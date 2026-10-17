@@ -1,0 +1,5 @@
+<workspace>\ps-audit\port435rc3\staging\literal-submission\Challenge.lean:121:8: warning: declaration uses `sorry`
+<workspace>\ps-audit\port435rc3\staging\literal-submission\Challenge.lean:127:8: warning: declaration uses `sorry`
+<workspace>\ps-audit\port435rc3\staging\literal-submission\Challenge.lean:136:8: warning: declaration uses `sorry`
+<workspace>\ps-audit\port435rc3\staging\literal-submission\Challenge.lean:145:8: warning: declaration uses `sorry`
+<workspace>\ps-audit\port435rc3\staging\literal-submission\Challenge.lean:151:8: warning: declaration uses `sorry`

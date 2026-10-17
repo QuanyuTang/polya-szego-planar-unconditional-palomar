@@ -1,0 +1,47 @@
+{
+  "module": "Solution",
+  "original_record_sha256": "ff7ae3963a928a25826e1f444c3b1c45f2772028dc629fdb9dd8bef530a5845e",
+  "source": {
+    "sha256": "134aa69b2298a383761ca85ee9afd9072ff9b3817017a4be9f1a459d274ea863",
+    "size": 10411
+  },
+  "lean_exit_code": 0,
+  "post_validation_exit_code": 0,
+  "exit_code": 0,
+  "seconds": 15.7219046,
+  "native_flags": [
+    "-j",
+    "1",
+    "-D",
+    "Elab.async=false"
+  ],
+  "finished_ns": 1792273337298402100,
+  "artifacts": [
+    {
+      "kind": ".olean",
+      "sha256": "e3f2a57078af5d297f51fefdbabb21a052221d74de54328150fdd655b6d1828e",
+      "size": 122744
+    },
+    {
+      "kind": ".olean.server",
+      "sha256": "685bccf93f491f6f1bf64af78b0f304f0e658935a40892fac08c3f919373209b",
+      "size": 16144
+    },
+    {
+      "kind": ".olean.private",
+      "sha256": "78a9b48628e3fd2b81c8e6a283f45f275b74438186d6d68fe6747df4cee95baa",
+      "size": 120088
+    },
+    {
+      "kind": ".ir.sig",
+      "sha256": "89c7d54cad53daba5ed46f8b9a5ed81193347e7f380dbae2676807ce43b03eb4",
+      "size": 176
+    },
+    {
+      "kind": ".ir",
+      "sha256": "e8b0dc4ec203a8585bb87b4170411d773fd2fa2fa0646641825cf44b994206a9",
+      "size": 5728
+    }
+  ],
+  "scope": "Native development bytes only; no Linux, Comparator or independent-kernel result claimed."
+}

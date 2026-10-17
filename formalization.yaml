@@ -1,0 +1,61 @@
+project:
+  name: Planar Pólya–Szegő Buckling Inequality
+  description: >-
+    Unconditional Lean formalization of the planar area corollary cor:area and
+    conjecture conj:PS in A sharp comparison between planar buckling and Dirichlet
+    eigenvalues. For open planar sets of positive finite area, it proves the sharp
+    area inequality and characterizes equality by exact equality with an open
+    disk. It retains the original Sobolev-space, variational eigenvalue and Bessel
+    definitions, and includes the disk eigenvalue and buckling–Dirichlet comparison.
+  authors:
+    - Quanyu Tang
+    - Haiqi Zhang
+  license: Apache-2.0
+  responsible_maintainers:
+    - Quanyu Tang
+
+classification:
+  arxiv:
+    - math.AP
+  msc2020: []
+
+sources:
+  - title: A sharp comparison between planar buckling and Dirichlet eigenvalues
+    type: manuscript
+    relationship: formalizes
+    location: 'paper/PS_dim2_v3.tex: cor:area and conj:PS'
+    note: >-
+      The target manuscript supplied for this project is paper/PS_dim2_v3.tex.
+      Aristotle's initial Lean delivery was based on the separately supplied
+      PS_dim2_definition_theorem_proof_v3.tex. The public statements retain the
+      standard mathematical definitions audited against PS_dim2_v3.tex. No public
+      manuscript identifier or publication link is asserted.
+
+automation:
+  methods:
+    - method: >-
+        Aristotle generated the initial Lean delivery from the supplied
+        PS_dim2_definition_theorem_proof_v3.tex. Its main target statements
+        retained PaperExternals assumptions; that delivery alone did not prove
+        the requested unconditional corollary.
+      framework: Aristotle
+    - method: >-
+        Codex assisted completion of the missing proof obligations, Lean API
+        porting, source and dependency review, semantic and axiom audits, and
+        end-to-end local native Lean verification. The repository workflows
+        enforce Linux builds, comparison of the five original public statements,
+        and replay through Lean, NanoDa and con-ron for the exact commit.
+      framework: OpenAI Codex
+
+review:
+  status: >-
+    The corresponding development sources completed end-to-end local native Lean
+    verification, including the complete proof closure and literal submission
+    statement and axiom audits. Native-to-release source mappings distinguish
+    historical-comment and line-ending changes; the released bytes are checked
+    by the repository workflows. AI-assisted source and semantic review was
+    performed; no independent human review is recorded. Linux builds, five-target
+    Challenge/Solution comparison and the three kernel checks are enforced by
+    those workflows. Their actual results and logs must be read from GitHub
+    Actions for the exact commit; local checks do not assert their success or
+    Palomar registry acceptance.

@@ -1,0 +1,1937 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\mathtoolsset{showonlyrefs}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+\DeclareMathOperator{\cof}{cof}
+\title{A sharp comparison between planar buckling\\and Dirichlet eigenvalues}
+% Add the authors and affiliations before submission.
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Introduction}
+For an open set $\Omega\subset\mathbb R^2$ of finite positive area, define
+\[
+ \Lambda_1(\Omega)=\inf_{0\ne v\in H_0^2(\Omega)}
+       \frac{\int_\Omega(\Delta v)^2\dd x}
+            {\int_\Omega|\nabla v|^2\dd x},\qquad
+ \lambda_1^{\mathrm D}(\Omega)=\inf_{0\ne v\in H_0^1(\Omega)}
+       \frac{\int_\Omega|\nabla v|^2\dd x}
+            {\int_\Omega v^2\dd x}.
+\]
+Here $H_0^m(\Omega)$ denotes the closure of $C_c^\infty(\Omega)$
+in $H^m(\Omega)$. This definition is used throughout, including when
+$\partial\Omega$ is irregular. For a smooth bounded domain, the first
+quantity is the least eigenvalue of the clamped buckling problem
+\[
+ \Delta^2v+\Lambda\Delta v=0\quad\hbox{in }\Omega,
+ \qquad v=\partial_\nu v=0\quad\hbox{on }\partial\Omega,
+\]
+where $\nu$ is the outward unit normal. In the planar plate model,
+$\Lambda_1$ represents the critical load for uniform lateral compression.
+
+The isoperimetric question for this eigenvalue belongs to the classical
+program of comparing membranes and plates of prescribed area. The
+Faber--Krahn theorem \cite{Faber,Krahn} identifies the disk as the
+minimizer of $\lambda_1^{\mathrm D}$. P\'olya and Szeg\H{o}
+\cite{PS} proposed the corresponding assertion for the first buckling
+load. Let $J_\nu$ be the Bessel function of the first kind, and let
+$j_{\nu,n}$ denote its $n$th positive zero. On a disk of radius $R$,
+\[
+ \lambda_1^{\mathrm D}(B_R)=j_{0,1}^2/R^2,
+ \qquad \Lambda_1(B_R)=j_{1,1}^2/R^2.
+\]
+The planar P\'olya--Szeg\H{o} conjecture takes the following form.
+\begin{conjecture}\label{conj:PS}
+For every smooth bounded planar domain $\Omega$,
+\[
+ |\Omega|\Lambda_1(\Omega)\ge\pi j_{1,1}^2,
+\]
+with equality if and only if $\Omega$ is a disk.
+\end{conjecture}
+
+Szeg\H{o}'s early symmetrization argument \cite{Szego50,Szego58}
+established the buckling inequality under an additional hypothesis
+that a first eigenfunction does not change sign. The correction in
+\cite{Szego58} addresses the admissibility of the rearranged function.
+The sign hypothesis cannot be imposed on general buckling eigenfunctions;
+see the discussion in \cite{AL} and the analysis of annuli in \cite{BP}.
+Thus the usual positivity-based proof for the Dirichlet Laplacian does
+not directly settle Conjecture~\ref{conj:PS}.
+
+A second line of work compares buckling and membrane spectra. Payne's
+inequality $\Lambda_1\ge\lambda_2^{\mathrm D}$ \cite{Payne}, with the
+correction discussed by Friedlander \cite{Friedlander}, gives a useful
+but nonsharp area bound. Here $\lambda_j^{\mathrm D}$ denotes the
+$j$th Dirichlet eigenvalue, counted with multiplicity. In dimension two, the bound of Bramble and
+Payne \cite{BramblePayne} is $|\Omega|\Lambda_1>2\pi j_{0,1}^2$ for
+bounded connected domains. Ashbaugh and Laugesen \cite{AL} extended this
+estimate to higher dimensions. More recently, Levitin and Polterovich
+\cite{LP} established Payne's shifted comparison for every odd buckling
+index. These index comparisons are distinct from the comparison with
+$\lambda_1^{\mathrm D}$ proved below.
+
+Shape optimization provides another approach. Ashbaugh and Bucur
+\cite{AB} proved existence results in the simply connected planar class
+and for a relaxed problem. Stollenwerk \cite{Stollenwerk} subsequently
+proved existence among finite-measure open sets in arbitrary dimension.
+The Weinberger--Willms argument, presented in \cite{AB}, identifies a
+smooth simply connected optimizer as a disk; related optimality
+conditions were developed by Stollenwerk and Wagner \cite{SW}.
+Lamboley and Nahon \cite{LN} proved boundedness and partial boundary
+regularity of planar optimizers, and weakened the regularity assumptions
+in this characterization. Those results leave hypotheses on the
+optimizer; the argument here does not require an optimal-domain
+regularity theorem.
+
+Our main result is a sharp comparison with the first Dirichlet eigenvalue.
+\begin{theorem}\label{main}
+For every open set $\Omega\subset\mathbb R^2$ with
+$0<|\Omega|<\infty$,
+\begin{equation}\label{eq:comparison}
+ \Lambda_1(\Omega)\ge
+       \frac{j_{1,1}^2}{j_{0,1}^2}\lambda_1^{\mathrm D}(\Omega).
+\end{equation}
+The constant is optimal.
+\end{theorem}
+
+Combining Theorem~\ref{main} with the Faber--Krahn inequality resolves
+Conjecture~\ref{conj:PS}, without assumptions on topology or boundary
+regularity.
+\begin{corollary}\label{cor:area}
+For every open set $\Omega\subset\mathbb R^2$ of finite positive area,
+\begin{equation}\label{eq:area}
+ |\Omega|\Lambda_1(\Omega)\ge\pi j_{1,1}^2.
+\end{equation}
+Equality holds if and only if $\Omega$ is an open disk as a set.
+\end{corollary}
+
+The proof of \eqref{eq:comparison} is variational. We construct a
+one-variable function $f$ for which
+\[
+ F=|\nabla U|f\bigl(U/|\nabla U|\bigr)
+\]
+converts a compactly supported buckling test function into a Dirichlet
+test function. The value at $\nabla U=0$ is specified by continuity.
+After adding two divergence terms whose integrals vanish, the desired
+functional inequality reduces to positivity of a symmetric matrix.
+Its kernel is determined by the radial disk eigenfunctions. The
+remaining $2\times2$ block is controlled by convexity, two Wronskian
+comparisons, and a residue expansion for an auxiliary Bessel function.
+The construction is compatible with changes of sign of $U$. In
+particular, it does not use positivity of a buckling eigenfunction.
+
+Section~\ref{sec:calibration} defines the profiles and proves the matrix
+identities. Sections~\ref{cv:sec:convexity}--\ref{sec:G} establish the
+one-variable inequalities. Section~\ref{sec:functional} treats the weak
+interpretation of the divergence terms and proves Theorem~\ref{main}.
+Section~\ref{sec:equality} proves the equality statement. The
+appendices collect the fixed Bessel estimates and the form-domain facts
+used in the proof. All functions may be taken real-valued: the quotient
+of a complex function is a weighted average of the quotients of its
+nonzero real and imaginary parts.
+
+\section{The auxiliary profiles and matrix identity}\label{sec:calibration}
+\subsection{The disk profiles}
+Put $k=j_{1,1}$, $q=j_{0,1}$, $\alpha=q/k$,
+$\lambda=\alpha^2$, $c=-J_0(k)>0$, and, for $0<r<k$,
+\[
+ \begin{gathered}
+ p=J_1(r),\qquad u=J_0(r)+c,\qquad \phi=J_0(\alpha r),\\
+ A=-p_r/p,\quad C=-1/r,\quad t=u/p,\quad T=t_r=tA-1.
+ \end{gathered}
+\]
+Here $p,u,\phi>0$. The radial functions $u$ and $\phi$ are the
+first buckling and Dirichlet eigenfunctions on $B_k$, with eigenvalues
+$1$ and $\lambda$, respectively. Since $u_r=-p$, the change of variable
+$t=u/p$ is chosen so that the transform $p f(t)$ sends $u$ to $\phi$.
+Define
+\[
+ f(t(r))=\phi/p,\qquad z=f_t,\qquad g=f-tz,\qquad
+ w=\phi_r/p,
+ \qquad
+ K=\left(\frac{\alpha J_1(q)}c\right)^2.
+\]
+A profile written as a function of $r$ means its composition with
+$t=t(r)$ when necessary; derivatives carry a subscript $r$ or $t$. Primes in radial calculations
+denote $r$ derivatives. All terminating decimals below denote exact
+rational numbers.
+The Bessel equation, defining series and recurrences are given in
+\cite[Eqs.~10.2.1--10.2.2 and 10.6.1--10.6.3]{DLMF};
+the canonical product and interlacing of real zeros are given in
+\cite[Eqs.~10.21.15 and 10.21.2]{DLMF}.
+Appendix~\ref{app:constants} proves all fixed constant bounds used below,
+including the identification of their root indices.
+
+\subsection{The change of variable}
+\begin{lemma}
+$T<0$ on $(0,k)$, and $t$ maps that interval bijectively onto $(0,\infty)$
+in reverse order.
+\end{lemma}
+\begin{proof}
+Let $S=p^2+up_r$, so $T=-S/p^2$. If $p_r\ge0$ then $S>0$.
+The elementary alternating Bessel bounds
+$J_0(r)\ge1-r^2/4$ and $J_1(r)/r\le1/2$ imply
+$p_r=J_0-p/r>0$ on $0<r\le\sqrt5/2$.
+If $p_r(r)<0$, necessarily $r>\sqrt5/2$. For $L=p_r/p$, the Bessel
+ODE gives
+\[
+ (\log p)_{rr}
+ =-1+\frac1{r^2}-\frac Lr-L^2
+ =-1+\frac5{4r^2}-\left(L+\frac1{2r}\right)^2<0
+ \quad(r>\sqrt5/2).
+\]
+Thus $\log p$ is strictly concave on $[r,k)$ and, since
+$A(r)>0$,
+\[
+ u(r)=\int_r^k p(s)\,ds
+ <\int_r^\infty p(r)e^{-A(r)(s-r)}ds=\frac{p(r)}{A(r)}.
+\]
+It follows that $S=p^2(1-tA)>0$. The endpoint expansions
+$t\sim2(1+c)/r$ at zero and $t\sim(k-r)/2$ at $k$ prove surjectivity.
+\end{proof}
+
+The following formulas will be useful:
+\begin{equation}
+ S=p^2+up_r>0,\qquad
+ z=\frac{\phi p_r-p\phi_r}{S},\qquad
+ g=\frac{p\phi+u\phi_r}{S}.
+\end{equation}
+The Bessel equations give the identities
+\begin{align}
+ A_r&=A^2+AC+1-C^2,& C_r&=C^2,\label{riccati}\\
+ f_r&=w+Af=Tz,&w_r&=(A+C)w-\lambda f,
+ &w&=-z-Ag.\label{fw}
+\end{align}
+
+\subsection{Two auxiliary functions}
+Let
+\[
+ B(x)=x[J_0(x)^2+J_1(x)^2]-J_0(x)J_1(x).
+\]
+The recurrence relations give
+\[
+ B'(x)=\frac{J_0(x)J_1(x)}x.
+\]
+Define
+\begin{equation}\label{Gclosed}
+ G(r)=K+\frac{\alpha rB(\alpha r)-KrB(r)}{p(r)^2}.
+\end{equation}
+The choice of $K$ gives
+\[
+ B(k)=kc^2,\qquad B(q)=qJ_1(q)^2,\qquad KB(k)=\alpha B(q).
+\]
+This identity will remove the apparent singularity at $r=k$.
+
+Define
+\begin{equation}\label{bclosed}
+ b=-KA-GC-fw=-KA+\frac Gr-\frac{\phi\phi_r}{p^2}.
+\end{equation}
+\begin{lemma}
+The function $G$ satisfies
+\begin{equation}\label{Videntity}
+ V:=w^2-Cfw+\lambda f^2=K A_r+GC^2.
+\end{equation}
+One also has
+\begin{align}
+ G_r&=b+2AG+2KC,\label{Gode}\\
+ b_r+CG_r&=-2f_rw.\label{bidentity}
+\end{align}
+\end{lemma}
+\begin{proof}
+Expand \eqref{Gclosed} using the definition of $B$, multiply by $p^2$,
+and use \eqref{riccati}. The result is exactly
+$G=r^2(V-KA_r)$, proving \eqref{Videntity}.
+By \eqref{fw} and $C_r=C^2$,
+\[
+ V_r=(2A+C)V-C^2fw.
+\]
+Also
+\[
+ A_{rr}=(2A+C)A_r+AC^2-2C^3.
+\]
+Differentiate \eqref{Videntity}, substitute these two formulas, and
+cancel $K(2A+C)A_r$. Division by $C^2>0$ gives
+\[
+ G_r=(2A-C)G-KA+2KC-fw=b+2AG+2KC.
+\]
+Differentiating \eqref{bclosed} gives
+\[
+ b_r+CG_r=-KA_r-GC^2-f_rw-fw_r
+         =-V-f_rw-fw_r=-2f_rw,
+\]
+where the last equality uses
+$f_rw-fw_r=w^2-Cfw+\lambda f^2=V$.
+\end{proof}
+
+\subsection{Reduction to a two-dimensional quadratic form}
+Define the coefficients
+\[
+ a=K-g^2,\quad d=2G-tG_t,\quad
+ L_A=2b-tb_t-2zg,\quad L_C=b+G_t,\quad
+ H=-K-z^2+\lambda f^2+b_t.
+\]
+Define the symmetric matrix
+\[
+ M=\begin{pmatrix}
+ a&d/2&L_A/2\\ d/2&K&L_C/2\\L_A/2&L_C/2&H
+ \end{pmatrix}.
+\]
+\begin{proposition}\label{kernel}
+For all $0<r<k$,
+\[
+ L_C=-dA-2KC,\qquad L_A=-2aA-dC,\qquad
+ H=aA^2+dAC+KC^2.
+\]
+
+\end{proposition}
+\begin{proof}
+The first equation follows from \eqref{Gode}:
+\[
+ dA+2KC+L_C=2GA+2KC+b+(1-tA)G_t
+                    =G_r-TG_t=0.
+\]
+For the second, multiply its left side by $T$ and use
+\eqref{bclosed}, $f-g=tz$, and $w=-z-Ag$:
+\begin{align*}
+ T(L_A+2aA+dC)
+ &=T[2b-2zg+2(K-g^2)A+2GC]-t(b_r+CG_r)\\
+ &=-2tTzw-t(b_r+CG_r)=0,
+\end{align*}
+by \eqref{bidentity} and $Tz=f_r$.
+Finally \eqref{bidentity} implies $b_t=-2zw-CG_t$. Therefore
+\begin{align*}
+ H-(aA^2+dAC+KC^2)
+ &=\lambda f^2+w^2-K(1+A^2+C^2)-2GAC+CG_r\\
+ &=\lambda f^2+w^2-K(1+A^2-C^2)+Cb\\
+ &=V-GC^2-K(A^2+AC+1-C^2)=0
+\end{align*}
+by \eqref{Gode}, \eqref{bclosed}, \eqref{riccati} and
+\eqref{Videntity}.
+\end{proof}
+
+\begin{proposition}\label{prop:reduction}
+If
+\begin{equation}\label{remaining-positivity}
+ d^2+4Kg^2\le4K^2,
+\end{equation}
+then $M$ is positive semidefinite and $2K-g^2-d\ge0$.
+\end{proposition}
+\begin{proof}
+The kernel identities give the quadratic-form identity
+\[
+ (X,Y,P)M(X,Y,P)^T
+ =a(X-AP)^2+d(X-AP)(Y-CP)+K(Y-CP)^2.
+\]
+The block determinant is $K(K-g^2)-d^2/4$; nonnegativity implies
+$g^2\le K$. Moreover
+\[
+ 2K-g^2-d\ge2K-g^2-2\sqrt{K(K-g^2)}
+            =\left(\sqrt K-\sqrt{K-g^2}\right)^2\ge0.
+\]
+\end{proof}
+
+\subsection{Analytic endpoint data}\label{sec:endpoints}
+Write $\beta=\sqrt K$, $a_0=1-\lambda$ and $\delta=k-r$.
+The Bessel equations give
+\[
+ p=c\delta+\frac{c}{2k}\delta^2+
+       \frac{c(3/k^2-1)}6\delta^3+O(\delta^4),\qquad
+ u=\frac c2\delta^2+\frac{c}{6k}\delta^3+O(\delta^4),
+\]
+\[
+ \phi=c\beta\delta+\frac{c\beta}{2k}\delta^2+
+       \frac{c\beta(2/k^2-\lambda)}6\delta^3+O(\delta^4).
+\]
+Thus $t=\delta/2+O(\delta^2)$ and, writing $m_k=1-\lambda-k^{-2}$,
+\[
+ g=\beta-\frac{\beta m_k}{6}\delta^2+O(\delta^3),\qquad
+ z=\frac{2\beta m_k}{3}\delta+O(\delta^2).
+\]
+Here $m_k>0$ follows already from $\lambda<2/5$ and $k>19/5$,
+whose elementary rational justifications are supplied below.
+
+The endpoint values of $G$ and its slope are exact. Put
+$N(r)=\alpha rB(\alpha r)-KrB(r)$. Differentiating
+$(sB(s))'=s(J_0(s)^2+J_1(s)^2)$ gives
+\[
+ N(k)=N'(k)=0,\quad N''(k)=-2Kc^2,
+ \quad N_{rrr}(k)=2Kc^2/k.
+\]
+Consequently
+\[
+ G=\frac{Kp^2+N}{p^2}=\frac{2K}{3k}\delta+O(\delta^2),
+ \qquad G(k)=0,\quad G_r(k)=-\frac{2K}{3k}.
+\]
+All these expansions are convergent local analytic expansions after
+the indicated removable factors have been cancelled. At the radial center,
+$G|_{r=0}=2\lambda-K$, $g|_{r=0}=0$, $z|_{r=0}=(1+c)^{-1}$; these follow
+from the ordinary Bessel series.
+\section{Convexity of the transform}\label{cv:sec:convexity}
+Put $r_0=(1-\lambda)^{-1/2}$. Only the coarse elementary parameter bounds
+\begin{equation}
+ 0<\lambda<\frac25,\qquad 0<c<\frac{41}{100},\qquad k>\frac{19}5
+\end{equation}
+will be used. They follow from Lemma~\ref{gm:coarse} in
+Appendix~\ref{app:constants}. The same appendix verifies
+\begin{equation}\label{cv:nineteen}
+ \frac7{25}<J_0(19/10)<\frac{283}{1000},\qquad
+ \frac{J_1(19/10)}{19/10}>\frac3{10}.
+\end{equation}
+These use only the degree-six and degree-eight alternating
+Bessel bounds, recorded explicitly in the appendix.
+
+\begin{lemma}
+One has $z>0$ and $g>0$ throughout $0<r<k$.
+\end{lemma}
+\begin{proof}
+Set $W=p\phi'-\phi p'$. The two Bessel equations give
+\[
+ (rW)'=r(a_0-r^{-2})p\phi.
+\]
+Both endpoint limits of $rW$ are zero. Its derivative is negative
+before $r_0=a_0^{-1/2}$ and positive after $r_0$. Hence $W<0$ in
+the open interval. Thus $f_r=W/p^2<0$ and $z=f_r/t'>0$.
+
+For the other sign put $\psi=-\phi'=\sqrt\lambda
+J_1(\sqrt\lambda r)>0$. Now
+\[
+ [r(p\psi'-\psi p')]'=a_0rp\psi>0.
+\]
+The expression on the left before differentiation has limit zero
+at the center. Consequently $h=\psi/p$ is strictly increasing.
+Using $\phi(r)=\int_r^k\psi(s)\dd s$ gives
+\[
+ p\phi+u\phi'
+ =p(r)\int_r^k p(s)[h(s)-h(r)]\dd s>0.
+\]
+Since $g=(p\phi+u\phi')/S$, the claim follows.
+\end{proof}
+
+Put $m=a_0-r^{-2}$ and $Q=a_0u-c$.
+\begin{lemma}
+For $0<r<k$,
+\begin{equation}\label{cv:system}
+ g_r=\frac{u}{S}(pmg+Qz),\qquad z_r=-\frac pu g_r.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Use $u'=-p$, $p''=-p'/r-(1-r^{-2})p$ and
+$\phi''=-\phi'/r-\lambda\phi$. First,
+\[
+ S'+S/r=p(u/r^2-c).
+\]
+Differentiating $z=(\phi p'-p\phi')/S$ in $r$ and then dividing by
+$t'=-S/p^2$ gives
+\[
+ f_{tt}=\frac{p^3}{S^3}
+ \left[\phi(p'^2-pp'')+\phi''S-\phi'S'\right].
+\]
+After inserting $p'=u-c-p/r$, the bracket equals
+$S[a_0\phi-cz-(p/r^2)g]$. Hence
+\[
+ f_{tt}=\frac{p^3}{S^2}
+       \left[a_0\phi-cz-\frac p{r^2}g\right].
+\]
+Now use $g_r=-tz_r$, $z_r=f_{tt}t'$ and $\phi=pg+uz$ to obtain
+\eqref{cv:system}.
+\end{proof}
+
+\begin{lemma}\label{cv:ratio}
+There is a unique $r_Q\in(19/10,k)$ for which $Q(r_Q)=0$.
+For
+\[
+ F(r)=\frac{p(r)m(r)}{Q(r)}
+\]
+one has $F'(r)>0$ both on $(0,r_0)$ and on $(r_Q,k)$.
+\end{lemma}
+\begin{proof}
+Since $Q'=-a_0p<0$, $Q(k)=-c<0$, and
+\[
+ Q(19/10)>\frac35\frac7{25}-\frac25\frac{41}{100}
+ =\frac1{250}>0,
+\]
+the zero is unique and lies after $19/10$. Also
+$r_0\le\sqrt{5/3}<19/10$. Write
+$Q_0=Q(0)=a_0-\lambda c>2/5$.
+
+For $0<r<r_0$, put $x=a_0r^2\in(0,1)$. The elementary Bessel
+bounds $p\le r/2$ and $p'/p\le1/r$ hold there; the latter follows
+from $p'=p/r-J_2(r)$ and the direct alternating-series bound
+$J_2(r)\ge r^2/8-r^4/96>0$ for $r<r_0\le\sqrt{5/3}$.
+Furthermore
+\[
+ Q=Q_0-a_0\int_0^r p(s)\dd s\ge Q_0-x/4>0.
+\]
+As $F<0$, the condition $F'>0$ is equivalent to
+\[
+ \frac2{r(1-x)}-\frac{p'}p>\frac{a_0p}{Q}.
+\]
+The left side is at least $(1+x)/[r(1-x)]$, while the right side
+is at most $x/[2r(Q_0-x/4)]$. The required strict comparison follows
+from
+\[
+ 2(Q_0-x/4)(1+x)-x(1-x)
+ =2Q_0+(2Q_0-3/2)x+x^2/2
+ >4/5-7x/10+x^2/2\ge1/10.
+\]
+
+For $r>r_Q$ put $A=-p'/p$ and $\ell=r-r_Q$. The estimates
+\eqref{cv:nineteen} give $p'(19/10)<283/1000-3/10<0$.
+Since $(\log p)''<0$ for $r>\sqrt5/2$, we have $A>0$ on
+$[r_Q,k)$. The tangent-line bound for the concave function $\log p$
+gives, for $r_Q\le s\le r$,
+\[
+ p(s)\le p(r)e^{A(r)(r-s)},\qquad
+ \frac{a_0p(r)}{-Q(r)}
+ =\frac{p(r)}{\int_{r_Q}^r p(s)\dd s}
+ \ge\frac{A(r)}{e^{A(r)\ell}-1}.
+\]
+It follows that
+\[
+ A+\frac{a_0p}{-Q}\ge\frac{A}{1-e^{-A\ell}}>\frac1\ell.
+\]
+On the other hand,
+\[
+ \frac{m'}m=\frac2{r(a_0r^2-1)}<\frac1{r-r_Q}.
+\]
+Indeed, the last strict inequality is equivalent to
+$a_0r^3-3r+2r_Q>0$; it holds at $r=r_Q>r_0$ and its derivative is
+positive thereafter. Therefore
+\[
+ \frac\dd{\dd r}\log(-F)
+ =-A+\frac{m'}m-\frac{a_0p}{-Q}<0.
+\]
+As $F<0$ on this interval too, this proves $F'>0$.
+\end{proof}
+
+\begin{proposition}
+For every $0<r<k$,
+\[
+ g_r>0,\qquad f_{tt}>0,\qquad 0<g(r)<\sqrt K.
+\]
+\end{proposition}
+\begin{proof}
+At any zero of $g_r$ in an interval with $Q\ne0$, the system
+\eqref{cv:system} gives $z_r=0$ and
+\begin{equation}\label{cv:zeroorientation}
+ g_{rr}=\frac{u}{S}\,gQ\left(\frac{pm}{Q}\right)'.
+\end{equation}
+The endpoint expansions give
+\[
+ g_r\longrightarrow\frac{a_0-\lambda c}{1+c}>0\quad(r\downarrow0),
+\]
+and, with $\delta=k-r$,
+\[
+ g=\beta-\frac{f_2}4\delta^2+O(\delta^3),\qquad
+ f_2=\frac{2\beta}{3}(a_0-k^{-2})>0.
+\]
+Thus $g_r>0$ near both endpoints. On $(0,r_0)$, Lemma~\ref{cv:ratio}
+and \eqref{cv:zeroorientation} make every hypothetical zero of $g_r$
+a strict crossing from negative to positive. Since $g_r$ starts
+positive, no such zero is possible. On $[r_0,r_Q]$ both terms in
+$pmg+Qz$ are nonnegative and at least one is positive, so $g_r>0$
+directly. On $(r_Q,k)$ every hypothetical zero is instead a strict
+crossing from positive to negative. Positivity near $k$ excludes
+such a zero. This proves $g_r>0$ globally.
+
+Because $g_r=-t t'f_{tt}$ and $t>0$, $t'<0$, strict convexity
+follows. Finally $g(0+)=0$ and $g(k-)=\beta$ give the claimed
+bound.
+\end{proof}
+
+\section{A quadratic estimate}
+The elementary coarse bounds needed below are
+\begin{equation}
+ \frac14<\lambda<\frac25,\qquad
+ \frac25<c<\frac{41}{100},\qquad 2<k<4.
+\end{equation}
+These are included in Lemma~\ref{gm:coarse}; in particular, the lower
+bound on $\lambda$ follows from $q>2$ and $k<4$.
+
+\subsection{Elementary bounds for the phase}
+Set
+\[
+ \rho=\sqrt{u^2+p^2},\qquad \theta=\arctan(p/u),\qquad
+ \eta=\theta'=\frac{S}{\rho^2}>0.
+\]
+The phase increases from zero to $\pi/2$. Write $s_\theta=\sin\theta=p/\rho$
+and $c_\theta=\cos\theta=u/\rho$. The system
+$u'=-p$, $p'=u-c-p/r$ gives
+\begin{equation}\label{ph:phase}
+ \eta=1-\frac{c}{\rho} c_\theta-\frac{s_\theta c_\theta}{r},\qquad
+ \frac{\rho'}\rho=-\frac{c}{\rho} s_\theta-\frac{s_\theta^2}{r}.
+\end{equation}
+
+\begin{lemma}\label{ph:diskbounds}
+Throughout $0<r<k$,
+\begin{equation}\label{ph:hbounds}
+ \eta>\frac{s_\theta c_\theta}{r},\qquad \eta<\frac{\tan\theta}{r},\qquad
+ \eta>\frac12-\frac{s_\theta c_\theta}{r}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+First $J_2>0$ and $J_3>0$ on $(0,4)$. For $J_3$, the first two
+alternating terms give $J_3(r)\ge r^3/48-r^5/768>0$.
+For $J_2$, four terms give
+\[
+ J_2(r)\ge r^2\left(\frac18-\frac{r^2}{96}
+                 +\frac{r^4}{3072}-\frac{r^6}{184320}\right)>0.
+\]
+Indeed the polynomial in parentheses, as a function of $x=r^2$,
+is decreasing on $[0,16]$ and has value $7/360$ at $16$.
+
+Let $F=p^2-uJ_2$. The recurrences $p'=p/r-J_2$ and
+$J_2'=p-2J_2/r$ give the exact first-order equation
+\[
+ (r^2F)'=rp(2p-cr).
+\]
+Since $(p/r)'=-J_2/r<0$, the forcing has exactly one change of sign,
+from positive to negative. Both endpoint limits of $r^2F$ are zero.
+Consequently $F>0$ in the open interval. It follows that
+$S=up/r+F>up/r$, proving the first bound in \eqref{ph:hbounds}.
+
+The recurrence $4J_2/r=p+J_3$ gives another exact identity:
+\[
+ p \rho^2-ruS=p\left(p-\frac{ru}2\right)^2
+                  +\frac{r^2u^2}{4}J_3>0.
+\]
+Division by $ru\rho^2$ proves the second bound.
+
+Finally $(J_0^2+J_1^2)'=-2p^2/r<0$ and
+$J_0(k)^2+J_1(k)^2=c^2$. Hence
+\[
+ \rho^2-2cu=J_0(r)^2+p(r)^2-c^2>0.
+\]
+Thus $cu/\rho^2<1/2$, which combined with \eqref{ph:phase} gives the
+third bound.
+\end{proof}
+
+\begin{lemma}\label{ph:radius}
+If $\theta\ge\pi/4$, then $r>2$ and
+\[
+ r>2\sqrt2\sin\theta.
+\]
+\end{lemma}
+\begin{proof}
+The elementary series bounds $J_0(2)>11/50$,
+$J_1(2)<3/5$, together with $c>2/5$, give $u(2)>p(2)$.
+Thus $\theta(2)<\pi/4$ and $\theta\ge\pi/4$ implies $r>2$.
+
+By the second identity in the preceding proof,
+\begin{equation}\label{ph:logsine}
+ \left(\log\frac{\sin\theta}{r}\right)'
+ =\cot\theta\left(\eta-\frac{\tan\theta}{r}\right)
+ \le-\frac{ru^2J_3}{4p \rho^2}<0.
+\end{equation}
+On $0<r\le2$ we have $u^2/\rho^2>1/2$, $p\le r/2$ and
+\[
+ J_3(r)\ge\frac{r^3}{48}-\frac{r^5}{768}
+          \ge\frac{r^3}{64}.
+\]
+Therefore the right side of \eqref{ph:logsine} is at most
+$-r^3/256$. Integrating from zero to $2$, using
+$\lim_{r\downarrow0}\sin\theta/r=[2(1+c)]^{-1}\le5/14$,
+gives
+\[
+ \frac{\sin\theta(2)}2
+ <\frac5{14}e^{-1/64}<\frac5{14}\frac{64}{65}
+ =\frac{32}{91}<\frac1{2\sqrt2}.
+\]
+The last inequality is the integer comparison $8192<8281$.
+Monotonicity in \eqref{ph:logsine} extends this bound to every $r\ge2$.
+\end{proof}
+
+\subsection{Monotonicity of an auxiliary potential}
+\begin{proposition}\label{ph:potential}
+The function
+\[
+ \mathcal V(r)=-\frac{\rho''+\rho'/r}{\rho}
+\]
+is strictly decreasing on $(0,k)$.
+\end{proposition}
+\begin{proof}
+Direct differentiation of \eqref{ph:phase} gives
+\[
+ \eta'=\frac{s_\theta c_\theta}{r^2}+(2\eta-1)\frac{c}{\rho} s_\theta
+                     +\frac{\eta(2s_\theta^2-1)}r,
+\]
+\[
+ \mathcal V=1-\frac{c}{\rho} c_\theta-\frac{s_\theta^2}{r^2}-\eta^2,
+\]
+and consequently
+\begin{equation}\label{ph:Vprime}
+ \mathcal V'=-\frac{cp}{\rho^2}(1-2\eta)^2
+ +\frac2r\left[\left(\eta c_\theta-\frac{s_\theta}{r}\right)^2-\eta^2s_\theta^2\right].
+\end{equation}
+We show that the square bracket is strictly negative.
+
+For $0<\theta<\pi/4$ the bracket, as a quadratic in $\eta$, has
+positive roots
+\[
+ \eta_- =\frac{s_\theta}{r(s_\theta+c_\theta)},\qquad \eta_+=\frac{s_\theta}{r(c_\theta-s_\theta)}.
+\]
+Lemma~\ref{ph:diskbounds} gives
+\[
+ \eta>\frac{s_\theta c_\theta}{r}\ge \eta_-,\qquad
+ \eta<\frac{s_\theta}{r c_\theta}<\eta_+.
+\]
+Here $c_\theta(s_\theta+c_\theta)\ge1$ is equivalent to $c_\theta\ge s_\theta$.
+At $\theta=\pi/4$ the bracket is linear in $\eta$ and the same lower
+bound still makes it strictly negative.
+
+For $\pi/4<\theta<\pi/2$ the quadratic has negative leading
+coefficient and is negative whenever $\eta>\eta_-$. By
+Lemma~\ref{ph:radius}, $r>2\sqrt2s_\theta$. On this angular range
+\[
+ c_\theta+\frac1{s_\theta+c_\theta}\le\sqrt2.
+\]
+Indeed its value at $\pi/4$ is $\sqrt2$, and its derivative is
+$-s_\theta+(s_\theta-c_\theta)/(s_\theta+c_\theta)^2<0$. It follows that
+\[
+ r>2s_\theta\left(c_\theta+\frac1{s_\theta+c_\theta}\right),\qquad
+ \frac12-\frac{s_\theta c_\theta}{r}>\frac{s_\theta}{r(s_\theta+c_\theta)}=\eta_-.
+\]
+The third bound in \eqref{ph:hbounds} again gives $\eta>\eta_-$.
+Thus the bracket in \eqref{ph:Vprime} is negative everywhere, proving
+$\mathcal V'<0$.
+\end{proof}
+
+\subsection{A Wronskian comparison}
+\begin{proposition}
+For every $t>0$,
+\[
+ g^2+z^2<K.
+\]
+\end{proposition}
+\begin{proof}
+The endpoint expansions give
+\[
+ \mathcal V(0+)=\frac{c+1/2}{(1+c)^2}>\frac25>\lambda,
+ \qquad
+ \mathcal V(k-)=\frac14-\frac1{k^2}<\frac14<\lambda.
+\]
+For the first strict comparison, a sufficient rational bound is
+$\mathcal V(0+)>(9/10)/(141/100)^2>2/5$.
+By Proposition~\ref{ph:potential}, $\mathcal V-\lambda$ has exactly one sign
+change, from positive to negative.
+
+Let $W=\rho\phi'-\phi \rho'$. Since $\phi''+\phi'/r+\lambda\phi=0$,
+\[
+ (rW)'=r \rho\phi(\mathcal V-\lambda).
+\]
+Both endpoint limits of $rW$ are zero. The forcing is first positive
+and then negative, so $W>0$ throughout $(0,k)$. Using
+$\rho'=-p(c+p/r)/\rho$ and the formulas for $z,g$ gives the exact relation
+\[
+ z-tg=-\frac{\rho W}{pS}<0.
+\]
+Finally $g_t=-tf_{tt}$ and $z_t=f_{tt}$ imply
+\[
+ \frac\dd{\dd t}(g^2+z^2)=2f_{tt}(z-tg)<0.
+\]
+As $t\downarrow0$, $(g,z)\to(\beta,0)$, giving the energy bound.
+\end{proof}
+
+\section{A lower bound for the first derivative}
+In this section put $v=1-J_0(r)$ and $\sigma=1+c=u+v$.
+We first need an estimate for the disk profile.
+
+\begin{lemma}\label{dc:ratio}
+On $0<r<k$,
+\begin{equation}\label{dc:boundB}
+ \frac{2vS}{p^2}<\sigma.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The standard Bessel product and derivative recurrence give
+\[
+ J_1(r)=\frac r2\prod_{n\ge1}
+                  \left(1-\frac{r^2}{j_{1,n}^2}\right),\qquad
+ \frac{J_2(r)}{rJ_1(r)}
+       =\sum_{n\ge1}\frac2{j_{1,n}^2-r^2}.
+\]
+The series and its derivative converge uniformly on each compact
+subinterval of $(0,k)$.  In particular $J_2/(rJ_1)$ is strictly
+increasing there.  See \cite[Eqs.~10.21.15 and 10.6.2]{DLMF}.
+
+Since $X=J_0(r)$ is strictly decreasing from $1$ to $-c$, regard
+$E(X)=p(r)^2$ as a function of $X\in[-c,1]$.  The function $E$ is
+continuous on the closed interval, vanishes at its endpoints and
+is smooth in its interior.  Using $X'=-p$ and
+$p'=X-p/r$ gives
+\[
+ E_X=-2X+\frac{2p}r,\qquad
+ E_{XX}=-2+\frac{2J_2(r)}{rp},\qquad E_{XXX}<0.
+\]
+The last sign follows because $J_2/(rp)$ increases with $r$ while
+$X$ decreases with $r$.
+
+For fixed endpoints $x_-=-c$, $x_+=1$, the second divided difference is
+\[
+ E[x_-,X,x_+]=-\frac{E(X)}{(x_+-X)(X-x_-)}.
+\]
+Its derivative with respect to the middle node is the third divided
+difference $E[x_-,X,X,x_+]$.  The Hermite divided-difference mean-value
+theorem yields, for some $\xi\in(x_-,x_+)$,
+\[
+ \frac{d}{dX}E[x_-,X,x_+]=E[x_-,X,X,x_+]
+                   =\frac{E_{XXX}(\xi)}{3!}<0.
+\]
+Only continuity of $E$ at $x_-,x_+$ is needed here: the usual proof
+subtracts its cubic Hermite interpolant and applies Rolle's theorem
+three times to interior points.  No endpoint second derivative is
+being assumed.
+
+It follows that $E(X)/[(1-X)(X+c)]$ is strictly increasing with
+$X$, and hence strictly decreasing with $r$.  Differentiating that
+ratio gives precisely
+\[
+ \left(\frac{p^2}{uv}\right)'
+ =-\frac{p}{u^2v^2}\{(u-v)p^2-2uvp'\}<0.
+\]
+Finally $\sigma p^2-2vS=(u-v)p^2-2uvp'$, proving
+\eqref{dc:boundB}.
+\end{proof}
+
+\begin{corollary}
+Put $h_0=(p+vA)/\sigma$. The function
+\[
+ \mathcal R=\lambda-\frac{h_0}{r}+h_0^2-h_0'
+\]
+is strictly decreasing on $(0,k)$.
+\end{corollary}
+\begin{proof}
+Logarithmic differentiation of the same Bessel product gives
+$A'>0$.  Also $p/r$ is strictly decreasing, so
+$rp<2\int_0^rp(s)\,ds=2v$.  Direct differentiation, using
+$h_0'=vA'/\sigma$, gives
+\[
+ \mathcal R'
+ =\frac{pA'}{\sigma}\left(\frac{2vS/p^2}{\sigma}-1\right)
+                      +\frac{rp-2v}{\sigma r^3}<0
+\]
+by Lemma~\ref{dc:ratio}.
+\end{proof}
+
+We will also use $J_0(qs)>1-s$ for $0<s<1$. Here is an elementary proof.
+$J_1$ is strictly unimodal on $(0,q)$: its derivative is positive
+for $r\le\sqrt5/2$ by the change-of-variable lemma, and at any later zero its
+second derivative is $-(1-r^{-2})J_1$, so a downward crossing
+can occur only after $1$, and all such later crossings are downward.
+The elementary series gives $J_1'(1)>5/16>0$, and
+$J_1'(q)=-J_1(q)/q<0$, so there is exactly one such crossing.
+Moreover $qJ_1(q)>1$.
+Indeed $2<q<5/2$ and the four-term alternating lower bound gives,
+with $s=q^2\in[4,25/4]$,
+\[
+ qJ_1(q)\ge Q(s),\quad
+ Q(s)=\frac s2-\frac{s^2}{16}+\frac{s^3}{384}
+                                      -\frac{s^4}{18432}.
+\]
+Here $Q''(s)=-[(s-12)^2+48]/1536<0$ and
+$Q(4)=83/72>1$, $Q(25/4)=5834975/4718592>1$.
+Therefore $J_1(r)-1/q$ has exactly one sign change on $(0,q)$,
+from negative to positive.  The function $J_0(r)-1+r/q$ first
+increases and then decreases, with zero values at both endpoints,
+which proves the assertion.
+
+\begin{proposition}
+For $0<r<k$,
+\[
+ z(r)>\frac{k-r}{k(1+c)}.
+\]
+\end{proposition}
+\begin{proof}
+Use $h_0$ from the preceding corollary.
+Let $\psi$ be the positive solution of
+\[
+ \psi'=-h_0\psi,\qquad \psi(0)=1.
+\]
+At the center $h_0=r/(4\sigma)+O(r^3)$, so $\psi$ extends as a smooth
+even positive function.  At the other endpoint, with $\delta=k-r$,
+the elementary Bessel expansions give
+\[
+ p=c\delta+\frac{c}{2k}\delta^2+O(\delta^3),\quad
+ v=\sigma-\frac c2\delta^2+O(\delta^3),\quad
+ h_0=\frac1\delta+\frac1{2k}+O(\delta).
+\]
+Consequently $\psi=c_\psi\delta(1+\delta/(2k)+O(\delta^2))$ for
+some $c_\psi>0$.  In particular $\psi$ and $\phi$ have simple zeros
+at $k$.
+
+Define
+\[
+ V_\psi=-\frac{\psi''+\psi'/r}{\psi}
+       =h_0'+h_0/r-h_0^2=\lambda-\mathcal R.
+\]
+By the preceding corollary $V_\psi$ is strictly increasing.
+For $W=\psi\phi'-\phi\psi'$ one has the exact identity
+\[
+ (rW)'=r\psi\phi(V_\psi-\lambda).
+\]
+The central regularity and the simple boundary zeros give
+$rW\to0$ at both endpoints.  The strictly increasing function
+$V_\psi-\lambda$ must therefore change sign exactly once,
+from negative to positive: otherwise its integral against the
+positive weight $r\psi\phi$ could not be zero.  Thus $rW$
+first decreases from zero and then increases to zero, and
+$W<0$ throughout the open interval.  It follows that
+\[
+ -\frac{\phi'}\phi-h_0=-\frac W{\psi\phi}>0.
+\]
+Finally the exact transformed derivative is
+$z=(\phi p'-p\phi')/S$.  Direct subtraction, using
+$\sigma-u=v$, yields
+\[
+ z-\frac{\phi}{\sigma}
+ =\frac{\phi p}{S}
+       \left(-\frac{\phi'}\phi-\frac{p-vp'/p}{\sigma}\right)
+ =\frac{\phi p}{S}
+       \left(-\frac{\phi'}\phi-h_0\right)>0.
+\]
+The inequality for $J_0$ proved above, rescaled to $(0,k)$, gives
+$\phi(r)>(k-r)/k$ and completes the proof.
+\end{proof}
+
+\section{Concavity of the auxiliary function}\label{sec:G}
+Write $q_n=j_{0,n}$ and $\kappa_n=j_{1,n}$.
+\begin{lemma}\label{ev:Benvelope}
+For every $n\ge1$ and every $x\ge q_n$,
+\[
+ B(\kappa_n)\le B(x)\le B(q_n).
+\]
+Equality on the left and right holds only at $x=\kappa_n$ and $x=q_n$,
+respectively.
+\end{lemma}
+\begin{proof}
+One has $B'(x)=J_0(x)J_1(x)/x$. By interlacing, the positive zeros
+$q_n$ of $J_0$ give local maxima of $B$ and the positive zeros $\kappa_n$
+of $J_1$ give local minima. The identities
+\[
+ 2B(x)-\frac{J_1(x)^2}{x}
+       =3\int_0^x\frac{J_1(s)^2}{s^2}ds
+\]
+and
+\[
+ B(q_{n+1})-B(q_n)
+   =-\frac12\int_{q_n}^{q_{n+1}}\frac{J_0(s)^2}{s^2}ds<0
+\]
+show, respectively, that the successive minima increase strictly and
+the successive maxima decrease strictly. Between successive critical
+points $B$ is strictly monotone. The asserted bounds follow for each $n$. Also $B(q)>B(k)>0$ and
+$K=\alpha B(q)/B(k)$.
+\end{proof}
+
+Put $L(r)=KB(r)-\alpha B(\alpha r)$, so that
+$G(r)=K-rL(r)/p(r)^2$. The endpoint identities give $G(k)=0$ and
+\begin{equation}\label{gm:endslope}
+ G_r(k)=-\frac{2K}{3k}.
+\end{equation}
+The singularities at $0,k,-k$ are removable. The function $G$ is an
+even meromorphic function whose only other possible poles are double
+poles at $\pm\kappa_n$, $n\ge2$. There are no unlisted complex zeros:
+if $J_1(\zeta)=0$ with $\zeta\ne0$, multiply the angular-one radial
+Dirichlet equation for $v(s)=J_1(\zeta s)$ on $(0,1)$ by $\bar v$ to get
+\[
+ \int_0^1\left(s|v'|^2+\frac{|v|^2}s\right)\,ds
+ =\zeta^2\int_0^1s|v|^2\,ds.
+\]
+The two integrals are strictly positive, so $\zeta^2>0$ and
+$\zeta$ is real. The nonzero
+zeros are simple by uniqueness for the Bessel ODE.
+
+The fixed bounds needed in the following lemma, including
+$K>.654$, $B(\kappa_3)>.634$, $B(q_2)<.640$ and
+$J_1(q_2)^2<.116$, are proved in Lemma~\ref{gm:coarse}.
+
+\begin{lemma}\label{gm:residuepositive}
+For $n\ge2$, $L(\kappa_n)>0$. Moreover
+\[
+ 3L(\kappa_n)-\phi(\kappa_n)\phi_r(\kappa_n)>0.
+\]
+\end{lemma}
+\begin{proof}
+Lemma~\ref{ev:Benvelope} gives $B(x)\le B(q)$ for $x\ge q$ and
+$B(\kappa_n)>B(k)$ for $n\ge2$. Since $KB(k)=\alpha B(q)$,
+this proves $L(\kappa_n)>0$.
+
+For $n=2$, the inequalities $k<\alpha\kappa_2<q_2$ imply
+$\phi(\kappa_2)<0$ and $\phi_r(\kappa_2)>0$, so the second
+claim is immediate. For $n\ge3$ we have
+$B(\kappa_n)\ge B(\kappa_3)>.634$ and
+$B(\alpha\kappa_n)\le B(q_2)<.640$. Also
+$E(x)=J_0(x)^2+J_1(x)^2$ satisfies $E'=-2J_1(x)^2/x\le0$.
+Thus for $x=\alpha\kappa_n\ge q_2$,
+\[
+ |\phi(\kappa_n)\phi_r(\kappa_n)|
+ =\alpha|J_0(x)J_1(x)|\le\frac\alpha2 E(x)
+ <\frac{.628\cdot.116}{2}.
+\]
+The coarse bounds now give the strictly positive rational estimate
+\[
+ 3L(\kappa_n)-\phi(\kappa_n)\phi_r(\kappa_n)
+ >3(.654\cdot.634-.628\cdot.640)-\frac{.628\cdot.116}2
+ =\frac{431}{250000}>0.
+\]
+\end{proof}
+
+\subsection{Uniform complex asymptotics and coefficient residues}
+For the coefficient calculation we use the classical uniform asymptotic
+formula, for $\nu=0,1$,
+\begin{equation}\label{asym:uniformJ}
+ J_\nu(\zeta)=\left(\frac2{\pi\zeta}\right)^{1/2}
+ \left[\cos\left(\zeta-\frac{\nu\pi}2-\frac\pi4\right)
+       +O\left(\frac{e^{|\operatorname{Im}\zeta|}}{|\zeta|}\right)\right],
+ \qquad |\arg\zeta|\le\frac\pi2.
+\end{equation}
+The error is uniform on the closed sector, with the principal square
+root. This follows from the Hankel-function remainder estimates in
+\cite[\S10.17(iv), Eqs.~10.17.13--10.17.15]{DLMF} and
+$2J_\nu=H_\nu^{(1)}+H_\nu^{(2)}$; the variation bound is at most
+$\pi/(2|\zeta|)$ on the relevant half-plane, and the conjugate bound
+handles the other Hankel function. Integer-order parity extends the
+absolute-value estimates to the left half-plane.
+
+\begin{lemma}\label{asym:circles}
+For $R_N=(N+3/4)\pi$ and all sufficiently large integers $N$,
+$G$ has no pole on $|\zeta|=R_N$ and
+\[
+ \sup_{|\zeta|=R_N}|G(\zeta)|\le C R_N^2,
+\]
+where $C$ is independent of $N$.
+\end{lemma}
+\begin{proof}
+Write $R=R_N$ and $\zeta=x+iy$. By parity assume $x\ge0$.
+If $|y|\ge1$, then
+\[
+ |\cos(\zeta-3\pi/4)|\ge\sinh|y|\ge c_0 e^{|y|}
+\]
+for a fixed $c_0>0$. If $|y|<1$, then
+$0\le R-x=y^2/(R+x)\le1/R$ and $R-3\pi/4=N\pi$, so
+$|\cos(\zeta-3\pi/4)|\ge\cos(1/R)$.
+Thus \eqref{asym:uniformJ}, with its error absorbed for large $R$, gives
+\[
+ |J_1(\zeta)|\ge c_1R^{-1/2}e^{|y|}.
+\]
+The same asymptotic formula gives
+\[
+ |J_0(\zeta)|+|J_1(\zeta)|\le C_1R^{-1/2}e^{|y|},\qquad
+ |J_0(\alpha\zeta)|+|J_1(\alpha\zeta)|
+       \le C_2R^{-1/2}e^{\alpha|y|}.
+\]
+Here $\alpha$ is fixed and positive. Consequently
+$|B(\zeta)|+|B(\alpha\zeta)|\le C_3e^{2|y|}$.
+The representation $G=K-\zeta L/J_1^2$ now proves the claim.
+\end{proof}
+
+For a function analytic at zero, $[r^j]G$ denotes the coefficient of $r^j$ in its Taylor series.
+\begin{lemma}
+For every integer $m\ge2$,
+\begin{equation}\label{gm:resformula}
+ -[r^{2m}]G(r)=\sum_{n=2}^{\infty}
+ \frac{2[(2m-1)L(\kappa_n)-\phi(\kappa_n)\phi_r(\kappa_n)]}
+ {\kappa_n^{2m+1}J_0(\kappa_n)^2}.
+\end{equation}
+The series is absolutely convergent.
+\end{lemma}
+\begin{proof}
+At $\kappa=\kappa_n$ let $x_\kappa=J_0(\kappa)\ne0$.
+The Bessel equation gives
+\[
+ p(r)=x_\kappa(r-\kappa)
+       -\frac{x_\kappa}{2\kappa}(r-\kappa)^2
+       +O((r-\kappa)^3).
+\]
+Therefore the principal part of $K-G=rL/p^2$ at $\kappa$ is
+\[
+ \frac{A_\kappa}{(r-\kappa)^2}
+    +\frac{D_\kappa}{r-\kappa},\qquad
+ A_\kappa=\frac{\kappa L(\kappa)}{x_\kappa^2},\quad
+ D_\kappa=\frac{2L(\kappa)+\kappa L'(\kappa)}{x_\kappa^2}.
+\]
+Since $B'(\kappa)=0$,
+$\kappa L'(\kappa)=\phi(\kappa)\phi_r(\kappa)$.
+Evenness determines the principal part at $-\kappa$.
+
+To justify the coefficient identity, apply the residue theorem to
+$G(\zeta)/\zeta^{2m+1}$ on $|\zeta|=R_N$, using Lemma~\ref{asym:circles}.
+For each fixed integer $m\ge2$,
+\begin{equation}\label{asym:outervanishes}
+ \left|\frac1{2\pi i}\int_{|\zeta|=R_N}\frac{G(\zeta)}{\zeta^{2m+1}}\dd\zeta\right|
+       \le C_{\alpha,K}R_N^{2-2m}\longrightarrow0.
+\end{equation}
+The residue at zero is $[\zeta^{2m}]G(\zeta)$. With the principal parts already
+computed, the sum of the residues at $\kappa$ and $-\kappa$ is
+\[
+ \frac{2(2m+1)A_\kappa}{\kappa^{2m+2}}
+       -\frac{2D_\kappa}{\kappa^{2m+1}}
+ =\frac{2[(2m-1)L(\kappa)-\phi(\kappa)\phi_r(\kappa)]}
+        {\kappa^{2m+1}J_0(\kappa)^2}.
+\]
+It remains to verify absolute convergence before taking the limit of
+the finite residue sums. The zero asymptotic
+\cite[Eq.~10.21.19]{DLMF}
+gives
+\[
+ \kappa_n=(n+1/4)\pi+O(n^{-1}).
+\]
+Apply \eqref{asym:uniformJ} on the positive axis at $\kappa_n$ to obtain
+\[
+ J_0(\kappa_n)=(-1)^n\left(\frac{2}{\pi\kappa_n}\right)^{1/2}
+                         (1+O(\kappa_n^{-1})).
+\]
+The same upper bounds give $B(x)=O(1)$ as $x\to+\infty$, so
+$L(\kappa_n)=O(1)$ and
+\[
+ \phi(\kappa_n)\phi_r(\kappa_n)
+   =-\alpha J_0(\alpha\kappa_n)J_1(\alpha\kappa_n)
+   =O(\kappa_n^{-1}).
+\]
+Consequently, for each fixed $m\ge2$, the absolute value of the
+displayed paired residue is $O_m(\kappa_n^{-2m})$, and the resulting
+series converges absolutely. Letting $N\to\infty$ in the residue
+theorem and using \eqref{asym:outervanishes} gives
+\[
+ -[\zeta^{2m}]G(\zeta)=\sum_{n=2}^{\infty}
+ \frac{2[(2m-1)L(\kappa_n)-\phi(\kappa_n)\phi_r(\kappa_n)]}
+        {\kappa_n^{2m+1}J_0(\kappa_n)^2}.
+\]
+
+\end{proof}
+
+\subsection{Concavity and the final estimates}
+\begin{proposition}
+There are numbers $a_m>0$ such that
+\[
+ G(r)=2\lambda-K-\sum_{m=1}^\infty a_m r^{2m},
+ \qquad |r|<\kappa_2.
+\]
+For $0<r<k$,
+\[
+ G(r)>0,\qquad G_r(r)<0,\qquad G_{rr}(r)<0,
+ \qquad G_t(t)>0.
+\]
+\end{proposition}
+\begin{proof}
+Lemma~\ref{gm:residuepositive} makes every summand of
+\eqref{gm:resformula} positive for $m\ge2$. For $m=1$, direct expansion
+at zero gives
+\[
+ [r^2]G=\frac{2\lambda-\lambda^2-K}{4}<0,
+\]
+because $0<\lambda<.4$ and $K>.654>.64$.
+There are no singularities in $|r|<\kappa_2$, so its Taylor series
+converges there. Termwise differentiation proves both strict
+derivative signs. Since $G(k)=0$, positivity follows. Finally
+$t_r<0$ implies $G_t=G_r/t_r>0$.
+\end{proof}
+
+\begin{corollary}
+For $\delta=k-r$, $0\le r\le k$,
+\[
+ 0\le G(r)\le\frac{2K}{3k}\delta,\qquad
+ 0\le-G_r(r)\le\frac{2K}{3k}.
+\]
+\end{corollary}
+\begin{proof}
+Strict concavity and $G_r(0)=0$ show that $G_r$ decreases to the
+value in \eqref{gm:endslope}. A concave function lies below its tangent
+line at $k$, where $G(k)=0$.
+\end{proof}
+
+\begin{lemma}\label{gm:tailratio}
+For $0<r<k$,
+\[
+ 0<\frac{up}{S}<\frac{k^2-r^2}{r}.
+\]
+\end{lemma}
+\begin{proof}
+Write $b=k^2$, $x=r^2$, $p=rh(x)$ and use the canonical product
+\[
+ h(x)=\frac12(1-x/b)P(x),\qquad
+ P(x)=\prod_{n\ge2}(1-x/\kappa_n^2).
+\]
+Its logarithmic derivative is
+\[
+ \frac{h'}h=-\frac1{b-x}-\Sigma(x),\qquad
+ \Sigma(x)=\sum_{n\ge2}\frac1{\kappa_n^2-x}\le\Sigma(b)=\frac1b.
+\]
+The final equality follows without a sum evaluation: the endpoint ODE
+$p''(k)/p'(k)=-1/k$, applied to the displayed factored product,
+gives $P'(b)/P(b)=-1/b$.
+Since $P$ decreases, $h(y)\le h(x)(b-y)/(b-x)$ for $x\le y\le b$.
+Consequently
+\[
+ u=\frac12\int_x^bh(y)dy\le\frac{b-x}{4}h(x),\qquad
+ S=xh^2+u(h+2xh').
+\]
+The claimed upper bound is equivalent to positivity of
+\[
+ J=(b-x)xh^2+uD,\qquad D=(b-2x)h+2x(b-x)h'.
+\]
+If $D\ge0$ this is immediate. If $D<0$, the upper bound on $u$
+gives
+\[
+ J\ge\frac{(b-x)h^2}{4}
+       [b-2x(b-x)\Sigma(x)]
+ \ge\frac{(b-x)h^2}{4}
+       \left[b-\frac{2x(b-x)}b\right]>0,
+\]
+since $x(b-x)\le b^2/4$.
+\end{proof}
+
+\begin{corollary}
+On $0<r<k$,
+\[
+ 0<d(r)<2G(r)\le\frac{4K}{3k}(k-r).
+\]
+\end{corollary}
+\begin{proof}
+Since $t_r=-S/p^2$, $d=2G+C_{\rm rad} G_r$ with $C_{\rm rad}=up/S$.
+The positive-coefficient expansion and $G(k)=0$ give
+\[
+ d=2\sum_{m\ge1}a_m
+       [(k^{2m}-r^{2m})-mC_{\rm rad} r^{2m-1}].
+\]
+Lemma~\ref{gm:tailratio} shows that each bracket is strictly positive,
+because
+\[
+ k^{2m}-r^{2m}
+ =(k^2-r^2)\sum_{j=0}^{m-1}k^{2(m-1-j)}r^{2j}
+ \ge m(k^2-r^2)r^{2m-2}>mC_{\rm rad} r^{2m-1}.
+\]
+This proves $d>0$. The strict upper bound $d<2G$ follows from
+$tG_t>0$, and the final linear estimate was proved above.
+\end{proof}
+
+\subsection{Completion of the matrix estimate}
+The preceding sections give, on $0<r<k$,
+\[
+ g^2+z^2<K,\qquad
+ 0<d<2G\le\frac{4K}{3k}(k-r),\qquad
+ z>\frac{k-r}{k(1+c)}.
+\]
+Since $G|_{r=0}=2\lambda-K>0$, one has $K<2\lambda<4/5<1$, and $c<1/2$.
+It follows that $2\sqrt K(1+c)<3$. Therefore
+\[
+ 0<d<\frac{4K}{3k}(k-r)
+ <2\sqrt K\frac{k-r}{k(1+c)}<2\sqrt K\,z.
+\]
+Together with the quadratic bound for $g$ and $z$ this proves
+\begin{equation}\label{analytic-coupling}
+ \boxed{\quad d^2<4Kz^2<4K(K-g^2),\qquad0<r<k.\quad}
+\end{equation}
+By \eqref{analytic-coupling}, the matrix $M$ and the separate mixed-Hessian
+coefficient are positive semidefinite by Proposition~\ref{kernel}
+and Proposition~\ref{prop:reduction}. In particular,
+\eqref{remaining-positivity} holds throughout the parameter interval. 
+\section{The functional inequality}\label{sec:functional}
+We first record the endpoint control needed to apply the profiles to
+arbitrary smooth functions, including those that change sign. We write
+$\|\cdot\|_2$ for the $L^2$ norm on the domain under consideration
+and use the Frobenius norm for matrices.
+
+\begin{lemma}\label{lem:flux-endpoints}
+With
+$\ell=(1+c)^{-1}$ and $\beta=\sqrt K$, their endpoint behavior is
+\begin{align*}
+ f(t)&=\beta+O(t^2),& b(t)&=O(t),&
+ G(t)&=\frac{4K}{3k}t+O(t^2) &&(t\downarrow0),\\
+ f(t)&=\ell t+O(t^{-1}),&
+ b(t)&=2\lambda\ell t+O(t^{-1}),&
+ G(t)&=2\lambda-K+O(t^{-2}) &&(t\to\infty).
+\end{align*}
+The expansions are convergent analytic or Laurent expansions at the
+respective endpoints. The functions
+\[
+ f_t,\quad f-tf_t,\quad b_t,\quad b-tb_t,
+ \quad G,\quad G_t,\quad tG_t
+\]
+are bounded on $(0,\infty)$.
+\end{lemma}
+\begin{proof}
+At $r=k$, the expansions in Section~\ref{sec:endpoints} show that
+$t=\delta/2+O(\delta^2)$ has an analytic inverse and
+$f=\beta+O(\delta^2)$. The formula for $G$ gives the stated expansion.
+Moreover
+\[
+ A=\delta^{-1}+\frac1{2k}+O(\delta),\qquad
+ fw=-K\delta^{-1}-\frac K{2k}+O(\delta).
+\]
+In $b=-KA+G/r-fw$, both the pole and constant terms cancel. Hence
+$b=O(\delta)$, and all three functions are analytic in $t$ at zero.
+
+At $r=0$, the function $y=1/t=p/u$ is odd and analytic, with
+$y_r(0)=1/[2(1+c)]$. Its inverse $r=r(y)$ is odd and analytic.
+The functions $f=\phi/p$ and $b$ are odd meromorphic functions of $r$
+with at most a simple pole, while $G$ is even and analytic there.
+The leading terms are
+\[
+ t=\frac{2(1+c)}r+O(r),\qquad
+ f=\frac2r+O(r),\qquad b=\frac{4\lambda}r+O(r),\qquad
+ G=2\lambda-K+O(r^2).
+\]
+Substitution of $r=r(1/t)$ proves the expansions at infinity and the
+claim about differentiated remainders. The boundedness assertions
+follow at the endpoints from these expansions and on compact
+subintervals from smoothness.
+\end{proof}
+
+Extend $f$ and $G$ evenly and $b$ oddly to the real line. The even
+extension of $G$ is Lipschitz, not differentiable at zero; only its
+first weak derivative will be used. Put
+\[
+ \mathcal F(a,P)=
+ \begin{cases}P f(a/P),&P>0,\\ \ell|a|,&P=0,\end{cases}
+ \qquad \ell=(1+c)^{-1}.
+\]
+The following is the functional form of the comparison.
+\begin{proposition}\label{prop:functional}
+For every real $U\in C_c^\infty(\mathbb R^2)$, the function
+$F=\mathcal F(U,|\nabla U|)$ is compactly supported and Lipschitz, and
+\begin{equation}\label{functional}
+ \int_{\mathbb R^2}|\nabla F|^2-\lambda\int_{\mathbb R^2}F^2
+ \le K\left(\int_{\mathbb R^2}|\Delta U|^2
+                     -\int_{\mathbb R^2}|\nabla U|^2\right).
+\end{equation}
+\end{proposition}
+\begin{proof}
+On $\{P:=|\nabla U|>0\}$ choose the orthonormal frame
+$e_1=\nabla U/P$, $e_2=(-\partial_2U,\partial_1U)/P$, and write
+\[
+ X=e_1^TD^2Ue_1,\qquad Y=e_2^TD^2Ue_2,
+ \qquad Z=e_1^TD^2Ue_2,\qquad s=U/P.
+\]
+In the following identities all profiles are evaluated at $s$.
+The chain rule gives
+\[
+ |\nabla F|^2=(zP+gX)^2+g^2Z^2.
+\]
+For a $2\times2$ matrix, $\cof$ denotes its cofactor matrix. Direct
+calculation, or the identity $\operatorname{div}(\cof D^2U)=0$, gives
+\begin{align*}
+ \operatorname{div}\bigl(Pb(s)\nabla U\bigr)
+   &=P\bigl((2b-sb_s)X+bY\bigr)+b_sP^2,\\
+ \operatorname{div}\bigl(G(s)\cof(D^2U)\nabla U\bigr)
+   &=(2G-sG_s)(XY-Z^2)+PG_sY.
+\end{align*}
+Adding these two expressions to
+\[
+ K(|D^2U|^2-P^2)-(|\nabla F|^2-\lambda F^2)
+\]
+produces exactly
+\[
+ (X,Y,P)M(s)(X,Y,P)^T+(2K-g^2-d)Z^2.
+\]
+For $s>0$ this is nonnegative by the matrix estimate proved in
+Section~\ref{sec:G}. For $s<0$, the parity extensions give
+\[
+ M(-s)=D M(s)D,\qquad D=\operatorname{diag}(-1,-1,1),
+\]
+and the same conclusion follows.
+
+It remains to justify the calculation across the nodal and critical
+sets. If a scalar profile $a$ has bounded $a_s$ and $a-sa_s$, then
+$P a(A/P)$ has bounded derivatives in $(A,P)$ for $P>0$. Integrating
+these bounds separately in $A$ and $P$ gives a Lipschitz extension to
+$\mathbb R\times[0,\infty)$. Lemma~\ref{lem:flux-endpoints} applies
+this observation to $f$ and $b$. Their extensions at $P=0$ are
+$\ell|A|$ and $2\lambda\ell A$, respectively. Therefore $F$ and
+\[
+ V_1=P b(U/P)\nabla U
+\]
+with this extension are compactly supported Lipschitz functions.
+
+For the second vector field, define
+\[
+ \Psi(A,\xi)=G(A/|\xi|)\xi\quad(\xi\ne0),\qquad
+ \Psi(A,0)=0.
+\]
+Its derivative in $A$ has norm at most $\|G_s\|_\infty$ and its
+matrix derivative in $\xi$ is
+\[
+ G I-sG_s\frac{\xi\otimes\xi}{|\xi|^2},\qquad s=A/|\xi|.
+\]
+The bounds on $G,G_s,sG_s$ prove that $\Psi$ is globally Lipschitz;
+continuity at $\xi=0$ follows from boundedness of $G$. Thus
+\[
+ V_2=\cof(D^2U)\Psi(U,\nabla U)
+\]
+is also compactly supported and Lipschitz. Both divergences are
+integrable weak derivatives and have integral zero. In particular,
+the cusp in $G$ introduces no measure supported on $\{U=0\}$.
+
+The portion of $\{U=0\}$ where $P>0$ is locally a smooth curve and
+has area zero. On $\{P=0\}$ one has $D^2U=0$ almost everywhere:
+apply the implicit function theorem to each first derivative of
+$U$ to discard the zero sets on which its gradient is nonzero.
+At each remaining critical point, the derivative of
+$x\mapsto(U(x),\nabla U(x))$ is zero. A Lipschitz composition then
+has derivative zero. In $V_2$, the term differentiating the cofactor
+also vanishes because $\Psi(U,0)=0$. Hence, almost everywhere on
+$\{P=0\}$,
+\[
+ \nabla F=0,\qquad \operatorname{div}V_1
+       =\operatorname{div}V_2=0.
+\]
+These assertions agree with the weak derivatives by Rademacher's
+theorem; see \cite[\S\S3.1, 4.2]{EG}. The remaining density at
+such points is $\lambda\ell^2U^2\ge0$, including when the critical
+set has positive area. Integration, together with
+$\int|D^2U|^2=\int|\Delta U|^2$, proves \eqref{functional}.
+\end{proof}
+
+We now prove Theorem~\ref{main}.
+\begin{proof}
+Let $0\ne v\in C_c^\infty(\Omega)$ and set
+\[
+ Q=\frac{\|\Delta v\|_2^2}{\|\nabla v\|_2^2},\qquad
+ \widetilde\Omega=\sqrt Q\,\Omega,\qquad U(x)=v(x/\sqrt Q).
+\]
+In dimension two, $\|\Delta U\|_2^2=\|\nabla U\|_2^2$.
+The function $F$ in Proposition~\ref{prop:functional} is Lipschitz
+and has compact support in $\widetilde\Omega$, so it belongs to
+$H_0^1(\widetilde\Omega)$ by mollification. At a nonzero maximum
+point of $|U|$, one has $\nabla U=0$ and $F=\ell|U|>0$; therefore
+$F$ is not identically zero. Applying \eqref{functional} gives
+\[
+ Q^{-1}\lambda_1^{\mathrm D}(\Omega)
+   =\lambda_1^{\mathrm D}(\widetilde\Omega)
+   \le\lambda=\frac{j_{0,1}^2}{j_{1,1}^2}.
+\]
+Taking the infimum over $v$ and then using density in $H_0^2(\Omega)$
+proves \eqref{eq:comparison}. The disk eigenvalues show that the
+constant is optimal. The proof only uses compactly supported tests,
+so boundedness of $\Omega$ is not required.
+\end{proof}
+
+\section{Equality}\label{sec:equality}
+We first isolate the distinction between equality almost everywhere
+and equality of open sets.
+\begin{lemma}\label{lem:strict-disk}
+For every nonempty proper open subset $W$ of a planar disk $B$,
+\[
+ \Lambda_1(W)>\Lambda_1(B).
+\]
+\end{lemma}
+\begin{proof}
+Choose $x_0\in B\setminus W$. By Lemma~\ref{app:formfacts}, the
+buckling minimum on $W$ is attained, and every element of $H_0^2(W)$,
+extended by zero, has a continuous representative vanishing at $x_0$.
+If the two eigenvalues were equal, a minimizer on $W$ would also
+minimize on $B$. Lemma~\ref{app:disk} identifies the first eigenspace
+on $B$ as one-dimensional, spanned by a function strictly positive
+inside $B$. No nonzero element of this eigenspace vanishes at $x_0$.
+\end{proof}
+
+We now prove Corollary~\ref{cor:area}.
+\begin{proof}
+The Faber--Krahn inequality \cite{Faber,Krahn} gives
+\[
+ |\Omega|\lambda_1^{\mathrm D}(\Omega)\ge\pi q^2
+\]
+for every open set of finite positive area. Multiplication by $k^2/q^2$
+and Theorem~\ref{main} give \eqref{eq:area}.
+
+If equality holds in \eqref{eq:area}, then equality holds in the
+Faber--Krahn inequality. Its equality characterization gives a disk $B$
+of area $|\Omega|$ such that $\Omega$ and $B$ agree almost everywhere.
+Openness now implies $\Omega\subset B$, since an open
+neighborhood of any point outside $B$, including a point on its
+boundary, has positive area outside $B$.
+The equality of areas gives $\Lambda_1(\Omega)=\Lambda_1(B)$.
+Lemma~\ref{lem:strict-disk} excludes a proper inclusion. Conversely,
+a disk gives equality by its explicit first eigenfunction.
+\end{proof}
+
+\begin{remark}
+For a smooth bounded simply connected planar domain, the first
+Dirichlet Stokes eigenvalue equals $\Lambda_1(\Omega)$ under the
+stream-function representation; see \cite[Remark~1]{HMP}.
+Here the Stokes eigenvalue is the infimum of
+$\int_\Omega|\nabla v|^2/\int_\Omega|v|^2$ over nonzero
+$v\in H_0^1(\Omega;\mathbb R^2)$ with $\operatorname{div}v=0$.
+Thus the area inequality applies to that
+problem in the simply connected class. On a multiply connected
+domain, a stream function can have different constants on different
+boundary components and need not belong to $H_0^2(\Omega)$.
+The present argument does not remove that distinction, nor does it
+prove the buckling conjecture in dimensions $N\ge3$.
+\end{remark}
+\appendix
+\section{Bessel constants and root identification}\label{app:constants}
+The estimates in this appendix are finite comparisons of explicitly
+stated rational polynomials and their alternating remainders.
+
+\begin{lemma}
+\label{subm:J1-separation}
+If $0<a<b$ are distinct positive zeros of $J_1$, then $b-a>\pi$.
+\end{lemma}
+\begin{proof}
+The function $y(r)=\sqrt r\,J_1(r)$ satisfies
+\[
+ y''+\left(1-\frac{3}{4r^2}\right)y=0\qquad(r>0).
+\]
+It is a nonzero member of $H_0^1(a,b)$.  Multiplication by $y$ and
+integration by parts, followed by the one-dimensional Dirichlet
+Wirtinger inequality, gives
+\[
+ \frac{\pi^2}{(b-a)^2}\int_a^b y^2\,dr
+ \le\int_a^b(y')^2\,dr
+ =\int_a^b\left(1-\frac{3}{4r^2}\right)y^2\,dr
+ <\int_a^b y^2\,dr.
+\]
+Since the last integral is positive, $b-a>\pi$.
+\end{proof}
+
+\begin{lemma}
+
+Writing $q_n=j_{0,n}$ and $\kappa_n=j_{1,n}$, one has
+\begin{equation}\label{subm:root-boxes}
+\begin{array}{c|c|c}
+ \text{zero}&\text{rational interval}&\text{endpoint signs}\\\hline
+ q=q_1&(2.40482,2.40483)&(+,-)\\
+ k=\kappa_1&(3.83170,3.83171)&(+,-)\\
+ q_2&(5.5200,5.5202)&(-,+)\\
+ \kappa_2&(7.015,7.016)&(-,+)\\
+ \kappa_3&(10.173,10.174)&(+,-).
+\end{array}
+\end{equation}
+Each displayed interval contains exactly its indicated zero.
+\end{lemma}
+\begin{proof}
+Here and below, the signs for $q_n$ concern $J_0$ and those for
+$\kappa_n$ concern $J_1$.  For $\nu=0,1$ put
+\[
+ S_{\nu,N}(x)=\sum_{m=0}^N
+ \frac{(-1)^m(x/2)^{2m+\nu}}{m!(m+\nu)!}.
+\]
+For $0<x<11$, the absolute terms in the tail starting at $m=31$
+strictly decrease: their successive ratio is
+\[
+ \frac{x^2}{4(m+1)(m+\nu+1)}
+ <\frac{121}{4\cdot32^2}<1\qquad(m\ge31).
+\]
+Consequently
+\begin{equation}
+ S_{\nu,31}(x)<J_\nu(x)<S_{\nu,30}(x),\qquad
+ 0<S_{\nu,30}(x)-J_\nu(x)
+ <\frac{(x/2)^{62+\nu}}{31!(31+\nu)!}.
+\end{equation}
+The following table gives integers
+$A,B$ for which
+\[
+ \frac A{10^8}<S_{\nu,31}(x)<S_{\nu,30}(x)<\frac B{10^8}.
+\]
+Every entry is a rational comparison obtained by substitution in the
+two displayed finite sums and multiplication by positive denominators.
+\begin{equation}\label{subm:rational-record}
+\begin{array}{c|r|r|r}
+ \nu&x&A&B\\\hline
+ 0&2.40482&288&289\\
+ 0&2.40483&-231&-230\\
+ 1&3.83170&240&241\\
+ 1&3.83171&-163&-162\\
+ 0&5.5200&-2658&-2657\\
+ 0&5.5202&4147&4148\\
+ 1&7.015&-17608&-17607\\
+ 1&7.016&12404&12405\\
+ 1&10.173&11689&11690\\
+ 1&10.174&-13281&-13280\\\hline
+ 1&2.40482&51914869&51914870\\
+ 0&3.83170&-40275940&-40275939\\
+ 1&5.5201&-34026346&-34026345\\
+ 0&10.1735&-24970488&-24970487
+\end{array}
+\end{equation}
+The first ten rows give all endpoint signs in
+\eqref{subm:root-boxes}, hence the existence of a zero in every
+interval.
+
+We next identify the root indices.  The alternating series gives
+\[
+ J_1(r)>\frac r2-\frac{r^3}{16}\ge0
+ \qquad(0<r\le\sqrt8).
+\]
+The first inequality is strict even at $r=\sqrt8$, since the
+remaining alternating tail begins with a positive term and strictly
+decreasing absolute terms.  Let $a_1,a_2,a_3$ be zeros in the three
+displayed $J_1$ intervals, in increasing order.  Each interval has
+width less than $1<3<\pi$, so Lemma~\ref{subm:J1-separation}
+makes its zero unique.  There is no positive zero before $a_1$:
+such a zero would lie above $\sqrt8>2$, and its distance to $a_1$
+would be less than $3.83171-2<3<\pi$.
+
+If a further zero lay between $a_1$ and $a_2$, applying
+Lemma~\ref{subm:J1-separation} to the two subintervals would give
+$a_2-a_1>2\pi$.  This contradicts
+\[
+ a_2-a_1<7.016-3.83170=3.18430<6<2\pi.
+\]
+The same argument between $a_2$ and $a_3$ uses
+\[
+ a_3-a_2<10.174-7.015=3.159<6<2\pi.
+\]
+Thus $a_i=\kappa_i$ for $i=1,2,3$.  These are the only numerical
+uses of $\pi$: the elementary lower bound $\pi>3$ suffices; no
+upper or finer lower bound is used.
+
+For $\nu\ge0$ the classical interlacing theorem is
+\[
+ j_{\nu,1}<j_{\nu+1,1}<j_{\nu,2}<j_{\nu+1,2}<\cdots
+ \qquad\text{\cite[Eq.~10.21.2]{DLMF}}.
+\]
+For $\nu=0$ it supplies exactly one zero of $J_0$ in
+$(0,\kappa_1)$ and exactly one in $(\kappa_1,\kappa_2)$.
+The $J_0$ intervals in \eqref{subm:root-boxes} lie in these respective
+gaps, so their zeros are $q_1$ and $q_2$, with uniqueness as asserted.
+\end{proof}
+
+\begin{lemma}\label{gm:coarse}
+With $\alpha=q/k$, $\lambda=\alpha^2$, $c=-J_0(k)$, and
+$K=\alpha^2J_1(q)^2/c^2$, one has
+\[
+ .6276<\alpha<.628,\qquad \frac14<\lambda<\frac25,
+ \qquad .4027<c<.4028,\qquad \frac{19}5<k<4,
+ \qquad K>.654.
+\]
+Furthermore
+\[
+ B(\kappa_3)>.634,\qquad B(q_2)<.640,\qquad
+ J_1(q_2)^2<.116,
+ \qquad k<\alpha\kappa_2<q_2<\alpha\kappa_3.
+\]
+\end{lemma}
+\begin{proof}
+The integer-order integral representation
+\cite[Eq.~10.9.2]{DLMF}, differentiated for real $x$, gives
+\[
+ J_n(x)=\frac1\pi\int_0^\pi
+       \cos(x\sin\vartheta-n\vartheta)\,d\vartheta,
+ \qquad |J_n'(x)|\le1\quad(n\in\mathbb Z).
+\]
+In particular, the last four rows of
+\eqref{subm:rational-record}, the root intervals, and the mean-value
+theorem yield
+\[
+ J_1(q)>.51914-.00001>.5191,\qquad
+ -.4028<J_0(k)<-.4027,
+\]
+\[
+ |J_1(q_2)|<.34027+.0001<.3404,\qquad
+ J_0(10.1735)<-.2497.
+\]
+For example, the asserted two-sided bound at $k$ follows already from
+\[
+ -.40275940-.00001<J_0(k)
+                  <-.40275939+.00001.
+\]
+The root intervals give
+\[
+ .6276\cdot3.83171<2.40482,
+ \qquad 2.40483<.628\cdot3.83170,
+\]
+and hence the bounds on $\alpha$.  Since $q>2$ and $k<4$, one has
+$\lambda>1/4$; and $.628^2<2/5$ proves its upper bound.  Now
+\[
+ K>\frac{(.6276)^2(.5191)^2}{(.4028)^2}
+ =\frac{66335796013041}{101404900000000}>.654,
+\]
+\[
+ J_1(q_2)^2<(.3404)^2=.11587216<.116,
+\]
+\[
+ B(q_2)=q_2J_1(q_2)^2
+ <5.5202(.3404)^2=.639637497632<.640.
+\]
+On the interval $(10.173,10.174)$, uniqueness of the zero and the
+endpoint signs make $J_1$ positive before $\kappa_3$ and negative
+after it.  Thus $J_0'=-J_1$ makes $\kappa_3$ the minimum of $J_0$
+on the entire closed interval, and therefore
+\[
+ J_0(\kappa_3)\le J_0(10.1735)<-.2497.
+\]
+It follows that
+\[
+ B(\kappa_3)=\kappa_3J_0(\kappa_3)^2
+ >10.173(.2497)^2=.63428746557>.634.
+\]
+Finally the required order comparisons follow from the explicit
+rational chains
+\[
+\begin{aligned}
+ k&<3.83171<.6276\cdot7.015=4.402614<\alpha\kappa_2,\\
+ \alpha\kappa_2&<.628\cdot7.016=4.406048<5.5200<q_2,\\
+ q_2&<5.5202<.6276\cdot10.173=6.3845748<\alpha\kappa_3.
+\end{aligned}
+\]
+\end{proof}
+
+The same rational series bounds supply the few small-argument
+comparisons used earlier.  At $r=19/10$,
+\[
+ \frac7{25}<S_{0,3}(r)<J_0(r)<S_{0,4}(r)
+ <\frac{283}{1000},\qquad
+ \frac{J_1(r)}r>\frac{S_{1,3}(r)}r>\frac3{10}.
+\]
+Also
+\[
+ J_0(2)>S_{0,3}(2)=\frac29>\frac{11}{50},\qquad
+ J_1(2)<S_{1,2}(2)=\frac7{12}<\frac35.
+\]
+All needed alternating tails are decreasing from their first omitted
+term.  These estimates prove the asserted coarse bounds.
+
+\section{Zero extension, compactness and the disk spectrum}
+
+\begin{lemma}\label{app:formfacts}
+Let $\Omega\subset\mathbb R^2$ be bounded and open. Zero extension
+identifies $H_0^m(\Omega)$ isometrically with a closed subspace of
+$H_0^m(Q)$, for $m=1,2$, whenever $Q$ is a rectangle containing
+$\overline\Omega$ in its interior. There is a constant $C_Q$ such that
+\[
+ \|u\|_{H^2(\Omega)}\le C_Q\|\Delta u\|_{L^2(\Omega)},
+ \qquad u\in H_0^2(\Omega).
+\]
+The embedding $H_0^2(\Omega)\hookrightarrow H_0^1(\Omega)$ is compact.
+Every element of $H_0^2(\Omega)$ has a continuous zero extension to
+$\mathbb R^2$, with bounded point evaluations. The buckling infimum is attained whenever $\Omega$ is nonempty.
+\end{lemma}
+\begin{proof}
+Zero extension preserves the $H^m$ norm on $C_c^\infty(\Omega)$;
+passing to the completion proves the first assertion and closedness.
+For smooth compactly supported functions, integration by parts gives
+\[
+ \|D^2u\|_2^2=\|\Delta u\|_2^2,\qquad
+ \|\nabla u\|_2^2=-\int u\Delta u.
+\]
+Poincar\'e's inequality on $Q$ first bounds $\|\nabla u\|_2$ by
+$C_Q\|\Delta u\|_2$, and then bounds $\|u\|_2$. Density gives the
+displayed coercive estimate. Rellich compactness on the fixed
+rectangle $Q$ gives strong $H^1(Q)$ convergence of a subsequence
+from every bounded $H^2(Q)$ sequence, hence the asserted compactness.
+These are the usual embedding and compactness theorems, applied only
+on a rectangle; see \cite[Chapters~4 and~6]{AF}.
+
+For completeness, point evaluation follows directly on the whole
+plane. With any fixed Plancherel normalization of the Fourier
+transform, Cauchy--Schwarz gives
+\[
+ \|\widehat u\|_{L^1(\mathbb R^2)}
+ \le\left(\int_{\mathbb R^2}(1+|\xi|^2)^{-2}\,d\xi\right)^{1/2}
+       \|(1+|\xi|^2)\widehat u\|_2
+ \le C\|u\|_{H^2(\mathbb R^2)}.
+\]
+The first integral is finite. Fourier inversion therefore gives a
+continuous representative and $\|u\|_\infty\le C\|u\|_{H^2}$.
+This also proves uniform convergence of continuous representatives
+under $H^2$ convergence. Approximating by $C_c^\infty(\Omega)$
+therefore shows that this representative is zero at every point
+of $\mathbb R^2\setminus\Omega$, including its boundary.
+Finally, normalize the gradient energy of
+a buckling minimizing sequence to one. The coercive estimate, weak
+$H^2$ compactness and strong $H^1$ compactness give a minimizer with
+unit gradient energy. No extension theorem for the boundary of
+$\Omega$ is used.
+\end{proof}
+
+\begin{lemma}\label{app:disk}
+On a disk $B_R(a)$, the first buckling eigenvalue is $k^2/R^2$,
+where $k=j_{1,1}$. Its eigenspace is one-dimensional and spanned by
+\[
+ U_B(x)=J_0(k|x-a|/R)-J_0(k),
+\]
+which is strictly positive in the disk.
+\end{lemma}
+\begin{proof}
+Translation reduces to $a=0$. A weak buckling eigenfunction satisfies
+$\Delta(\Delta+\Lambda)U=0$. The distribution
+$(\Delta+\Lambda)U$ is harmonic, hence smooth; interior elliptic
+regularity for the second-order equation then makes $U$ smooth
+in the disk. The relevant local regularity results can be found in
+\cite[Sections~2.2 and~6.3]{EvansPDE}.
+
+Put $\rho=\sqrt\Lambda>0$. The regular solution in angular mode
+$n\ge0$ is a linear combination of $r^n$ and $J_n(\rho r)$,
+with $r^0=1$ for $n=0$. Indeed applying $\Delta+\Lambda$ to its
+regular harmonic component gives a particular solution proportional
+to $r^n$, and the remaining regular Helmholtz component is
+$J_n(\rho r)$. The two clamped traces at $r=R$ have a nonzero
+solution precisely when
+\[
+ \rho R J_n'(\rho R)-nJ_n(\rho R)
+             =-\rho R J_{n+1}(\rho R)=0.
+\]
+The trace assertion is the classical trace theorem on the smooth
+disk, applied to $U$ and its first derivatives, which belong to
+$H_0^1(B_R)$ by the $H_0^2$ closure definition; see
+\cite[Section~4.3]{EG}. Each separated radial solution is
+smooth up to $r=R$, so these are ordinary endpoint values.
+The angular Fourier projections are bounded on $H^2(B_R)$: they
+are averages of rotations, which preserve the equivalent squared
+Sobolev norm $\|u\|_2^2+\|\nabla u\|_2^2+\|D^2u\|_2^2$.
+They preserve $H_0^2(B_R)$ by its closure definition, commute with
+the weak equation, and preserve the zero traces. Thus every
+nonzero Fourier component of an eigenfunction is subject to the
+displayed characteristic equation, and a nonzero eigenfunction
+has at least one such component.
+Interlacing of the positive zeros of consecutive Bessel orders gives
+$j_{1,1}<j_{2,1}<j_{3,1}<\cdots$; see
+\cite[Section~10.21(i)]{DLMF}. All nonzero zeros are simple.
+Thus the smallest admissible $\rho R$ is the simple zero $k$ in
+mode $n=0$, which yields exactly the displayed function.
+The mode calculation also shows that no other angular component
+can belong to this eigenspace. The displayed $U_B$ is an admissible
+clamped test function: near the boundary it satisfies
+$U_B=O((R-r)^2)$ and $\nabla U_B=O(R-r)$. Multiply it by a smooth
+cutoff that is zero for $R-r\le\varepsilon$ and one for
+$R-r\ge2\varepsilon$. The error in each second derivative is
+uniformly bounded and supported in a collar of area $O(\varepsilon)$,
+so the cutoffs converge to $U_B$ in $H^2$. Hence $U_B\in H_0^2(B_R)$.
+Its differential equation and integration by parts give its
+buckling quotient $k^2/R^2$, proving attainment of the stated
+smallest value. Finally $J_1>0$ on $(0,k)$ and
+$J_0'=-J_1$ imply its strict interior positivity.
+\end{proof}
+
+\begin{thebibliography}{99}
+
+\bibitem{AF}
+R.~A. Adams and J.~J.~F. Fournier,
+\emph{Sobolev Spaces}, 2nd ed.,
+Pure and Applied Mathematics, vol.~140,
+Academic Press, Amsterdam, 2003.
+
+\bibitem{AB}
+M.~S. Ashbaugh and D. Bucur,
+On the isoperimetric inequality for the buckling of a clamped plate,
+\emph{Z. Angew. Math. Phys.} \textbf{54} (2003), no.~5, 756--770.
+\doi{10.1007/s00033-003-3204-3}.
+
+\bibitem{AL}
+M.~S. Ashbaugh and R.~S. Laugesen,
+Fundamental tones and buckling loads of clamped plates,
+\emph{Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4)}
+\textbf{23} (1996), no.~2, 383--402.
+
+\bibitem{BramblePayne}
+J.~H. Bramble and L.~E. Payne,
+Pointwise bounds in the first biharmonic boundary value problem,
+\emph{J. Math. Phys.} \textbf{42} (1963), 278--286.
+\doi{10.1002/sapm1963421278}.
+
+\bibitem{BP}
+D. Buoso and E. Parini,
+The buckling eigenvalue problem in the annulus,
+\emph{Commun. Contemp. Math.} \textbf{23} (2021), no.~4, 2050044.
+\doi{10.1142/S0219199720500443}.
+
+\bibitem{EvansPDE}
+L.~C. Evans,
+\emph{Partial Differential Equations}, 2nd ed.,
+Graduate Studies in Mathematics, vol.~19,
+American Mathematical Society, Providence, RI, 2010.
+
+\bibitem{EG}
+L.~C. Evans and R.~F. Gariepy,
+\emph{Measure Theory and Fine Properties of Functions}, revised ed.,
+Textbooks in Mathematics, CRC Press, Boca Raton, FL, 2015.
+
+\bibitem{Faber}
+G. Faber,
+Beweis, da\ss{} unter allen homogenen Membranen von gleicher Fl\"ache
+und gleicher Spannung die kreisf\"ormige den tiefsten Grundton gibt,
+\emph{Sitzungsber. Bayer. Akad. Wiss. Math.-Phys. Kl.}
+(1923), 169--172.
+
+\bibitem{Friedlander}
+L. Friedlander,
+Remarks on the membrane and buckling eigenvalues for planar domains,
+\emph{Mosc. Math. J.} \textbf{4} (2004), no.~2, 369--375.
+\doi{10.17323/1609-4514-2004-4-2-369-375}.
+
+\bibitem{HMP}
+A. Henrot, I. Mazari-Fouquer and Y. Privat,
+Is the Faber--Krahn inequality true for the Stokes operator?,
+\emph{Calc. Var. Partial Differential Equations}
+\textbf{63} (2024), article~228.
+\doi{10.1007/s00526-024-02820-7}.
+
+\bibitem{Krahn}
+E. Krahn,
+\"Uber eine von Rayleigh formulierte Minimaleigenschaft des Kreises,
+\emph{Math. Ann.} \textbf{94} (1925), 97--100.
+\doi{10.1007/BF01208645}.
+
+\bibitem{LN}
+J. Lamboley and M. Nahon,
+Boundary regularity of a fourth order Alt-Caffarelli problem and
+applications to the minimization of the critical buckling load,
+preprint, 2025, arXiv:2512.18626.
+\doi{10.48550/arXiv.2512.18626}.
+
+\bibitem{LP}
+M. Levitin and I. Polterovich,
+Payne's conjecture for buckling eigenvalues of odd index,
+preprint, 2026, arXiv:2609.12235.
+\doi{10.48550/arXiv.2609.12235}.
+
+\bibitem{DLMF}
+National Institute of Standards and Technology,
+\emph{NIST Digital Library of Mathematical Functions},
+version~1.2.8, released 15 September 2026,
+\url{https://dlmf.nist.gov/}, accessed 15 October 2026.
+
+\bibitem{Payne}
+L.~E. Payne,
+Inequalities for eigenvalues of membranes and plates,
+\emph{J. Rational Mech. Anal.} \textbf{4} (1955), 517--529.
+
+\bibitem{PS}
+G. P\'olya and G. Szeg\H{o},
+\emph{Isoperimetric Inequalities in Mathematical Physics},
+Annals of Mathematics Studies, vol.~27,
+Princeton University Press, Princeton, NJ, 1951.
+
+\bibitem{Stollenwerk}
+K. Stollenwerk,
+On the optimal domain for minimizing the buckling load of a clamped plate,
+\emph{Z. Angew. Math. Phys.} \textbf{74} (2023), article~12.
+\doi{10.1007/s00033-022-01898-3}.
+
+\bibitem{SW}
+K. Stollenwerk and A. Wagner,
+Optimality conditions for the buckling of a clamped plate,
+\emph{J. Math. Anal. Appl.} \textbf{432} (2015), no.~1, 254--273.
+\doi{10.1016/j.jmaa.2015.06.035}.
+
+\bibitem{Szego50}
+G. Szeg\H{o},
+On membranes and plates,
+\emph{Proc. Natl. Acad. Sci. USA} \textbf{36} (1950), no.~3, 210--216.
+\doi{10.1073/pnas.36.3.210}.
+
+\bibitem{Szego58}
+G. Szeg\H{o},
+Note to my paper ``On membranes and plates'',
+\emph{Proc. Natl. Acad. Sci. USA} \textbf{44} (1958), no.~4, 314--316.
+\doi{10.1073/pnas.44.4.314}.
+
+\end{thebibliography}
+\end{document}

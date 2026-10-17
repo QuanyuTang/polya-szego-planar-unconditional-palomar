@@ -1,0 +1,51 @@
+name: Lean verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-verification-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      LEAN_NUM_THREADS: "1"
+    steps:
+      - name: Check out the source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: "false"
+      - name: Require the complete frozen release inputs
+        run: python3 scripts/check-release-inputs.py
+      - name: Check source requirements and checksums
+        run: |
+          python3 scripts/check-lean-sources.py
+          sha256sum --check verification/SHA256SUMS
+      - name: Set up the fixed Lean toolchain
+        uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
+        with:
+          auto-config: "false"
+          build: "false"
+          use-mathlib-cache: "true"
+          use-github-cache: "false"
+      - name: Build the full source closure, submission pair and audit in order
+        run: bash scripts/build-serial.sh
+      - name: Print full proof and submission types and enforce standard axiom guards
+        run: |
+          lake env lean --version
+          lake env lean -j1 -D Elab.async=false UnconditionalAreaFinalAudit.lean
+          lake env lean -j1 -D Elab.async=false SubmissionSolutionAudit.lean
+      - name: Check that verification preserved the frozen files
+        run: |
+          sha256sum --check verification/SHA256SUMS
+          git diff --exit-code

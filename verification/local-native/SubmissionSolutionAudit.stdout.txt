@@ -1,0 +1,36 @@
+BucklingChallenge.area_inequality : ∀ (Ω : Set.{0} BucklingChallenge.Plane),
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        LE.le.{0} (HMul.hMul.{0, 0, 0} Real.pi (HPow.hPow.{0, 0, 0} BucklingChallenge.j11 2))
+          (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (BucklingChallenge.bucklingEig Ω))
+BucklingChallenge.area_equality_iff : ∀ (Ω : Set.{0} BucklingChallenge.Plane),
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        (Eq.{1} (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (BucklingChallenge.bucklingEig Ω))
+            (HMul.hMul.{0, 0, 0} Real.pi (HPow.hPow.{0, 0, 0} BucklingChallenge.j11 2)) ↔
+          ∃ a R, LT.lt.{0} 0 R ∧ Eq.{1} Ω (Metric.ball.{0} a R))
+BucklingChallenge.polya_szego_buckling : ∀ (Ω : Set.{0} BucklingChallenge.Plane),
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        ∀ (R : ℝ),
+          LT.lt.{0} 0 R →
+            Eq.{1} (HMul.hMul.{0, 0, 0} Real.pi (HPow.hPow.{0, 0, 0} R 2)) (MeasureTheory.volume.{0} Ω).toReal →
+              LE.le.{0} (BucklingChallenge.bucklingEig (Metric.ball.{0} 0 R)) (BucklingChallenge.bucklingEig Ω) ∧
+                (Eq.{1} (BucklingChallenge.bucklingEig Ω) (BucklingChallenge.bucklingEig (Metric.ball.{0} 0 R)) ↔
+                  ∃ a, Eq.{1} Ω (Metric.ball.{0} a R))
+BucklingChallenge.bucklingEig_ball : ∀ (a : BucklingChallenge.Plane) (R : ℝ),
+  LT.lt.{0} 0 R →
+    Eq.{1} (BucklingChallenge.bucklingEig (Metric.ball.{0} a R))
+      (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} BucklingChallenge.j11 2) (HPow.hPow.{0, 0, 0} R 2))
+BucklingChallenge.buckling_ge_dirichlet : ∀ (Ω : Set.{0} BucklingChallenge.Plane),
+  IsOpen.{0} Ω →
+    Set.Nonempty.{0} Ω →
+      LE.le.{0}
+        (HMul.hMul.{0, 0, 0}
+          (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} BucklingChallenge.j11 2)
+            (HPow.hPow.{0, 0, 0} BucklingChallenge.j01 2))
+          (BucklingChallenge.dirichletEig Ω))
+        (BucklingChallenge.bucklingEig Ω)

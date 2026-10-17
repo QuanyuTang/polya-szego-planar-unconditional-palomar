@@ -1,0 +1,55 @@
+{
+  "original_record_sha256": "b98e230304a06fe60ed950ac13de220f9dd869470a5d6c5f5ba9a0c1d52feacd",
+  "review": {
+    "status": "ROOT_ACTUAL_LITERAL_FIVE_TYPES_AND_AXIOM_REVIEW_ACCEPTED",
+    "created_ns": 1792273401187641200,
+    "literal_run": "1792273299308514700-21304",
+    "records": [
+      {
+        "module": "Challenge",
+        "source_sha256": "6cce53daa10f1f17b07c49466949d7f7240a01a096ec06799075b672bd574a81",
+        "result_sha256": "3d72603983066ff1d34f5e6ce2cb730d2805fb0369d6f4eee5f7fa768b1d60e2",
+        "native_exit": 0,
+        "post_exit": 0,
+        "five_actual_parts_freshly_hashed": true,
+        "seconds": 15.6248692,
+        "stdout_sha256": "72e4a3eb423630b0135d9462b03d5ec663da2128f404dddeec59ecfc32a9e0a8"
+      },
+      {
+        "module": "Solution",
+        "source_sha256": "134aa69b2298a383761ca85ee9afd9072ff9b3817017a4be9f1a459d274ea863",
+        "result_sha256": "ff7ae3963a928a25826e1f444c3b1c45f2772028dc629fdb9dd8bef530a5845e",
+        "native_exit": 0,
+        "post_exit": 0,
+        "five_actual_parts_freshly_hashed": true,
+        "seconds": 15.7219046,
+        "stdout_sha256": "fc4b3bb4c042c86a33c0f0dfefa8bfa809cee010e9b3c7d1b210d48f5c6fe666"
+      },
+      {
+        "module": "SubmissionSolutionAudit",
+        "source_sha256": "4da2f96b6b5402832cf5d78827b21940369c2c3ac7c9e9765c6fb79ec3ff7ef3",
+        "result_sha256": "df3d3f8a4426adc6c46402889bbfb650009ab7fc6576265b2813999ed1f55204",
+        "native_exit": 0,
+        "post_exit": 0,
+        "five_actual_parts_freshly_hashed": true,
+        "seconds": 14.333872,
+        "stdout_sha256": "0f699980a8bebdc42b6c18305860204955a64b1366ee0e08eb0dfa38c06f37d4"
+      }
+    ],
+    "five_complete_native_types_read_in_full": true,
+    "five_exact_standard_three_axiom_guards_executed": true,
+    "semantic_review": {
+      "natural_inputs_only": true,
+      "no_external_package_argument": true,
+      "equality_is_exact_open_ball_set_equality": true,
+      "positive_finite_area_open_domain_and_pi_j11_squared": true,
+      "same_radius_PS_equality": true,
+      "disk_and_buckling_dirichlet_targets_preserved": true,
+      "twenty_original_definitions_preserved": true
+    },
+    "source_and_guard_review": "Root read full Challenge, Solution, SubmissionSolutionAudit sources and actual full five-type stdout, alongside target TeX cor:area lines115-121 and conj:PS59-65. Independent semantic review SHA15e55836d385ed878a37e900acbbc5afea8c2f5fa345acf0fbe112c210c59f72 corroborates original20 definitions and transfer proofs.",
+    "independent_comparator_performed": false,
+    "linux_or_three_kernel_success_claimed": false,
+    "independent_production_assembly_allowed": true
+  }
+}

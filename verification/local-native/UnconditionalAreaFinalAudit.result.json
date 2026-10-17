@@ -1,0 +1,47 @@
+{
+  "module": "UnconditionalAreaFinalAudit",
+  "original_record_sha256": "ce0df5300b68d5e38ff84c7a052a757cced8048a0c4721cfa7c6c120f91f577a",
+  "source": {
+    "sha256": "c9fcecbff588f67490191cc62b75b035003a78d07078113899794af4108a221b",
+    "size": 4830
+  },
+  "lean_exit_code": 0,
+  "post_validation_exit_code": 0,
+  "exit_code": 0,
+  "seconds": 14.2320111,
+  "native_flags": [
+    "-j",
+    "1",
+    "-D",
+    "Elab.async=false"
+  ],
+  "finished_ns": 1792272887303485600,
+  "artifacts": [
+    {
+      "kind": ".olean",
+      "sha256": "dbe4fe3c5ebf51cd745e6fb3a3f83aa0c7bb5a2eae29c6a9e1875930558fe82b",
+      "size": 1256
+    },
+    {
+      "kind": ".olean.server",
+      "sha256": "5bde78454e00a6aaa39e7855ad347a5f3276b5656e0738d47fae775adeb7fa45",
+      "size": 1064
+    },
+    {
+      "kind": ".olean.private",
+      "sha256": "34040896b696da55e8bf8006efcc083834ddafb88ab9ac163369c88680c921f3",
+      "size": 592
+    },
+    {
+      "kind": ".ir.sig",
+      "sha256": "d41d8336bec2a46479f0b3a0ed0889c361239cf37560c2dda50abad5b205e283",
+      "size": 176
+    },
+    {
+      "kind": ".ir",
+      "sha256": "0e1b240b7fa6355e92d75636fcdcaece6e377e8ea9bfe38095bc72d1392fb168",
+      "size": 1376
+    }
+  ],
+  "scope": "Native development bytes only; no Linux, Comparator or independent-kernel result claimed."
+}

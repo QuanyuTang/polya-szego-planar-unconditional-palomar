@@ -1,0 +1,41 @@
+{
+  "original_record_sha256": "58b65cfea4e72ed8a1add6d7f5f8ca7cc6053394e61c41316c7ddd1023a1f7a6",
+  "review": {
+    "status": "ROOT_REVIEWED_ACTUAL_FINAL_AUDIT_NATIVE0_TYPES_AND_STANDARD_AXIOM_GUARDS",
+    "reviewer": "AI-assisted root type/source review",
+    "source_sha256": "c9fcecbff588f67490191cc62b75b035003a78d07078113899794af4108a221b",
+    "actual_result_sha256": "ce0df5300b68d5e38ff84c7a052a757cced8048a0c4721cfa7c6c120f91f577a",
+    "actual_stdout_sha256": "2313659c78afa6eea13091a9d855a46cafe0041a5a68d23b472ba43b48890683",
+    "native_exit": 0,
+    "post_validation_exit": 0,
+    "source_and_five_actual_parts_fresh_sha_checked": true,
+    "complete_type_roots_read_in_full": [
+      "Buckling.DirichletFKAreaProduct.sharpConstant_pos",
+      "Buckling.DirichletFKAreaProduct.global_lower_bound",
+      "Buckling.FaberKrahnEqualityGroundStateData.exists_density_with_global_branches",
+      "Buckling.FaberKrahnEqualityAeDisk.exists_ae_disk_of_area_product_equality",
+      "Buckling.FaberKrahnEqualityAeDisk.exists_prescribed_ae_disk_of_area_product_equality",
+      "Buckling.AffineReflectionWeakTransport.whole_data_reflection",
+      "Buckling.WeakSMPConnected.zero_or_pos_ae",
+      "Buckling.FaberKrahnPolarizationBranch.global_branch_of_groundState_at_equality",
+      "Buckling.ReflectionBranchPositiveBall.exists_pos_ball_ae_eq_of_nonneg_branches",
+      "Buckling.faberKrahn_holds_without_E12",
+      "Buckling.paperExternals_holds_without_E12",
+      "Buckling.area_inequality_unconditional",
+      "Buckling.area_equality_iff_without_E12",
+      "Buckling.polya_szego_buckling_without_E12"
+    ],
+    "exact_standard_three_axiom_guards_executed": 14,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "closed_producers": [
+      "Buckling.faberKrahn_holds_without_E12",
+      "Buckling.paperExternals_holds_without_E12"
+    ],
+    "public_last_three_only_natural_geometric_measure_inputs": true,
+    "equality_is_actual_set_equality_with_open_disk": true
+  }
+}

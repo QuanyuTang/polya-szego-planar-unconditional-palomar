@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "BucklingChallenge.area_inequality",
+    "BucklingChallenge.area_equality_iff",
+    "BucklingChallenge.polya_szego_buckling",
+    "BucklingChallenge.bucklingEig_ball",
+    "BucklingChallenge.buckling_ge_dirichlet"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

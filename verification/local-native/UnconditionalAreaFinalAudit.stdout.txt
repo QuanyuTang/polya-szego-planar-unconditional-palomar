@@ -1,0 +1,186 @@
+Buckling.DirichletFKAreaProduct.sharpConstant_pos : LT.lt.{0} 0 Buckling.DirichletFKAreaProduct.sharpConstant
+Buckling.DirichletFKAreaProduct.global_lower_bound : ∀ (Ω : Set.{0} Buckling.Plane),
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        LE.le.{0} Buckling.DirichletFKAreaProduct.sharpConstant
+          (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.dirichletEig Ω))
+@Buckling.FaberKrahnEqualityGroundStateData.exists_density_with_global_branches : ∀ {k : ℝ},
+  LT.lt.{0} 0 k →
+    (∀ (A : Set.{0} Buckling.Plane),
+        IsOpen.{0} A →
+          LT.lt.{0} 0 (MeasureTheory.volume.{0} A) →
+            LT.lt.{0} (MeasureTheory.volume.{0} A) Top.top.{0} →
+              LE.le.{0} k (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} A).toReal (Buckling.dirichletEig A))) →
+      ∀ {Ω : Set.{0} Buckling.Plane},
+        IsOpen.{0} Ω →
+          Set.Nonempty.{0} Ω →
+            LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+              Eq.{1} (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.dirichletEig Ω)) k →
+                ∃ U,
+                  MeasureTheory.MemLp.{0, 0} U 2 MeasureTheory.volume.{0} ∧
+                    MeasureTheory.Integrable.{0, 0} U MeasureTheory.volume.{0} ∧
+                      (∀ᵐ (x : Buckling.Plane), LE.le.{0} 0 (U x)) ∧
+                        LT.lt.{0} 0 (∫ (x : Buckling.Plane), U x) ∧
+                          (Set.ofPred.{0} fun x => LT.lt.{0} 0 (U x)) =ᵐ[MeasureTheory.volume.{0}] Ω ∧
+                            (∀ᵐ (x : Buckling.Plane), x ∉ Ω → Eq.{1} (U x) 0) ∧
+                              ∀ (ν : FaberKrahnDevelopment.EuclideanReflection.UnitNormal) (c : ℝ),
+                                FaberKrahnDevelopment.twoPointPolarization.{0}
+                                      (FaberKrahnDevelopment.EuclideanReflection.halfspace ν c)
+                                      (FaberKrahnDevelopment.EuclideanReflection.reflection ν c)
+                                      U =ᵐ[MeasureTheory.volume.{0}]
+                                    U ∨
+                                  FaberKrahnDevelopment.twoPointPolarization.{0}
+                                      (FaberKrahnDevelopment.EuclideanReflection.halfspace ν c)
+                                      (FaberKrahnDevelopment.EuclideanReflection.reflection ν c)
+                                      U =ᵐ[MeasureTheory.volume.{0}]
+                                    fun x => U (FaberKrahnDevelopment.EuclideanReflection.reflection ν c x)
+@Buckling.FaberKrahnEqualityAeDisk.exists_ae_disk_of_area_product_equality : ∀ {k : ℝ},
+  LT.lt.{0} 0 k →
+    (∀ (A : Set.{0} Buckling.Plane),
+        IsOpen.{0} A →
+          LT.lt.{0} 0 (MeasureTheory.volume.{0} A) →
+            LT.lt.{0} (MeasureTheory.volume.{0} A) Top.top.{0} →
+              LE.le.{0} k (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} A).toReal (Buckling.dirichletEig A))) →
+      ∀ {Ω : Set.{0} Buckling.Plane},
+        IsOpen.{0} Ω →
+          Set.Nonempty.{0} Ω →
+            LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+              Eq.{1} (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.dirichletEig Ω)) k →
+                ∃ a R, LT.lt.{0} 0 R ∧ Ω =ᵐ[MeasureTheory.volume.{0}] Metric.ball.{0} a R
+@Buckling.FaberKrahnEqualityAeDisk.exists_prescribed_ae_disk_of_area_product_equality : ∀ {k : ℝ},
+  LT.lt.{0} 0 k →
+    (∀ (A : Set.{0} Buckling.Plane),
+        IsOpen.{0} A →
+          LT.lt.{0} 0 (MeasureTheory.volume.{0} A) →
+            LT.lt.{0} (MeasureTheory.volume.{0} A) Top.top.{0} →
+              LE.le.{0} k (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} A).toReal (Buckling.dirichletEig A))) →
+      ∀ {Ω : Set.{0} Buckling.Plane},
+        IsOpen.{0} Ω →
+          Set.Nonempty.{0} Ω →
+            LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+              Eq.{1} (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.dirichletEig Ω)) k →
+                ∀ {R : ℝ},
+                  LT.lt.{0} 0 R →
+                    Eq.{1} (MeasureTheory.volume.{0} (Metric.ball.{0} 0 R)) (MeasureTheory.volume.{0} Ω) →
+                      ∃ a, Eq.{1} (MeasureTheory.volume.{0} (symmDiff.{0} Ω (Metric.ball.{0} a R))) 0
+Buckling.AffineReflectionWeakTransport.whole_data_reflection : ∀
+  (ν : FaberKrahnDevelopment.EuclideanReflection.UnitNormal) (c eigenvalue : ℝ) {U : Buckling.Plane → ℝ},
+  MeasureTheory.MemLp.{0, 0} U 2 MeasureTheory.volume.{0} →
+    ∀ {g : Fin 2 → Buckling.Plane → ℝ},
+      (∀ (i : Fin 2), MeasureTheory.MemLp.{0, 0} (g i) 2 MeasureTheory.volume.{0}) →
+        EllipticPdes.Embedding.HasWeakGradOn Set.univ.{0} U g →
+          (∀ (ψ : Buckling.Plane → ℝ),
+              Buckling.IsTestFn Set.univ.{0} ψ →
+                (∀ (x : Buckling.Plane), LE.le.{0} 0 (ψ x)) →
+                  LE.le.{0} (∑ i, ∫ (x : Buckling.Plane), HMul.hMul.{0, 0, 0} (g i x) (Buckling.pderiv i ψ x))
+                    (HMul.hMul.{0, 0, 0} eigenvalue (∫ (x : Buckling.Plane), HMul.hMul.{0, 0, 0} (U x) (ψ x)))) →
+            MeasureTheory.MemLp.{0, 0} (fun x => U (FaberKrahnDevelopment.EuclideanReflection.reflection ν c x)) 2
+                MeasureTheory.volume.{0} ∧
+              (∀ (i : Fin 2),
+                  MeasureTheory.MemLp.{0, 0} (Buckling.AffineReflectionWeakTransport.reflectedGradient ν c g i) 2
+                    MeasureTheory.volume.{0}) ∧
+                EllipticPdes.Embedding.HasWeakGradOn Set.univ.{0}
+                    (fun x => U (FaberKrahnDevelopment.EuclideanReflection.reflection ν c x))
+                    (Buckling.AffineReflectionWeakTransport.reflectedGradient ν c g) ∧
+                  ∀ (ψ : Buckling.Plane → ℝ),
+                    Buckling.IsTestFn Set.univ.{0} ψ →
+                      (∀ (x : Buckling.Plane), LE.le.{0} 0 (ψ x)) →
+                        LE.le.{0}
+                          (∑ i,
+                            ∫ (x : Buckling.Plane),
+                              HMul.hMul.{0, 0, 0} (Buckling.AffineReflectionWeakTransport.reflectedGradient ν c g i x)
+                                (Buckling.pderiv i ψ x))
+                          (HMul.hMul.{0, 0, 0} eigenvalue
+                            (∫ (x : FaberKrahnDevelopment.EuclideanReflection.Plane),
+                              HMul.hMul.{0, 0, 0} (U (FaberKrahnDevelopment.EuclideanReflection.reflection ν c x))
+                                (ψ x)))
+@Buckling.WeakSMPConnected.zero_or_pos_ae : ∀ {D : Set.{0} Buckling.Plane},
+  IsOpen.{0} D →
+    IsPreconnected.{0} D →
+      ∀ {w : Buckling.Plane → ℝ},
+        MeasureTheory.MemLp.{0, 0} w 2 MeasureTheory.volume.{0} →
+          ∀ {g : Fin 2 → Buckling.Plane → ℝ},
+            (∀ (i : Fin 2), MeasureTheory.MemLp.{0, 0} (g i) 2 MeasureTheory.volume.{0}) →
+              EllipticPdes.Embedding.HasWeakGradOn Set.univ.{0} w g →
+                (∀ᵐ (x : Buckling.Plane) ∂MeasureTheory.Measure.restrict.{0} MeasureTheory.volume.{0} D,
+                    LE.le.{0} 0 (w x)) →
+                  (∀ (ψ : Buckling.Plane → ℝ),
+                      Buckling.IsTestFn D ψ →
+                        (∀ (x : Buckling.Plane), LE.le.{0} 0 (ψ x)) →
+                          LE.le.{0} 0
+                            (∑ i, ∫ (x : Buckling.Plane), HMul.hMul.{0, 0, 0} (g i x) (Buckling.pderiv i ψ x))) →
+                    w =ᵐ[MeasureTheory.Measure.restrict.{0} MeasureTheory.volume.{0} D] 0 ∨
+                      ∀ᵐ (x : Buckling.Plane) ∂MeasureTheory.Measure.restrict.{0} MeasureTheory.volume.{0} D,
+                        LT.lt.{0} 0 (w x)
+@Buckling.FaberKrahnPolarizationBranch.global_branch_of_groundState_at_equality : ∀ {k : ℝ},
+  LT.lt.{0} 0 k →
+    (∀ (A : Set.{0} Buckling.Plane),
+        IsOpen.{0} A →
+          LT.lt.{0} 0 (MeasureTheory.volume.{0} A) →
+            LT.lt.{0} (MeasureTheory.volume.{0} A) Top.top.{0} →
+              LE.le.{0} k (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} A).toReal (Buckling.dirichletEig A))) →
+      ∀ {Ω : Set.{0} Buckling.Plane} (hΩ : IsOpen.{0} Ω),
+        Set.Nonempty.{0} Ω →
+          LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+            Eq.{1} (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.dirichletEig Ω)) k →
+              ∀ (u : Prod.{0, 0} (↥(Buckling.L2 Ω)) (Fin 2 → ↥(Buckling.L2 Ω))),
+                Membership.mem.{0, 0} (Buckling.H01 Ω) u →
+                  Eq.{1} (Buckling.energy0 u) 1 →
+                    Eq.{1} (Buckling.energy1 u) (Buckling.dirichletEig Ω) →
+                      (∀ᵐ (x : Buckling.Plane) ∂MeasureTheory.Measure.restrict.{0} MeasureTheory.volume.{0} Ω,
+                          LE.le.{0} 0 (↑↑u.1 x)) →
+                        ∀ (ν : FaberKrahnDevelopment.EuclideanReflection.UnitNormal) (c : ℝ),
+                          FaberKrahnDevelopment.twoPointPolarization.{0}
+                                (FaberKrahnDevelopment.EuclideanReflection.halfspace ν c)
+                                (FaberKrahnDevelopment.EuclideanReflection.reflection ν c)
+                                ↑↑(Buckling.H01WeakGradientBridge.fullComponent ⋯ u.1) =ᵐ[MeasureTheory.volume.{0}]
+                              ↑↑(Buckling.H01WeakGradientBridge.fullComponent ⋯ u.1) ∨
+                            FaberKrahnDevelopment.twoPointPolarization.{0}
+                                (FaberKrahnDevelopment.EuclideanReflection.halfspace ν c)
+                                (FaberKrahnDevelopment.EuclideanReflection.reflection ν c)
+                                ↑↑(Buckling.H01WeakGradientBridge.fullComponent ⋯ u.1) =ᵐ[MeasureTheory.volume.{0}]
+                              fun x =>
+                              ↑↑(Buckling.H01WeakGradientBridge.fullComponent ⋯ u.1)
+                                (FaberKrahnDevelopment.EuclideanReflection.reflection ν c x)
+@Buckling.ReflectionBranchPositiveBall.exists_pos_ball_ae_eq_of_nonneg_branches : ∀
+  {U : FaberKrahnDevelopment.EuclideanReflection.Plane → ℝ},
+  MeasureTheory.Integrable.{0, 0} U MeasureTheory.volume.{0} →
+    (∀ᵐ (x : FaberKrahnDevelopment.EuclideanReflection.Plane), LE.le.{0} 0 (U x)) →
+      LT.lt.{0} 0 (∫ (x : FaberKrahnDevelopment.EuclideanReflection.Plane), U x) →
+        LT.lt.{0} (MeasureTheory.volume.{0} (Set.ofPred.{0} fun x => LT.lt.{0} 0 (U x))) Top.top.{0} →
+          (∀ (ν : FaberKrahnDevelopment.EuclideanReflection.UnitNormal) (c : ℝ),
+              FaberKrahnDevelopment.twoPointPolarization.{0} (FaberKrahnDevelopment.EuclideanReflection.halfspace ν c)
+                    (FaberKrahnDevelopment.EuclideanReflection.reflection ν c) U =ᵐ[MeasureTheory.volume.{0}]
+                  U ∨
+                FaberKrahnDevelopment.twoPointPolarization.{0} (FaberKrahnDevelopment.EuclideanReflection.halfspace ν c)
+                    (FaberKrahnDevelopment.EuclideanReflection.reflection ν c) U =ᵐ[MeasureTheory.volume.{0}]
+                  fun x => U (FaberKrahnDevelopment.EuclideanReflection.reflection ν c x)) →
+            ∃ p R,
+              LT.lt.{0} 0 R ∧
+                (Set.ofPred.{0} fun x => LT.lt.{0} 0 (U x)) =ᵐ[MeasureTheory.volume.{0}] Metric.ball.{0} p R
+Buckling.faberKrahn_holds_without_E12 : Buckling.ExtFaberKrahn
+Buckling.paperExternals_holds_without_E12 : Buckling.PaperExternals
+@Buckling.area_inequality_unconditional : ∀ {Ω : Set.{0} Buckling.Plane},
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        LE.le.{0} (HMul.hMul.{0, 0, 0} Real.pi (HPow.hPow.{0, 0, 0} Buckling.jk 2))
+          (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.bucklingEig Ω))
+@Buckling.area_equality_iff_without_E12 : ∀ {Ω : Set.{0} Buckling.Plane},
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        (Eq.{1} (HMul.hMul.{0, 0, 0} (MeasureTheory.volume.{0} Ω).toReal (Buckling.bucklingEig Ω))
+            (HMul.hMul.{0, 0, 0} Real.pi (HPow.hPow.{0, 0, 0} Buckling.jk 2)) ↔
+          ∃ a R, LT.lt.{0} 0 R ∧ Eq.{1} Ω (Metric.ball.{0} a R))
+@Buckling.polya_szego_buckling_without_E12 : ∀ {Ω : Set.{0} Buckling.Plane},
+  IsOpen.{0} Ω →
+    LT.lt.{0} 0 (MeasureTheory.volume.{0} Ω) →
+      LT.lt.{0} (MeasureTheory.volume.{0} Ω) Top.top.{0} →
+        ∀ (R : ℝ),
+          LT.lt.{0} 0 R →
+            Eq.{1} (HMul.hMul.{0, 0, 0} Real.pi (HPow.hPow.{0, 0, 0} R 2)) (MeasureTheory.volume.{0} Ω).toReal →
+              LE.le.{0} (Buckling.bucklingEig (Metric.ball.{0} 0 R)) (Buckling.bucklingEig Ω) ∧
+                (Eq.{1} (Buckling.bucklingEig Ω) (Buckling.bucklingEig (Metric.ball.{0} 0 R)) ↔
+                  ∃ a, Eq.{1} Ω (Metric.ball.{0} a R))

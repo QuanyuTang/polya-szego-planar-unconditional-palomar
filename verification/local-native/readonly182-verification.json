@@ -1,0 +1,6 @@
+{
+  "original_record_sha256": "637e06959e41b127a547e0bb6c8b0c9a2b88e75f0fac122e668a12cd31ac5df4",
+  "actual_exit_code": 0,
+  "mode": "READ_ONLY_VERIFY_RESUME_ONLY",
+  "native_Lean_invocation_requested": false
+}

@@ -1,0 +1,100 @@
+name: Palomar checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  metadata:
+    name: Validate metadata and Apache license
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out the source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Require the complete frozen release inputs
+        run: python3 scripts/check-release-inputs.py
+      - name: Set up Python for the fixed official metadata contract
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.11.10"
+      - name: Install the hash-pinned contract dependency
+        run: python -m pip install --disable-pip-version-check --require-hashes --no-deps -r requirements-ci.txt
+      - name: Validate the full fixed official metadata contract
+        run: python scripts/validate-formalization.py
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b
+        with:
+          ruby-version: "3.3.12"
+          bundler-cache: true
+      - name: Detect the root repository license
+        run: |
+          bundle exec licensee detect LICENSE --json --no-packages --no-readme > "$RUNNER_TEMP/license.json"
+          ruby -rjson -e '
+            report = JSON.parse(File.read(ARGV.fetch(0)))
+            identifiers = report.fetch("licenses").map { |item| item.fetch("spdx_id") }
+            abort "LICENSE is not detected exactly as Apache-2.0" unless identifiers == ["Apache-2.0"]
+          ' "$RUNNER_TEMP/license.json"
+
+  source:
+    name: Check source requirements and checksums
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out the source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Require the complete frozen release inputs
+        run: python3 scripts/check-release-inputs.py
+      - name: Check Lean source requirements
+        run: python3 scripts/check-lean-sources.py
+      - name: Check the frozen input checksums
+        run: sha256sum --check verification/SHA256SUMS
+
+  comparator:
+    name: Replay the five Challenge targets against Solution
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      LEAN_NUM_THREADS: "1"
+    steps:
+      - name: Check out the source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Require the complete frozen release inputs
+        run: python3 scripts/check-release-inputs.py
+      - name: Check source requirements and checksums
+        run: |
+          python3 scripts/check-lean-sources.py
+          sha256sum --check verification/SHA256SUMS
+      - name: Set up the fixed Lean toolchain
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          auto-config: "false"
+          build: "false"
+          use-mathlib-cache: "true"
+          use-github-cache: "false"
+      - name: Build the full closure serially before Comparator replay
+        run: bash scripts/build-serial.sh
+      - name: Install bubblewrap for the toolchain Comparator
+        run: |
+          sudo apt-get update -qq >/dev/null
+          sudo apt-get install -y -qq bubblewrap >/dev/null
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Run the fixed template toolchain Comparator script
+        run: bash scripts/verify-comparator.sh
+      - name: Check that verification preserved the frozen files
+        run: |
+          sha256sum --check verification/SHA256SUMS
+          git diff --exit-code

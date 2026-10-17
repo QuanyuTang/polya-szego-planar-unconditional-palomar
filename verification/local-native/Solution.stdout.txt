@@ -1,0 +1,4 @@
+<workspace>\ps-audit\port435rc3\staging\literal-submission\Solution.lean:143:12: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
