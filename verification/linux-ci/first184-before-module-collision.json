@@ -1,0 +1,1677 @@
+{
+  "status": "ACTUAL_FIRST184_LINUX_TARGET_BUILDS_SUCCEEDED_LAST_AUDIT_IMPORT_COLLISION",
+  "commit": "77b0e5afdbfd0603cbd9ee0953edda3771fc5015",
+  "run_id": 39072719634,
+  "job_id": 117513472611,
+  "job_url": "https://github.com/QuanyuTang/polya-szego-planar-unconditional-palomar/actions/runs/39072719634/job/117513472611",
+  "raw_log_sha256": "e6a1fda995b4c2a418ef6685684cdc58c80708ba7d759ff7f11d05d854c19a59",
+  "actual_log_build_markers": 185,
+  "actual_successful_build_segments": 184,
+  "last_failed_target": "@/+SubmissionSolutionAudit",
+  "five_target_comparison_performed": false,
+  "three_kernel_acceptance_claimed": false,
+  "records": [
+    {
+      "target": "@/+RequestProject.Core1",
+      "start_log_line": 574,
+      "actual_success_line": {
+        "log_line": 976,
+        "text": "2026-10-17T21:58:01.1413023Z Build completed successfully (8959 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01HilbertModel",
+      "start_log_line": 977,
+      "actual_success_line": {
+        "log_line": 1392,
+        "text": "2026-10-17T21:58:13.3045103Z Build completed successfully (8960 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.Basic",
+      "start_log_line": 1393,
+      "actual_success_line": {
+        "log_line": 1395,
+        "text": "2026-10-17T21:58:21.0762535Z Build completed successfully (3034 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+EllipticH01Bridge",
+      "start_log_line": 1396,
+      "actual_success_line": {
+        "log_line": 1812,
+        "text": "2026-10-17T21:58:31.1579294Z Build completed successfully (8963 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FiniteAreaTestLpBounds",
+      "start_log_line": 1813,
+      "actual_success_line": {
+        "log_line": 2216,
+        "text": "2026-10-17T21:58:42.8390196Z Build completed successfully (8960 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.LpExtendByZero",
+      "start_log_line": 2217,
+      "actual_success_line": {
+        "log_line": 2219,
+        "text": "2026-10-17T21:58:46.2000965Z Build completed successfully (2268 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01UniformTails",
+      "start_log_line": 2220,
+      "actual_success_line": {
+        "log_line": 2642,
+        "text": "2026-10-17T21:58:59.6698900Z Build completed successfully (8966 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationEnergy",
+      "start_log_line": 2643,
+      "actual_success_line": {
+        "log_line": 2645,
+        "text": "2026-10-17T21:59:03.3403910Z Build completed successfully (2848 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AbsoluteValueEnergy",
+      "start_log_line": 2646,
+      "actual_success_line": {
+        "log_line": 2661,
+        "text": "2026-10-17T21:59:06.9036026Z Build completed successfully (2849 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01NonnegativeCompactApproximation",
+      "start_log_line": 2662,
+      "actual_success_line": {
+        "log_line": 3099,
+        "text": "2026-10-17T21:59:18.5593710Z Build completed successfully (8969 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationMeasure",
+      "start_log_line": 3100,
+      "actual_success_line": {
+        "log_line": 3128,
+        "text": "2026-10-17T21:59:21.3046780Z Build completed successfully (1789 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+EuclideanReflection",
+      "start_log_line": 3129,
+      "actual_success_line": {
+        "log_line": 3131,
+        "text": "2026-10-17T21:59:25.4498521Z Build completed successfully (2549 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationEnergyTransport",
+      "start_log_line": 3132,
+      "actual_success_line": {
+        "log_line": 3182,
+        "text": "2026-10-17T21:59:30.1866837Z Build completed successfully (2852 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationLipschitz",
+      "start_log_line": 3183,
+      "actual_success_line": {
+        "log_line": 3237,
+        "text": "2026-10-17T21:59:32.8507643Z Build completed successfully (1793 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+EuclideanReflectionContraction",
+      "start_log_line": 3238,
+      "actual_success_line": {
+        "log_line": 3244,
+        "text": "2026-10-17T21:59:37.2079098Z Build completed successfully (2550 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizedOpenDomain",
+      "start_log_line": 3245,
+      "actual_success_line": {
+        "log_line": 3327,
+        "text": "2026-10-17T21:59:40.6613096Z Build completed successfully (2553 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.Mollifier",
+      "start_log_line": 3328,
+      "actual_success_line": {
+        "log_line": 3330,
+        "text": "2026-10-17T21:59:44.7128619Z Build completed successfully (2779 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.Convolution",
+      "start_log_line": 3331,
+      "actual_success_line": {
+        "log_line": 3333,
+        "text": "2026-10-17T21:59:51.2756524Z Build completed successfully (2832 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.SmoothCutoff",
+      "start_log_line": 3334,
+      "actual_success_line": {
+        "log_line": 3336,
+        "text": "2026-10-17T21:59:54.5258844Z Build completed successfully (2814 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.WeakDeriv",
+      "start_log_line": 3337,
+      "actual_success_line": {
+        "log_line": 3339,
+        "text": "2026-10-17T22:00:01.2799153Z Build completed successfully (2877 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.WeakDerivClassical",
+      "start_log_line": 3340,
+      "actual_success_line": {
+        "log_line": 3342,
+        "text": "2026-10-17T22:00:07.3388911Z Build completed successfully (2881 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.WeakDerivChain",
+      "start_log_line": 3343,
+      "actual_success_line": {
+        "log_line": 3345,
+        "text": "2026-10-17T22:00:15.6836083Z Build completed successfully (2887 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.Graph",
+      "start_log_line": 3346,
+      "actual_success_line": {
+        "log_line": 3348,
+        "text": "2026-10-17T22:00:29.9518987Z Build completed successfully (3112 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.GraphLattice",
+      "start_log_line": 3349,
+      "actual_success_line": {
+        "log_line": 3351,
+        "text": "2026-10-17T22:00:36.7033891Z Build completed successfully (3122 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.GraphEuclidean",
+      "start_log_line": 3352,
+      "actual_success_line": {
+        "log_line": 3354,
+        "text": "2026-10-17T22:00:53.4849199Z Build completed successfully (3114 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.WeakGradient",
+      "start_log_line": 3355,
+      "actual_success_line": {
+        "log_line": 3357,
+        "text": "2026-10-17T22:00:59.4299238Z Build completed successfully (3112 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+CompactLipOriginalH01",
+      "start_log_line": 3358,
+      "actual_success_line": {
+        "log_line": 3782,
+        "text": "2026-10-17T22:01:11.4918959Z Build completed successfully (8975 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+CompactLipOriginalH01Energy",
+      "start_log_line": 3783,
+      "actual_success_line": {
+        "log_line": 4208,
+        "text": "2026-10-17T22:01:21.1459148Z Build completed successfully (8976 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AffinePolarizationRealEnergy",
+      "start_log_line": 4209,
+      "actual_success_line": {
+        "log_line": 4779,
+        "text": "2026-10-17T22:01:30.6039003Z Build completed successfully (8984 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationL2Continuity",
+      "start_log_line": 4780,
+      "actual_success_line": {
+        "log_line": 4829,
+        "text": "2026-10-17T22:01:34.1480230Z Build completed successfully (2530 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.WeakCompactness",
+      "start_log_line": 4830,
+      "actual_success_line": {
+        "log_line": 4832,
+        "text": "2026-10-17T22:01:38.1794672Z Build completed successfully (2430 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.DirectMethodForm",
+      "start_log_line": 4833,
+      "actual_success_line": {
+        "log_line": 4835,
+        "text": "2026-10-17T22:01:42.5139351Z Build completed successfully (2443 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01WeakLimitAdmissibility",
+      "start_log_line": 4836,
+      "actual_success_line": {
+        "log_line": 5265,
+        "text": "2026-10-17T22:01:54.3610302Z Build completed successfully (8969 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AffinePolarizedH01Candidate",
+      "start_log_line": 5266,
+      "actual_success_line": {
+        "log_line": 5886,
+        "text": "2026-10-17T22:02:03.8016624Z Build completed successfully (8993 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01AbsoluteValue",
+      "start_log_line": 5887,
+      "actual_success_line": {
+        "log_line": 6333,
+        "text": "2026-10-17T22:02:22.1744186Z Build completed successfully (8973 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.PoincareInequality",
+      "start_log_line": 6334,
+      "actual_success_line": {
+        "log_line": 6336,
+        "text": "2026-10-17T22:02:26.3054278Z Build completed successfully (3035 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.LpTranslation",
+      "start_log_line": 6337,
+      "actual_success_line": {
+        "log_line": 6339,
+        "text": "2026-10-17T22:02:30.9429311Z Build completed successfully (3036 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.Translation",
+      "start_log_line": 6340,
+      "actual_success_line": {
+        "log_line": 6342,
+        "text": "2026-10-17T22:02:34.7749945Z Build completed successfully (3041 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01TranslationModulus",
+      "start_log_line": 6343,
+      "actual_success_line": {
+        "log_line": 6765,
+        "text": "2026-10-17T22:02:49.4180909Z Build completed successfully (8969 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.FrechetKolmogorov",
+      "start_log_line": 6766,
+      "actual_success_line": {
+        "log_line": 6768,
+        "text": "2026-10-17T22:03:02.1626078Z Build completed successfully (3044 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FrechetKolmogorovTail",
+      "start_log_line": 6769,
+      "actual_success_line": {
+        "log_line": 6771,
+        "text": "2026-10-17T22:03:09.2941106Z Build completed successfully (3046 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01CompactEmbedding",
+      "start_log_line": 6772,
+      "actual_success_line": {
+        "log_line": 7202,
+        "text": "2026-10-17T22:03:19.3265794Z Build completed successfully (8973 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01NonzeroMass",
+      "start_log_line": 7203,
+      "actual_success_line": {
+        "log_line": 7626,
+        "text": "2026-10-17T22:03:30.5702442Z Build completed successfully (8967 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01RayleighMinimizer",
+      "start_log_line": 7627,
+      "actual_success_line": {
+        "log_line": 8071,
+        "text": "2026-10-17T22:03:43.2998925Z Build completed successfully (8977 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01DirichletEuler",
+      "start_log_line": 8072,
+      "actual_success_line": {
+        "log_line": 8517,
+        "text": "2026-10-17T22:03:53.6377084Z Build completed successfully (8978 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01NonnegativeMinimizer",
+      "start_log_line": 8518,
+      "actual_success_line": {
+        "log_line": 8994,
+        "text": "2026-10-17T22:04:03.0680723Z Build completed successfully (8989 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01WeakGradientBridge",
+      "start_log_line": 8995,
+      "actual_success_line": {
+        "log_line": 9415,
+        "text": "2026-10-17T22:04:14.0069054Z Build completed successfully (8967 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AffinePolarizedGroundState",
+      "start_log_line": 9416,
+      "actual_success_line": {
+        "log_line": 10108,
+        "text": "2026-10-17T22:04:23.2410619Z Build completed successfully (9007 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AffineReflectionWeakTransport",
+      "start_log_line": 10109,
+      "actual_success_line": {
+        "log_line": 10536,
+        "text": "2026-10-17T22:04:34.7819579Z Build completed successfully (8969 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01ComponentTestCutoff",
+      "start_log_line": 10537,
+      "actual_success_line": {
+        "log_line": 10940,
+        "text": "2026-10-17T22:04:43.7255672Z Build completed successfully (8960 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01ComponentProjection",
+      "start_log_line": 10941,
+      "actual_success_line": {
+        "log_line": 11360,
+        "text": "2026-10-17T22:05:09.7705999Z Build completed successfully (8964 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01ComponentRestriction",
+      "start_log_line": 11361,
+      "actual_success_line": {
+        "log_line": 11784,
+        "text": "2026-10-17T22:05:20.4039655Z Build completed successfully (8966 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01ComponentSelection",
+      "start_log_line": 11785,
+      "actual_success_line": {
+        "log_line": 12217,
+        "text": "2026-10-17T22:05:29.8488086Z Build completed successfully (8967 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FaberKrahnEqualityConnected",
+      "start_log_line": 12218,
+      "actual_success_line": {
+        "log_line": 12680,
+        "text": "2026-10-17T22:05:38.9766444Z Build completed successfully (8983 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+GraphH01ShiftedTruncation",
+      "start_log_line": 12681,
+      "actual_success_line": {
+        "log_line": 12707,
+        "text": "2026-10-17T22:05:43.9039003Z Build completed successfully (3124 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01BoundaryTruncation",
+      "start_log_line": 12708,
+      "actual_success_line": {
+        "log_line": 13188,
+        "text": "2026-10-17T22:05:56.6423213Z Build completed successfully (8975 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01GraphEuler",
+      "start_log_line": 13189,
+      "actual_success_line": {
+        "log_line": 13665,
+        "text": "2026-10-17T22:06:11.5894649Z Build completed successfully (8989 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01GroundStateGlobalTest",
+      "start_log_line": 13666,
+      "actual_success_line": {
+        "log_line": 14210,
+        "text": "2026-10-17T22:06:23.3319041Z Build completed successfully (8992 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01ZeroExtensionSubsolution",
+      "start_log_line": 14211,
+      "actual_success_line": {
+        "log_line": 14761,
+        "text": "2026-10-17T22:06:34.8641008Z Build completed successfully (8996 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01FullEuler",
+      "start_log_line": 14762,
+      "actual_success_line": {
+        "log_line": 15312,
+        "text": "2026-10-17T22:06:43.9030031Z Build completed successfully (8997 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPRegularizers",
+      "start_log_line": 15313,
+      "actual_success_line": {
+        "log_line": 15327,
+        "text": "2026-10-17T22:06:47.7410114Z Build completed successfully (2199 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.WeakGradUnique",
+      "start_log_line": 15328,
+      "actual_success_line": {
+        "log_line": 15330,
+        "text": "2026-10-17T22:06:51.1666870Z Build completed successfully (3113 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.ChainRule",
+      "start_log_line": 15331,
+      "actual_success_line": {
+        "log_line": 15333,
+        "text": "2026-10-17T22:06:56.1018195Z Build completed successfully (3123 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPLogTest",
+      "start_log_line": 15334,
+      "actual_success_line": {
+        "log_line": 15768,
+        "text": "2026-10-17T22:07:06.0364720Z Build completed successfully (8972 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.RayIntegral",
+      "start_log_line": 15769,
+      "actual_success_line": {
+        "log_line": 15771,
+        "text": "2026-10-17T22:07:13.8707680Z Build completed successfully (3132 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.Morrey",
+      "start_log_line": 15772,
+      "actual_success_line": {
+        "log_line": 15774,
+        "text": "2026-10-17T22:07:25.3190551Z Build completed successfully (3144 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PositiveCompactWeakApproximation",
+      "start_log_line": 15775,
+      "actual_success_line": {
+        "log_line": 16186,
+        "text": "2026-10-17T22:07:35.1665351Z Build completed successfully (8970 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PositiveCompactWeakTesting",
+      "start_log_line": 16187,
+      "actual_success_line": {
+        "log_line": 16599,
+        "text": "2026-10-17T22:07:44.4015754Z Build completed successfully (8971 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPCaccioppoliAlgebra",
+      "start_log_line": 16600,
+      "actual_success_line": {
+        "log_line": 16618,
+        "text": "2026-10-17T22:07:47.5378990Z Build completed successfully (2200 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPIntegratedCaccioppoli",
+      "start_log_line": 16619,
+      "actual_success_line": {
+        "log_line": 17067,
+        "text": "2026-10-17T22:07:58.1754431Z Build completed successfully (8978 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AnchoredL2Estimate",
+      "start_log_line": 17068,
+      "actual_success_line": {
+        "log_line": 17070,
+        "text": "2026-10-17T22:08:01.9133442Z Build completed successfully (2935 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Basic",
+      "start_log_line": 17071,
+      "actual_success_line": {
+        "log_line": 17073,
+        "text": "2026-10-17T22:08:06.0416123Z Build completed successfully (3113 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.C1Test",
+      "start_log_line": 17074,
+      "actual_success_line": {
+        "log_line": 17076,
+        "text": "2026-10-17T22:08:10.3779344Z Build completed successfully (3121 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Shear",
+      "start_log_line": 17077,
+      "actual_success_line": {
+        "log_line": 17079,
+        "text": "2026-10-17T22:08:15.3099357Z Build completed successfully (3122 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.WeakSobolev",
+      "start_log_line": 17080,
+      "actual_success_line": {
+        "log_line": 17082,
+        "text": "2026-10-17T22:08:20.6446547Z Build completed successfully (2894 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.GagliardoNirenberg",
+      "start_log_line": 17083,
+      "actual_success_line": {
+        "log_line": 17085,
+        "text": "2026-10-17T22:08:25.7749402Z Build completed successfully (3153 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.ShearWeakGrad",
+      "start_log_line": 17086,
+      "actual_success_line": {
+        "log_line": 17088,
+        "text": "2026-10-17T22:08:30.7205526Z Build completed successfully (3157 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Cutoff",
+      "start_log_line": 17089,
+      "actual_success_line": {
+        "log_line": 17091,
+        "text": "2026-10-17T22:08:34.7462171Z Build completed successfully (3114 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Reflect",
+      "start_log_line": 17092,
+      "actual_success_line": {
+        "log_line": 17094,
+        "text": "2026-10-17T22:08:38.5719387Z Build completed successfully (3114 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.HalfSpace",
+      "start_log_line": 17095,
+      "actual_success_line": {
+        "log_line": 17097,
+        "text": "2026-10-17T22:08:44.0025112Z Build completed successfully (3157 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.EvenReflection",
+      "start_log_line": 17098,
+      "actual_success_line": {
+        "log_line": 17100,
+        "text": "2026-10-17T22:08:48.9428769Z Build completed successfully (3158 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.BoundaryChart",
+      "start_log_line": 17101,
+      "actual_success_line": {
+        "log_line": 17103,
+        "text": "2026-10-17T22:08:53.8697367Z Build completed successfully (3162 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.C1Boundary",
+      "start_log_line": 17104,
+      "actual_success_line": {
+        "log_line": 17106,
+        "text": "2026-10-17T22:08:59.9028584Z Build completed successfully (3163 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.PartitionOfUnity",
+      "start_log_line": 17107,
+      "actual_success_line": {
+        "log_line": 17109,
+        "text": "2026-10-17T22:09:03.8368645Z Build completed successfully (3164 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Patch",
+      "start_log_line": 17110,
+      "actual_success_line": {
+        "log_line": 17112,
+        "text": "2026-10-17T22:09:08.6650433Z Build completed successfully (3155 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Motion",
+      "start_log_line": 17113,
+      "actual_success_line": {
+        "log_line": 17115,
+        "text": "2026-10-17T22:09:12.7884974Z Build completed successfully (3114 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.LocalExtension",
+      "start_log_line": 17116,
+      "actual_success_line": {
+        "log_line": 17118,
+        "text": "2026-10-17T22:09:18.5229877Z Build completed successfully (3167 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Operator",
+      "start_log_line": 17119,
+      "actual_success_line": {
+        "log_line": 17121,
+        "text": "2026-10-17T22:09:24.4528147Z Build completed successfully (3168 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.DomainSobolev",
+      "start_log_line": 17122,
+      "actual_success_line": {
+        "log_line": 17124,
+        "text": "2026-10-17T22:09:28.7838820Z Build completed successfully (3169 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.GlobalApproximation",
+      "start_log_line": 17125,
+      "actual_success_line": {
+        "log_line": 17127,
+        "text": "2026-10-17T22:09:33.7138904Z Build completed successfully (3171 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.LinearOperator",
+      "start_log_line": 17128,
+      "actual_success_line": {
+        "log_line": 17130,
+        "text": "2026-10-17T22:09:37.4478962Z Build completed successfully (3169 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Fredholm.CompactOperator",
+      "start_log_line": 17131,
+      "actual_success_line": {
+        "log_line": 17133,
+        "text": "2026-10-17T22:09:46.2817434Z Build completed successfully (2674 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.Domain",
+      "start_log_line": 17134,
+      "actual_success_line": {
+        "log_line": 17136,
+        "text": "2026-10-17T22:09:49.3021758Z Build completed successfully (2587 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.Density",
+      "start_log_line": 17137,
+      "actual_success_line": {
+        "log_line": 17139,
+        "text": "2026-10-17T22:09:53.4408865Z Build completed successfully (3036 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Form.BilinearForm",
+      "start_log_line": 17140,
+      "actual_success_line": {
+        "log_line": 17142,
+        "text": "2026-10-17T22:09:59.1752783Z Build completed successfully (3038 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Form.DivForm",
+      "start_log_line": 17143,
+      "actual_success_line": {
+        "log_line": 17145,
+        "text": "2026-10-17T22:10:11.4224641Z Build completed successfully (3113 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Form.DivFormGarding",
+      "start_log_line": 17146,
+      "actual_success_line": {
+        "log_line": 17148,
+        "text": "2026-10-17T22:10:18.5608601Z Build completed successfully (3119 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.Slab",
+      "start_log_line": 17149,
+      "actual_success_line": {
+        "log_line": 17151,
+        "text": "2026-10-17T22:10:22.1908840Z Build completed successfully (3037 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.GraphBounded",
+      "start_log_line": 17152,
+      "actual_success_line": {
+        "log_line": 17154,
+        "text": "2026-10-17T22:10:26.8218739Z Build completed successfully (3117 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Existence.DivFormExistence",
+      "start_log_line": 17155,
+      "actual_success_line": {
+        "log_line": 17157,
+        "text": "2026-10-17T22:10:32.3568729Z Build completed successfully (3124 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Sobolev.Coefficients",
+      "start_log_line": 17158,
+      "actual_success_line": {
+        "log_line": 17160,
+        "text": "2026-10-17T22:10:36.7948819Z Build completed successfully (3035 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Form.GeneralForm",
+      "start_log_line": 17161,
+      "actual_success_line": {
+        "log_line": 17163,
+        "text": "2026-10-17T22:10:43.3269027Z Build completed successfully (3039 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Existence.FullOp",
+      "start_log_line": 17164,
+      "actual_success_line": {
+        "log_line": 17166,
+        "text": "2026-10-17T22:10:49.7618755Z Build completed successfully (3040 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Form.DivFormEuclidean",
+      "start_log_line": 17167,
+      "actual_success_line": {
+        "log_line": 17169,
+        "text": "2026-10-17T22:11:03.4026894Z Build completed successfully (3122 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.Geometry",
+      "start_log_line": 17170,
+      "actual_success_line": {
+        "log_line": 17172,
+        "text": "2026-10-17T22:11:07.0368840Z Build completed successfully (3039 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.BoxSlice",
+      "start_log_line": 17173,
+      "actual_success_line": {
+        "log_line": 17175,
+        "text": "2026-10-17T22:11:11.4628171Z Build completed successfully (3043 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Poincare.BoundedDomain",
+      "start_log_line": 17176,
+      "actual_success_line": {
+        "log_line": 17178,
+        "text": "2026-10-17T22:11:16.6048888Z Build completed successfully (3125 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Existence.Garding",
+      "start_log_line": 17179,
+      "actual_success_line": {
+        "log_line": 17181,
+        "text": "2026-10-17T22:11:30.7418727Z Build completed successfully (3133 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Fredholm.GardingForm",
+      "start_log_line": 17182,
+      "actual_success_line": {
+        "log_line": 17184,
+        "text": "2026-10-17T22:11:36.1699514Z Build completed successfully (2676 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Fredholm.Fredholm",
+      "start_log_line": 17185,
+      "actual_success_line": {
+        "log_line": 17187,
+        "text": "2026-10-17T22:11:42.9094531Z Build completed successfully (3136 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Fredholm.FredholmComplete",
+      "start_log_line": 17188,
+      "actual_success_line": {
+        "log_line": 17190,
+        "text": "2026-10-17T22:11:48.3488660Z Build completed successfully (3137 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Fredholm.Compactness",
+      "start_log_line": 17191,
+      "actual_success_line": {
+        "log_line": 17193,
+        "text": "2026-10-17T22:11:54.4848873Z Build completed successfully (3138 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Spectrum.Spectrum",
+      "start_log_line": 17194,
+      "actual_success_line": {
+        "log_line": 17196,
+        "text": "2026-10-17T22:12:05.6348864Z Build completed successfully (3139 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.EuclideanFunctionalNorm",
+      "start_log_line": 17197,
+      "actual_success_line": {
+        "log_line": 17199,
+        "text": "2026-10-17T22:12:08.7584646Z Build completed successfully (2430 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Spectrum.RellichDischarge",
+      "start_log_line": 17200,
+      "actual_success_line": {
+        "log_line": 17202,
+        "text": "2026-10-17T22:12:17.4884472Z Build completed successfully (3150 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.H01Sobolev",
+      "start_log_line": 17203,
+      "actual_success_line": {
+        "log_line": 17205,
+        "text": "2026-10-17T22:12:24.2220219Z Build completed successfully (3152 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.BallChart",
+      "start_log_line": 17206,
+      "actual_success_line": {
+        "log_line": 17208,
+        "text": "2026-10-17T22:12:29.0565723Z Build completed successfully (3164 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Regularity.DifferenceQuotient",
+      "start_log_line": 17209,
+      "actual_success_line": {
+        "log_line": 17211,
+        "text": "2026-10-17T22:12:34.5906270Z Build completed successfully (3045 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Regularity.DiffQuotientBound",
+      "start_log_line": 17212,
+      "actual_success_line": {
+        "log_line": 17214,
+        "text": "2026-10-17T22:12:47.5294131Z Build completed successfully (3127 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Regularity.Caccioppoli",
+      "start_log_line": 17215,
+      "actual_success_line": {
+        "log_line": 17217,
+        "text": "2026-10-17T22:12:57.9676720Z Build completed successfully (3163 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Regularity.InteriorCompactSupport",
+      "start_log_line": 17218,
+      "actual_success_line": {
+        "log_line": 17220,
+        "text": "2026-10-17T22:13:02.4954516Z Build completed successfully (3165 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Regularity.RestrictedDiffQuotient",
+      "start_log_line": 17221,
+      "actual_success_line": {
+        "log_line": 17223,
+        "text": "2026-10-17T22:13:09.1344707Z Build completed successfully (3166 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Spectrum.RellichW12",
+      "start_log_line": 17224,
+      "actual_success_line": {
+        "log_line": 17226,
+        "text": "2026-10-17T22:13:17.2688897Z Build completed successfully (3235 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Embedding.ConstOfGradZero",
+      "start_log_line": 17227,
+      "actual_success_line": {
+        "log_line": 17229,
+        "text": "2026-10-17T22:13:22.0978812Z Build completed successfully (3146 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Spectrum.PoincareWirtinger",
+      "start_log_line": 17230,
+      "actual_success_line": {
+        "log_line": 17232,
+        "text": "2026-10-17T22:13:31.7397515Z Build completed successfully (3237 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Descent",
+      "start_log_line": 17233,
+      "actual_success_line": {
+        "log_line": 17235,
+        "text": "2026-10-17T22:13:38.2734955Z Build completed successfully (2560 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.GraphOperator",
+      "start_log_line": 17236,
+      "actual_success_line": {
+        "log_line": 17238,
+        "text": "2026-10-17T22:13:46.4129459Z Build completed successfully (3175 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Extension.Translate",
+      "start_log_line": 17239,
+      "actual_success_line": {
+        "log_line": 17241,
+        "text": "2026-10-17T22:13:49.9421370Z Build completed successfully (3115 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Analysis.Dilation",
+      "start_log_line": 17242,
+      "actual_success_line": {
+        "log_line": 17244,
+        "text": "2026-10-17T22:13:53.7788888Z Build completed successfully (3035 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@EllipticPdes/+EllipticPdes.Spectrum.PoincareBall",
+      "start_log_line": 17245,
+      "actual_success_line": {
+        "log_line": 17247,
+        "text": "2026-10-17T22:14:00.2059034Z Build completed successfully (3242 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPBallLogBound",
+      "start_log_line": 17248,
+      "actual_success_line": {
+        "log_line": 17712,
+        "text": "2026-10-17T22:14:10.1443063Z Build completed successfully (9046 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPLogBoundDecay",
+      "start_log_line": 17713,
+      "actual_success_line": {
+        "log_line": 17728,
+        "text": "2026-10-17T22:14:13.6735029Z Build completed successfully (2971 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPBallZero",
+      "start_log_line": 17729,
+      "actual_success_line": {
+        "log_line": 18202,
+        "text": "2026-10-17T22:14:23.1102255Z Build completed successfully (9048 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+ConnectedLocalAEDichotomy",
+      "start_log_line": 18203,
+      "actual_success_line": {
+        "log_line": 18213,
+        "text": "2026-10-17T22:14:25.6365227Z Build completed successfully (1743 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPConnected",
+      "start_log_line": 18214,
+      "actual_success_line": {
+        "log_line": 18697,
+        "text": "2026-10-17T22:14:34.5848873Z Build completed successfully (9050 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+H01GroundStatePositive",
+      "start_log_line": 18698,
+      "actual_success_line": {
+        "log_line": 19339,
+        "text": "2026-10-17T22:14:44.1193889Z Build completed successfully (9073 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakGradientDifference",
+      "start_log_line": 19340,
+      "actual_success_line": {
+        "log_line": 19761,
+        "text": "2026-10-17T22:14:53.4629104Z Build completed successfully (8968 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+WeakSMPMinimumBranch",
+      "start_log_line": 19762,
+      "actual_success_line": {
+        "log_line": 20245,
+        "text": "2026-10-17T22:15:02.3931207Z Build completed successfully (9051 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+AffineHalfspaceFold",
+      "start_log_line": 20246,
+      "actual_success_line": {
+        "log_line": 20329,
+        "text": "2026-10-17T22:15:05.9262817Z Build completed successfully (2554 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FoldedDomainConnected",
+      "start_log_line": 20330,
+      "actual_success_line": {
+        "log_line": 20421,
+        "text": "2026-10-17T22:15:09.3588914Z Build completed successfully (2555 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FoldedDomainNonempty",
+      "start_log_line": 20422,
+      "actual_success_line": {
+        "log_line": 20514,
+        "text": "2026-10-17T22:15:12.3868955Z Build completed successfully (2556 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationBranchExtension",
+      "start_log_line": 20515,
+      "actual_success_line": {
+        "log_line": 20631,
+        "text": "2026-10-17T22:15:15.6164576Z Build completed successfully (2557 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FaberKrahnPolarizationBranch",
+      "start_log_line": 20632,
+      "actual_success_line": {
+        "log_line": 21548,
+        "text": "2026-10-17T22:15:25.0570672Z Build completed successfully (9102 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FaberKrahnEqualityGroundStateData",
+      "start_log_line": 21549,
+      "actual_success_line": {
+        "log_line": 22466,
+        "text": "2026-10-17T22:15:34.2883971Z Build completed successfully (9103 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RadialPotentialCenter",
+      "start_log_line": 22467,
+      "actual_success_line": {
+        "log_line": 22483,
+        "text": "2026-10-17T22:15:38.1149795Z Build completed successfully (2648 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RadialKernelReflection",
+      "start_log_line": 22484,
+      "actual_success_line": {
+        "log_line": 22506,
+        "text": "2026-10-17T22:15:41.9349481Z Build completed successfully (2651 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RadialPotentialPolarization",
+      "start_log_line": 22507,
+      "actual_success_line": {
+        "log_line": 22580,
+        "text": "2026-10-17T22:15:46.2668642Z Build completed successfully (2654 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+ReflectionPairs",
+      "start_log_line": 22581,
+      "actual_success_line": {
+        "log_line": 22588,
+        "text": "2026-10-17T22:15:49.8879134Z Build completed successfully (2551 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+ReflectionOrderGoodPoints",
+      "start_log_line": 22589,
+      "actual_success_line": {
+        "log_line": 22672,
+        "text": "2026-10-17T22:15:54.1108576Z Build completed successfully (2659 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+ReflectionOrderPositiveBall",
+      "start_log_line": 22673,
+      "actual_success_line": {
+        "log_line": 22756,
+        "text": "2026-10-17T22:15:57.8332076Z Build completed successfully (2660 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+ReflectionBranchPositiveBall",
+      "start_log_line": 22757,
+      "actual_success_line": {
+        "log_line": 22884,
+        "text": "2026-10-17T22:16:01.3686511Z Build completed successfully (2670 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PlanarBallRadius",
+      "start_log_line": 22885,
+      "actual_success_line": {
+        "log_line": 22887,
+        "text": "2026-10-17T22:16:04.7993281Z Build completed successfully (2822 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FaberKrahnEqualityAeDisk",
+      "start_log_line": 22888,
+      "actual_success_line": {
+        "log_line": 23850,
+        "text": "2026-10-17T22:16:13.8349104Z Build completed successfully (9112 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationBounds",
+      "start_log_line": 23851,
+      "actual_success_line": {
+        "log_line": 23938,
+        "text": "2026-10-17T22:16:16.3662808Z Build completed successfully (1798 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FinitePolarizationOrbit",
+      "start_log_line": 23939,
+      "actual_success_line": {
+        "log_line": 24032,
+        "text": "2026-10-17T22:16:19.6989177Z Build completed successfully (2555 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+LipschitzCompactness",
+      "start_log_line": 24033,
+      "actual_success_line": {
+        "log_line": 24049,
+        "text": "2026-10-17T22:16:22.2180165Z Build completed successfully (1691 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+GlobalLipschitzCompactness",
+      "start_log_line": 24050,
+      "actual_success_line": {
+        "log_line": 24101,
+        "text": "2026-10-17T22:16:24.8476380Z Build completed successfully (1692 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationMoment",
+      "start_log_line": 24102,
+      "actual_success_line": {
+        "log_line": 24110,
+        "text": "2026-10-17T22:16:28.0668643Z Build completed successfully (2565 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+BoundedPolarizationOrbit",
+      "start_log_line": 24111,
+      "actual_success_line": {
+        "log_line": 24261,
+        "text": "2026-10-17T22:16:31.7962136Z Build completed successfully (2634 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+PolarizationMomentTransport",
+      "start_log_line": 24262,
+      "actual_success_line": {
+        "log_line": 24320,
+        "text": "2026-10-17T22:16:35.0288743Z Build completed successfully (2568 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+SquaredMomentPolarization",
+      "start_log_line": 24321,
+      "actual_success_line": {
+        "log_line": 24502,
+        "text": "2026-10-17T22:16:38.9538889Z Build completed successfully (2638 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+UniformDistributionClosure",
+      "start_log_line": 24503,
+      "actual_success_line": {
+        "log_line": 24524,
+        "text": "2026-10-17T22:16:41.5792038Z Build completed successfully (1777 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RadialSupportRadius",
+      "start_log_line": 24525,
+      "actual_success_line": {
+        "log_line": 24532,
+        "text": "2026-10-17T22:16:45.0109157Z Build completed successfully (2825 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+OrbitMinimizerSupport",
+      "start_log_line": 24533,
+      "actual_success_line": {
+        "log_line": 24735,
+        "text": "2026-10-17T22:16:48.4408611Z Build completed successfully (2843 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RequestProject.Core2",
+      "start_log_line": 24736,
+      "actual_success_line": {
+        "log_line": 25604,
+        "text": "2026-10-17T22:18:56.1044140Z Build completed successfully (8960 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RequestProject.Core3",
+      "start_log_line": 25605,
+      "actual_success_line": {
+        "log_line": 26751,
+        "text": "2026-10-17T22:20:40.2324305Z Build completed successfully (8961 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RequestProject.Core4",
+      "start_log_line": 26752,
+      "actual_success_line": {
+        "log_line": 27961,
+        "text": "2026-10-17T22:21:13.4928827Z Build completed successfully (8962 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+RequestProject.MainResults",
+      "start_log_line": 27962,
+      "actual_success_line": {
+        "log_line": 29172,
+        "text": "2026-10-17T22:21:22.1226962Z Build completed successfully (8963 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FiniteOrbitEnergies",
+      "start_log_line": 29173,
+      "actual_success_line": {
+        "log_line": 30526,
+        "text": "2026-10-17T22:21:32.0678713Z Build completed successfully (8973 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+UniformSquaredIntegral",
+      "start_log_line": 30527,
+      "actual_success_line": {
+        "log_line": 30542,
+        "text": "2026-10-17T22:21:35.2064559Z Build completed successfully (2567 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+OrbitL2Closure",
+      "start_log_line": 30543,
+      "actual_success_line": {
+        "log_line": 31961,
+        "text": "2026-10-17T22:21:44.3480415Z Build completed successfully (8979 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+SpectralCutoffGeometry",
+      "start_log_line": 31962,
+      "actual_success_line": {
+        "log_line": 31964,
+        "text": "2026-10-17T22:21:47.9769145Z Build completed successfully (2654 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+CutoffMassLimit",
+      "start_log_line": 31965,
+      "actual_success_line": {
+        "log_line": 33383,
+        "text": "2026-10-17T22:21:57.3122570Z Build completed successfully (8981 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+CutoffEnergyEstimate",
+      "start_log_line": 33384,
+      "actual_success_line": {
+        "log_line": 33386,
+        "text": "2026-10-17T22:22:02.4488296Z Build completed successfully (2849 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+CutoffRayleighReal",
+      "start_log_line": 33387,
+      "actual_success_line": {
+        "log_line": 34747,
+        "text": "2026-10-17T22:22:12.4871559Z Build completed successfully (8976 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+FixedInitialFaberKrahn",
+      "start_log_line": 34748,
+      "actual_success_line": {
+        "log_line": 36225,
+        "text": "2026-10-17T22:22:22.2291346Z Build completed successfully (8990 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+DirichletTestDensity",
+      "start_log_line": 36226,
+      "actual_success_line": {
+        "log_line": 37444,
+        "text": "2026-10-17T22:22:32.2656895Z Build completed successfully (8964 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+TestFunctionFaberKrahn",
+      "start_log_line": 37445,
+      "actual_success_line": {
+        "log_line": 38931,
+        "text": "2026-10-17T22:22:41.6081845Z Build completed successfully (8992 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+DirichletFKAreaProduct",
+      "start_log_line": 38932,
+      "actual_success_line": {
+        "log_line": 40424,
+        "text": "2026-10-17T22:22:50.8592855Z Build completed successfully (8993 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+UnconditionalFaberKrahn",
+      "start_log_line": 40425,
+      "actual_success_line": {
+        "log_line": 42389,
+        "text": "2026-10-17T22:23:00.2418851Z Build completed successfully (9139 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+UnconditionalAreaRigidity",
+      "start_log_line": 42390,
+      "actual_success_line": {
+        "log_line": 44355,
+        "text": "2026-10-17T22:23:09.5157645Z Build completed successfully (9140 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+UnconditionalAreaFinalAudit",
+      "start_log_line": 44356,
+      "actual_success_line": {
+        "log_line": 46507,
+        "text": "2026-10-17T22:23:18.6918018Z Build completed successfully (9141 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+Challenge",
+      "start_log_line": 46508,
+      "actual_success_line": {
+        "log_line": 46515,
+        "text": "2026-10-17T22:23:28.3458855Z Build completed successfully (8959 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+Solution",
+      "start_log_line": 46516,
+      "actual_success_line": {
+        "log_line": 48485,
+        "text": "2026-10-17T22:23:38.9153085Z Build completed successfully (9141 jobs)."
+      },
+      "completed_successfully": true
+    },
+    {
+      "target": "@/+SubmissionSolutionAudit",
+      "start_log_line": 48486,
+      "actual_success_line": null,
+      "completed_successfully": false
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 name = "RequestProject"
-defaultTargets = ["AreaProof", "Challenge", "Solution", "SubmissionSolutionAudit"]
+defaultTargets = ["AreaProof", "PlanarBucklingChallenge", "PlanarBucklingSolution", "SubmissionSolutionAudit"]
 moreLeanArgs = ["-j1"]
 
 [leanOptions]
@@ -124,12 +124,12 @@ roots = [
 ]
 
 [[lean_lib]]
-name = "Challenge"
-roots = ["Challenge"]
+name = "PlanarBucklingChallenge"
+roots = ["PlanarBucklingChallenge"]
 
 [[lean_lib]]
-name = "Solution"
-roots = ["Solution"]
+name = "PlanarBucklingSolution"
+roots = ["PlanarBucklingSolution"]
 
 [[lean_lib]]
 name = "SubmissionSolutionAudit"

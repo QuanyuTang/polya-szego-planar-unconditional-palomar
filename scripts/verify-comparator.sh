@@ -59,6 +59,6 @@ PY
 
 lake exe cache get
 # Fail closed before sandbox replay if either submission target needs a build.
-lake build --no-build --no-cache @/+Challenge @/+Solution
+lake build --no-build --no-cache @/+PlanarBucklingChallenge @/+PlanarBucklingSolution
 lake comparator --config "$config"
 

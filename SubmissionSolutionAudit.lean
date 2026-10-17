@@ -5,7 +5,7 @@ historical status labels. See verification/README.md and GitHub Actions for the
 verification record and checks of the exact commit.
 -/
 
-public import Solution
+public import PlanarBucklingSolution
 
 /-!
 # Complete solution target types and axiom guards

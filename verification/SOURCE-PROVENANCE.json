@@ -371,8 +371,8 @@
     "UnconditionalFaberKrahn",
     "UnconditionalAreaRigidity",
     "UnconditionalAreaFinalAudit",
-    "Challenge",
-    "Solution",
+    "PlanarBucklingChallenge",
+    "PlanarBucklingSolution",
     "SubmissionSolutionAudit"
   ],
   "own_sources": [
@@ -386,7 +386,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RequestProject.Core1",
-      "path": "RequestProject/Core1.lean"
+      "path": "RequestProject/Core1.lean",
+      "native_module": "RequestProject.Core1",
+      "release_module": "RequestProject.Core1"
     },
     {
       "native_sha256": "3214424e5e22d731a48c039feedacb3e4c3296d9d041023da15fd03344fe8e02",
@@ -398,7 +400,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01HilbertModel",
-      "path": "H01HilbertModel.lean"
+      "path": "H01HilbertModel.lean",
+      "native_module": "H01HilbertModel",
+      "release_module": "H01HilbertModel"
     },
     {
       "native_sha256": "923fedca524328a65754c3be74ee4a15f6c8dd818aed143102f25aa1d839c73c",
@@ -410,7 +414,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "EllipticH01Bridge",
-      "path": "EllipticH01Bridge.lean"
+      "path": "EllipticH01Bridge.lean",
+      "native_module": "EllipticH01Bridge",
+      "release_module": "EllipticH01Bridge"
     },
     {
       "native_sha256": "6a1c959697a0f009aa72bf96c776e5e10a717611cb95deef51caf05d92109407",
@@ -422,7 +428,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FiniteAreaTestLpBounds",
-      "path": "FiniteAreaTestLpBounds.lean"
+      "path": "FiniteAreaTestLpBounds.lean",
+      "native_module": "FiniteAreaTestLpBounds",
+      "release_module": "FiniteAreaTestLpBounds"
     },
     {
       "native_sha256": "216a53f5028100c44616483f3b66ad7094a0480355e8ebcf217fd69e10a2914a",
@@ -434,7 +442,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01UniformTails",
-      "path": "H01UniformTails.lean"
+      "path": "H01UniformTails.lean",
+      "native_module": "H01UniformTails",
+      "release_module": "H01UniformTails"
     },
     {
       "native_sha256": "adb2df5e06222684279b1606cf9a5f42fdc52e5ff9389c24f402c8a3c2b71c72",
@@ -446,7 +456,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationEnergy",
-      "path": "PolarizationEnergy.lean"
+      "path": "PolarizationEnergy.lean",
+      "native_module": "PolarizationEnergy",
+      "release_module": "PolarizationEnergy"
     },
     {
       "native_sha256": "e78c4bcdc84fc81e2e2972f5e19fc63248739e895f6688c85ac4f7cce3fc242e",
@@ -458,7 +470,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AbsoluteValueEnergy",
-      "path": "AbsoluteValueEnergy.lean"
+      "path": "AbsoluteValueEnergy.lean",
+      "native_module": "AbsoluteValueEnergy",
+      "release_module": "AbsoluteValueEnergy"
     },
     {
       "native_sha256": "95617836b710d1f22e9c9c532477d045280bb7c26f649f705135aebaaba7d0e2",
@@ -470,7 +484,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01NonnegativeCompactApproximation",
-      "path": "H01NonnegativeCompactApproximation.lean"
+      "path": "H01NonnegativeCompactApproximation.lean",
+      "native_module": "H01NonnegativeCompactApproximation",
+      "release_module": "H01NonnegativeCompactApproximation"
     },
     {
       "native_sha256": "84e463dda41fe4c4de797bff660fd83aeb9a9f2ac84b09bee34d5403bf3287e2",
@@ -482,7 +498,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationMeasure",
-      "path": "PolarizationMeasure.lean"
+      "path": "PolarizationMeasure.lean",
+      "native_module": "PolarizationMeasure",
+      "release_module": "PolarizationMeasure"
     },
     {
       "native_sha256": "5642b6b715dab934d25e6411055eaa720a1ba80316daebb00fb0e9ac0d0c997d",
@@ -494,7 +512,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "EuclideanReflection",
-      "path": "EuclideanReflection.lean"
+      "path": "EuclideanReflection.lean",
+      "native_module": "EuclideanReflection",
+      "release_module": "EuclideanReflection"
     },
     {
       "native_sha256": "0c120a4891a65aa973c3452871f102435eb361cf81be16bc3e7d58f4b302d6ba",
@@ -506,7 +526,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationEnergyTransport",
-      "path": "PolarizationEnergyTransport.lean"
+      "path": "PolarizationEnergyTransport.lean",
+      "native_module": "PolarizationEnergyTransport",
+      "release_module": "PolarizationEnergyTransport"
     },
     {
       "native_sha256": "194b31cd42e70a9e5b177a61f9e2eb5b0b104d1a6fadb57258bfb3f5f36829b9",
@@ -518,7 +540,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationLipschitz",
-      "path": "PolarizationLipschitz.lean"
+      "path": "PolarizationLipschitz.lean",
+      "native_module": "PolarizationLipschitz",
+      "release_module": "PolarizationLipschitz"
     },
     {
       "native_sha256": "e4e26fd772358bacc390b4420af84adb3c688db8506b859fea14426e3def9505",
@@ -530,7 +554,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "EuclideanReflectionContraction",
-      "path": "EuclideanReflectionContraction.lean"
+      "path": "EuclideanReflectionContraction.lean",
+      "native_module": "EuclideanReflectionContraction",
+      "release_module": "EuclideanReflectionContraction"
     },
     {
       "native_sha256": "4c4062c5933e50f0d185a9937d766ddfd395c0b09144e9ce06e92864ad4a4afd",
@@ -542,7 +568,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizedOpenDomain",
-      "path": "PolarizedOpenDomain.lean"
+      "path": "PolarizedOpenDomain.lean",
+      "native_module": "PolarizedOpenDomain",
+      "release_module": "PolarizedOpenDomain"
     },
     {
       "native_sha256": "9b8cd2b9559b2d6b3be1442e82ab3bb464cfbedb1a337b9935b5e35cae514916",
@@ -554,7 +582,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "CompactLipOriginalH01",
-      "path": "CompactLipOriginalH01.lean"
+      "path": "CompactLipOriginalH01.lean",
+      "native_module": "CompactLipOriginalH01",
+      "release_module": "CompactLipOriginalH01"
     },
     {
       "native_sha256": "0346cc76fbe49f31bb13ae00893777e64655f84d98e1995f32a6b122b6898253",
@@ -566,7 +596,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "CompactLipOriginalH01Energy",
-      "path": "CompactLipOriginalH01Energy.lean"
+      "path": "CompactLipOriginalH01Energy.lean",
+      "native_module": "CompactLipOriginalH01Energy",
+      "release_module": "CompactLipOriginalH01Energy"
     },
     {
       "native_sha256": "eca130c8b48304305636f86d3ad6dc82f2991c2f6d35ba6020ac84f20f21368a",
@@ -578,7 +610,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AffinePolarizationRealEnergy",
-      "path": "AffinePolarizationRealEnergy.lean"
+      "path": "AffinePolarizationRealEnergy.lean",
+      "native_module": "AffinePolarizationRealEnergy",
+      "release_module": "AffinePolarizationRealEnergy"
     },
     {
       "native_sha256": "e25b045accb06a46e84c08946248deb01f1d645ad9b00025cef47b135c0d4258",
@@ -590,7 +624,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationL2Continuity",
-      "path": "PolarizationL2Continuity.lean"
+      "path": "PolarizationL2Continuity.lean",
+      "native_module": "PolarizationL2Continuity",
+      "release_module": "PolarizationL2Continuity"
     },
     {
       "native_sha256": "d7c74015326fc408e65deeff3d5518bcd99372e8874c27239775c3a225958ad9",
@@ -602,7 +638,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01WeakLimitAdmissibility",
-      "path": "H01WeakLimitAdmissibility.lean"
+      "path": "H01WeakLimitAdmissibility.lean",
+      "native_module": "H01WeakLimitAdmissibility",
+      "release_module": "H01WeakLimitAdmissibility"
     },
     {
       "native_sha256": "f35bfba674fba375c0b165f6fdc0575629b3e2968764b4cd53c0fb24560d1e25",
@@ -614,7 +652,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AffinePolarizedH01Candidate",
-      "path": "AffinePolarizedH01Candidate.lean"
+      "path": "AffinePolarizedH01Candidate.lean",
+      "native_module": "AffinePolarizedH01Candidate",
+      "release_module": "AffinePolarizedH01Candidate"
     },
     {
       "native_sha256": "153999d239961b602d7977161804f5d60ada25ecda79bb09ec8598ace3e82c19",
@@ -626,7 +666,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01AbsoluteValue",
-      "path": "H01AbsoluteValue.lean"
+      "path": "H01AbsoluteValue.lean",
+      "native_module": "H01AbsoluteValue",
+      "release_module": "H01AbsoluteValue"
     },
     {
       "native_sha256": "ea3fa875396a6e2689f6ee2b9fbc0cd8c720084fa0c5e364a5cc2a2f8bcaa1de",
@@ -638,7 +680,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01TranslationModulus",
-      "path": "H01TranslationModulus.lean"
+      "path": "H01TranslationModulus.lean",
+      "native_module": "H01TranslationModulus",
+      "release_module": "H01TranslationModulus"
     },
     {
       "native_sha256": "c3f9177371240dbd7b32f824d1c9645e9c207ff6ccebb925eafa0e3d021eb7b5",
@@ -650,7 +694,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FrechetKolmogorovTail",
-      "path": "FrechetKolmogorovTail.lean"
+      "path": "FrechetKolmogorovTail.lean",
+      "native_module": "FrechetKolmogorovTail",
+      "release_module": "FrechetKolmogorovTail"
     },
     {
       "native_sha256": "f692d39258135380561e917ee52e7f53789d3984c04b4f5ae6bf9c6d9c3c5b95",
@@ -662,7 +708,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01CompactEmbedding",
-      "path": "H01CompactEmbedding.lean"
+      "path": "H01CompactEmbedding.lean",
+      "native_module": "H01CompactEmbedding",
+      "release_module": "H01CompactEmbedding"
     },
     {
       "native_sha256": "d820eaab4dae53079a84e95bf4cb21753eb335d9954bb75d7ab71ffdb02f596e",
@@ -674,7 +722,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01NonzeroMass",
-      "path": "H01NonzeroMass.lean"
+      "path": "H01NonzeroMass.lean",
+      "native_module": "H01NonzeroMass",
+      "release_module": "H01NonzeroMass"
     },
     {
       "native_sha256": "e162a54066771b71b109c35d02e49a35187f8e7ad1b5393e1dadca7f04d100a4",
@@ -686,7 +736,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01RayleighMinimizer",
-      "path": "H01RayleighMinimizer.lean"
+      "path": "H01RayleighMinimizer.lean",
+      "native_module": "H01RayleighMinimizer",
+      "release_module": "H01RayleighMinimizer"
     },
     {
       "native_sha256": "b2244b3008849261be1d6bc07adef318b9e2bb373ffbeeb41f29b17d47dc300f",
@@ -698,7 +750,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01DirichletEuler",
-      "path": "H01DirichletEuler.lean"
+      "path": "H01DirichletEuler.lean",
+      "native_module": "H01DirichletEuler",
+      "release_module": "H01DirichletEuler"
     },
     {
       "native_sha256": "f73b33fec6fe8c2992e9293908f03a3d35a35a4605a974151e9698666a13aff6",
@@ -710,7 +764,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01NonnegativeMinimizer",
-      "path": "H01NonnegativeMinimizer.lean"
+      "path": "H01NonnegativeMinimizer.lean",
+      "native_module": "H01NonnegativeMinimizer",
+      "release_module": "H01NonnegativeMinimizer"
     },
     {
       "native_sha256": "1e41124a23416c2e0c0120ec284c11d213806e9112c873ceb9379692a8907576",
@@ -722,7 +778,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01WeakGradientBridge",
-      "path": "H01WeakGradientBridge.lean"
+      "path": "H01WeakGradientBridge.lean",
+      "native_module": "H01WeakGradientBridge",
+      "release_module": "H01WeakGradientBridge"
     },
     {
       "native_sha256": "378ed891642e3596c973e0a03ca4862391b9ba48c03e0161729e086b523ba309",
@@ -734,7 +792,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AffinePolarizedGroundState",
-      "path": "AffinePolarizedGroundState.lean"
+      "path": "AffinePolarizedGroundState.lean",
+      "native_module": "AffinePolarizedGroundState",
+      "release_module": "AffinePolarizedGroundState"
     },
     {
       "native_sha256": "556209d0435fd9b360d39ae933bce841f3766660cbcaa4e9c591d604428c0b1d",
@@ -746,7 +806,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AffineReflectionWeakTransport",
-      "path": "AffineReflectionWeakTransport.lean"
+      "path": "AffineReflectionWeakTransport.lean",
+      "native_module": "AffineReflectionWeakTransport",
+      "release_module": "AffineReflectionWeakTransport"
     },
     {
       "native_sha256": "1a7ae5ddb3cb3f73cad441110ae4b74c0ed4643fc8153fe16db0f13187174a1c",
@@ -758,7 +820,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01ComponentTestCutoff",
-      "path": "H01ComponentTestCutoff.lean"
+      "path": "H01ComponentTestCutoff.lean",
+      "native_module": "H01ComponentTestCutoff",
+      "release_module": "H01ComponentTestCutoff"
     },
     {
       "native_sha256": "ddc1507ff9c77f8005831f80cc825c25babc8181cf0fc58ddb9f6122d8d5d14c",
@@ -770,7 +834,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01ComponentProjection",
-      "path": "H01ComponentProjection.lean"
+      "path": "H01ComponentProjection.lean",
+      "native_module": "H01ComponentProjection",
+      "release_module": "H01ComponentProjection"
     },
     {
       "native_sha256": "57705121aeb8fc17ff36be96529cfa44cdc5b5cbbb2d3dfd5e5910b910253710",
@@ -782,7 +848,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01ComponentRestriction",
-      "path": "H01ComponentRestriction.lean"
+      "path": "H01ComponentRestriction.lean",
+      "native_module": "H01ComponentRestriction",
+      "release_module": "H01ComponentRestriction"
     },
     {
       "native_sha256": "8bc5a078e7542301245b7d8893e79d3b95dcbf559e33b637a24eafd12e389493",
@@ -794,7 +862,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01ComponentSelection",
-      "path": "H01ComponentSelection.lean"
+      "path": "H01ComponentSelection.lean",
+      "native_module": "H01ComponentSelection",
+      "release_module": "H01ComponentSelection"
     },
     {
       "native_sha256": "28378f3fce5a7f0d66c77fccb075ff0f82e5f1dc9916f11fc0833f6947298332",
@@ -806,7 +876,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FaberKrahnEqualityConnected",
-      "path": "FaberKrahnEqualityConnected.lean"
+      "path": "FaberKrahnEqualityConnected.lean",
+      "native_module": "FaberKrahnEqualityConnected",
+      "release_module": "FaberKrahnEqualityConnected"
     },
     {
       "native_sha256": "a9cbfc4e2ebbb93ac933c437c05a9fe19fb14efc09fb70f0d3150c47fc0c0a3a",
@@ -818,7 +890,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "GraphH01ShiftedTruncation",
-      "path": "GraphH01ShiftedTruncation.lean"
+      "path": "GraphH01ShiftedTruncation.lean",
+      "native_module": "GraphH01ShiftedTruncation",
+      "release_module": "GraphH01ShiftedTruncation"
     },
     {
       "native_sha256": "4774ff8bfdea248269c6a01eeeb9e60ed9b858df3d8fc3e30f9e47e3bc9fd630",
@@ -830,7 +904,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01BoundaryTruncation",
-      "path": "H01BoundaryTruncation.lean"
+      "path": "H01BoundaryTruncation.lean",
+      "native_module": "H01BoundaryTruncation",
+      "release_module": "H01BoundaryTruncation"
     },
     {
       "native_sha256": "31bbb608127fff7cdfd55da403c238768cc624023069242e7e39e29fd2ee0654",
@@ -842,7 +918,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01GraphEuler",
-      "path": "H01GraphEuler.lean"
+      "path": "H01GraphEuler.lean",
+      "native_module": "H01GraphEuler",
+      "release_module": "H01GraphEuler"
     },
     {
       "native_sha256": "fb5d5b4baca858be8cf6a8536258451a98bd93107df248a74b0bcfad5c613465",
@@ -854,7 +932,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01GroundStateGlobalTest",
-      "path": "H01GroundStateGlobalTest.lean"
+      "path": "H01GroundStateGlobalTest.lean",
+      "native_module": "H01GroundStateGlobalTest",
+      "release_module": "H01GroundStateGlobalTest"
     },
     {
       "native_sha256": "03bd4e6e43990dd7b1d922fd0baad1d46afc8d9de8cfa57d01975c61e25b6db6",
@@ -866,7 +946,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01ZeroExtensionSubsolution",
-      "path": "H01ZeroExtensionSubsolution.lean"
+      "path": "H01ZeroExtensionSubsolution.lean",
+      "native_module": "H01ZeroExtensionSubsolution",
+      "release_module": "H01ZeroExtensionSubsolution"
     },
     {
       "native_sha256": "be84b1456d4a4d1a302aa5072ee450cc2bf67e9c78205798099dabe7f67feb62",
@@ -878,7 +960,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01FullEuler",
-      "path": "H01FullEuler.lean"
+      "path": "H01FullEuler.lean",
+      "native_module": "H01FullEuler",
+      "release_module": "H01FullEuler"
     },
     {
       "native_sha256": "f45e0ffd595e21b2eecbe364f7d807d9af7d8a1668d8fd0137e3c29b37a99a1b",
@@ -890,7 +974,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPRegularizers",
-      "path": "WeakSMPRegularizers.lean"
+      "path": "WeakSMPRegularizers.lean",
+      "native_module": "WeakSMPRegularizers",
+      "release_module": "WeakSMPRegularizers"
     },
     {
       "native_sha256": "85ada619970077fe8111a6bb57a7a7f198f5dadf35d4016cb2e1443260e295c3",
@@ -902,7 +988,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPLogTest",
-      "path": "WeakSMPLogTest.lean"
+      "path": "WeakSMPLogTest.lean",
+      "native_module": "WeakSMPLogTest",
+      "release_module": "WeakSMPLogTest"
     },
     {
       "native_sha256": "75314d586a06cbd88628d7d672e966226c9dca368dc33998a8f01c7bf1a66b6b",
@@ -914,7 +1002,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PositiveCompactWeakApproximation",
-      "path": "PositiveCompactWeakApproximation.lean"
+      "path": "PositiveCompactWeakApproximation.lean",
+      "native_module": "PositiveCompactWeakApproximation",
+      "release_module": "PositiveCompactWeakApproximation"
     },
     {
       "native_sha256": "f93fa81e6d257ffe3c28262f1d836ada85e31b0555a0fd8a17a1e78aab3793e8",
@@ -926,7 +1016,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PositiveCompactWeakTesting",
-      "path": "PositiveCompactWeakTesting.lean"
+      "path": "PositiveCompactWeakTesting.lean",
+      "native_module": "PositiveCompactWeakTesting",
+      "release_module": "PositiveCompactWeakTesting"
     },
     {
       "native_sha256": "795fbc74b235f4030a5eb08a3565c65621ae1abeccc029656fe7c154a8a06ef6",
@@ -938,7 +1030,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPCaccioppoliAlgebra",
-      "path": "WeakSMPCaccioppoliAlgebra.lean"
+      "path": "WeakSMPCaccioppoliAlgebra.lean",
+      "native_module": "WeakSMPCaccioppoliAlgebra",
+      "release_module": "WeakSMPCaccioppoliAlgebra"
     },
     {
       "native_sha256": "696bd51e0918837e05a3686339b09aa6139127cca79d50508fc15da999806d01",
@@ -950,7 +1044,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPIntegratedCaccioppoli",
-      "path": "WeakSMPIntegratedCaccioppoli.lean"
+      "path": "WeakSMPIntegratedCaccioppoli.lean",
+      "native_module": "WeakSMPIntegratedCaccioppoli",
+      "release_module": "WeakSMPIntegratedCaccioppoli"
     },
     {
       "native_sha256": "aaa41f7052b0d8c62aefe60828954de057730399b8887b5a831ebbfbd52600e1",
@@ -962,7 +1058,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AnchoredL2Estimate",
-      "path": "AnchoredL2Estimate.lean"
+      "path": "AnchoredL2Estimate.lean",
+      "native_module": "AnchoredL2Estimate",
+      "release_module": "AnchoredL2Estimate"
     },
     {
       "native_sha256": "5352c3ff1d8750b540c6731b8265be4d4078b2552aad47167135cfc305f2e352",
@@ -974,7 +1072,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPBallLogBound",
-      "path": "WeakSMPBallLogBound.lean"
+      "path": "WeakSMPBallLogBound.lean",
+      "native_module": "WeakSMPBallLogBound",
+      "release_module": "WeakSMPBallLogBound"
     },
     {
       "native_sha256": "e8d4ccb38d7130deee93a7f25e8c8654423d4db904e8eb6ccb75d6ad7f442470",
@@ -986,7 +1086,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPLogBoundDecay",
-      "path": "WeakSMPLogBoundDecay.lean"
+      "path": "WeakSMPLogBoundDecay.lean",
+      "native_module": "WeakSMPLogBoundDecay",
+      "release_module": "WeakSMPLogBoundDecay"
     },
     {
       "native_sha256": "6272ac3963c066ccbc4d88be026c35aaa447542b28e1bbf88fce23865256315c",
@@ -998,7 +1100,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPBallZero",
-      "path": "WeakSMPBallZero.lean"
+      "path": "WeakSMPBallZero.lean",
+      "native_module": "WeakSMPBallZero",
+      "release_module": "WeakSMPBallZero"
     },
     {
       "native_sha256": "bd507b6e8bcd682e9a77d340f7c5b5677445dbd461ad757e5c7ff22b9448e5e2",
@@ -1010,7 +1114,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "ConnectedLocalAEDichotomy",
-      "path": "ConnectedLocalAEDichotomy.lean"
+      "path": "ConnectedLocalAEDichotomy.lean",
+      "native_module": "ConnectedLocalAEDichotomy",
+      "release_module": "ConnectedLocalAEDichotomy"
     },
     {
       "native_sha256": "bf0404ae1f0a62f20a951b34ed322efd9b56a7f6f9cd5360a5e104beef9bb5d8",
@@ -1022,7 +1128,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPConnected",
-      "path": "WeakSMPConnected.lean"
+      "path": "WeakSMPConnected.lean",
+      "native_module": "WeakSMPConnected",
+      "release_module": "WeakSMPConnected"
     },
     {
       "native_sha256": "926127a37594dc26aae73c6da166f43f8362039caadbaaa03a3357a1c0bd1034",
@@ -1034,7 +1142,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "H01GroundStatePositive",
-      "path": "H01GroundStatePositive.lean"
+      "path": "H01GroundStatePositive.lean",
+      "native_module": "H01GroundStatePositive",
+      "release_module": "H01GroundStatePositive"
     },
     {
       "native_sha256": "1ff70efd54d8a57bdc82e690195cc9925dc12a0e60589722b44cf5bb636d76a2",
@@ -1046,7 +1156,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakGradientDifference",
-      "path": "WeakGradientDifference.lean"
+      "path": "WeakGradientDifference.lean",
+      "native_module": "WeakGradientDifference",
+      "release_module": "WeakGradientDifference"
     },
     {
       "native_sha256": "e0cbe1f3600e1f4eb3bb6d9774ea250a79c19e567cd9f4d3b2f8ed09acd7817e",
@@ -1058,7 +1170,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "WeakSMPMinimumBranch",
-      "path": "WeakSMPMinimumBranch.lean"
+      "path": "WeakSMPMinimumBranch.lean",
+      "native_module": "WeakSMPMinimumBranch",
+      "release_module": "WeakSMPMinimumBranch"
     },
     {
       "native_sha256": "8dc0411941c6f15fcaa9edac3008309b8cefe4e16505874e226add107d0463de",
@@ -1070,7 +1184,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "AffineHalfspaceFold",
-      "path": "AffineHalfspaceFold.lean"
+      "path": "AffineHalfspaceFold.lean",
+      "native_module": "AffineHalfspaceFold",
+      "release_module": "AffineHalfspaceFold"
     },
     {
       "native_sha256": "df0a2153027a841fe24eca2e96b8a195fe76ec138f0132bfa009a5643d7b64fc",
@@ -1082,7 +1198,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FoldedDomainConnected",
-      "path": "FoldedDomainConnected.lean"
+      "path": "FoldedDomainConnected.lean",
+      "native_module": "FoldedDomainConnected",
+      "release_module": "FoldedDomainConnected"
     },
     {
       "native_sha256": "91ca112ee87b3eb323b1ef65a6601ca677ecf59ea99af9d267a2b8f1002d0039",
@@ -1094,7 +1212,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FoldedDomainNonempty",
-      "path": "FoldedDomainNonempty.lean"
+      "path": "FoldedDomainNonempty.lean",
+      "native_module": "FoldedDomainNonempty",
+      "release_module": "FoldedDomainNonempty"
     },
     {
       "native_sha256": "b58de0f9099f3e96eb99ed72ff42ba25197d3f0eea0ba877caf1335abf8e191f",
@@ -1106,7 +1226,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationBranchExtension",
-      "path": "PolarizationBranchExtension.lean"
+      "path": "PolarizationBranchExtension.lean",
+      "native_module": "PolarizationBranchExtension",
+      "release_module": "PolarizationBranchExtension"
     },
     {
       "native_sha256": "7a57bcc26da659744b89348bae48e0510b503336101f175b625b9f42e8df51e3",
@@ -1118,7 +1240,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FaberKrahnPolarizationBranch",
-      "path": "FaberKrahnPolarizationBranch.lean"
+      "path": "FaberKrahnPolarizationBranch.lean",
+      "native_module": "FaberKrahnPolarizationBranch",
+      "release_module": "FaberKrahnPolarizationBranch"
     },
     {
       "native_sha256": "5ede2b2624a05d442d3ff1e672582af74226c19786fa7012531c44fca05323d3",
@@ -1130,7 +1254,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FaberKrahnEqualityGroundStateData",
-      "path": "FaberKrahnEqualityGroundStateData.lean"
+      "path": "FaberKrahnEqualityGroundStateData.lean",
+      "native_module": "FaberKrahnEqualityGroundStateData",
+      "release_module": "FaberKrahnEqualityGroundStateData"
     },
     {
       "native_sha256": "6e0c547f79147a7169762b4e8cb1a0e91fadf1d84bfd57046afded46123ef86e",
@@ -1142,7 +1268,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RadialPotentialCenter",
-      "path": "RadialPotentialCenter.lean"
+      "path": "RadialPotentialCenter.lean",
+      "native_module": "RadialPotentialCenter",
+      "release_module": "RadialPotentialCenter"
     },
     {
       "native_sha256": "05ba164fd21a3b0f151b480eb9f73a3091ea19ef0db800d24c8ec2b1b3857b9b",
@@ -1154,7 +1282,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RadialKernelReflection",
-      "path": "RadialKernelReflection.lean"
+      "path": "RadialKernelReflection.lean",
+      "native_module": "RadialKernelReflection",
+      "release_module": "RadialKernelReflection"
     },
     {
       "native_sha256": "c65a240ff64f72bbebc09db22b445b6dc429fbad9eafcf93a8820abb675149a0",
@@ -1166,7 +1296,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RadialPotentialPolarization",
-      "path": "RadialPotentialPolarization.lean"
+      "path": "RadialPotentialPolarization.lean",
+      "native_module": "RadialPotentialPolarization",
+      "release_module": "RadialPotentialPolarization"
     },
     {
       "native_sha256": "d5ad0406e61acf9444067e38b145b7ba1eb49559e9e74393d97f91a7d4cf0ace",
@@ -1178,7 +1310,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "ReflectionPairs",
-      "path": "ReflectionPairs.lean"
+      "path": "ReflectionPairs.lean",
+      "native_module": "ReflectionPairs",
+      "release_module": "ReflectionPairs"
     },
     {
       "native_sha256": "36b56ac37e795776e86e2969350723652099b172435c3aed041109f0225a8e95",
@@ -1190,7 +1324,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "ReflectionOrderGoodPoints",
-      "path": "ReflectionOrderGoodPoints.lean"
+      "path": "ReflectionOrderGoodPoints.lean",
+      "native_module": "ReflectionOrderGoodPoints",
+      "release_module": "ReflectionOrderGoodPoints"
     },
     {
       "native_sha256": "80c386cbd7ac67802ab4f08bf24bc56a7958dcccd9cccea4b36e9225da821028",
@@ -1202,7 +1338,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "ReflectionOrderPositiveBall",
-      "path": "ReflectionOrderPositiveBall.lean"
+      "path": "ReflectionOrderPositiveBall.lean",
+      "native_module": "ReflectionOrderPositiveBall",
+      "release_module": "ReflectionOrderPositiveBall"
     },
     {
       "native_sha256": "4b6127b23171b9eb5405709013c72f8472ff7033e8a4947c09188a8646788e79",
@@ -1214,7 +1352,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "ReflectionBranchPositiveBall",
-      "path": "ReflectionBranchPositiveBall.lean"
+      "path": "ReflectionBranchPositiveBall.lean",
+      "native_module": "ReflectionBranchPositiveBall",
+      "release_module": "ReflectionBranchPositiveBall"
     },
     {
       "native_sha256": "26ad90760ade7ee1ed6bd3f73292b325e361af230bf8c5afaf57bcf7b88d8b67",
@@ -1226,7 +1366,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PlanarBallRadius",
-      "path": "PlanarBallRadius.lean"
+      "path": "PlanarBallRadius.lean",
+      "native_module": "PlanarBallRadius",
+      "release_module": "PlanarBallRadius"
     },
     {
       "native_sha256": "88fcd963d1259627fbbb3c4febe75d06325c658b5f9d5312b1eaa83ed6ebc079",
@@ -1238,7 +1380,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FaberKrahnEqualityAeDisk",
-      "path": "FaberKrahnEqualityAeDisk.lean"
+      "path": "FaberKrahnEqualityAeDisk.lean",
+      "native_module": "FaberKrahnEqualityAeDisk",
+      "release_module": "FaberKrahnEqualityAeDisk"
     },
     {
       "native_sha256": "0afef597774c7edf17f4e1d6b6ea1f7759039022ee3599170810d64aa954e031",
@@ -1250,7 +1394,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationBounds",
-      "path": "PolarizationBounds.lean"
+      "path": "PolarizationBounds.lean",
+      "native_module": "PolarizationBounds",
+      "release_module": "PolarizationBounds"
     },
     {
       "native_sha256": "25cbf5d732fdabd40a7c980df02860ea5ea8c54d5ae02b1615fbbab0d48efb71",
@@ -1262,7 +1408,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FinitePolarizationOrbit",
-      "path": "FinitePolarizationOrbit.lean"
+      "path": "FinitePolarizationOrbit.lean",
+      "native_module": "FinitePolarizationOrbit",
+      "release_module": "FinitePolarizationOrbit"
     },
     {
       "native_sha256": "a47d77e4762f05b24dffc19b081731b9a124cfb98c87a022fd257e2402a72649",
@@ -1274,7 +1422,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "LipschitzCompactness",
-      "path": "LipschitzCompactness.lean"
+      "path": "LipschitzCompactness.lean",
+      "native_module": "LipschitzCompactness",
+      "release_module": "LipschitzCompactness"
     },
     {
       "native_sha256": "f69be8b4a0936e4e29c5baaa1520546321726743d95d4d72cc14bd3dbf07c1e1",
@@ -1286,7 +1436,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "GlobalLipschitzCompactness",
-      "path": "GlobalLipschitzCompactness.lean"
+      "path": "GlobalLipschitzCompactness.lean",
+      "native_module": "GlobalLipschitzCompactness",
+      "release_module": "GlobalLipschitzCompactness"
     },
     {
       "native_sha256": "f63c93d353e9920ea93dfba28dd62e6275e5a9f1002eeade4874d2a66084b778",
@@ -1298,7 +1450,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationMoment",
-      "path": "PolarizationMoment.lean"
+      "path": "PolarizationMoment.lean",
+      "native_module": "PolarizationMoment",
+      "release_module": "PolarizationMoment"
     },
     {
       "native_sha256": "8f5fb4e76cb75e7b33f8b85d9c87c46aaa70e4074719bc267ef27f8b8e09e4a9",
@@ -1310,7 +1464,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "BoundedPolarizationOrbit",
-      "path": "BoundedPolarizationOrbit.lean"
+      "path": "BoundedPolarizationOrbit.lean",
+      "native_module": "BoundedPolarizationOrbit",
+      "release_module": "BoundedPolarizationOrbit"
     },
     {
       "native_sha256": "f50b91e1634ca2fcade667f8a69cf5445bea0156cd1325eff31fc8c9548f1f57",
@@ -1322,7 +1478,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "PolarizationMomentTransport",
-      "path": "PolarizationMomentTransport.lean"
+      "path": "PolarizationMomentTransport.lean",
+      "native_module": "PolarizationMomentTransport",
+      "release_module": "PolarizationMomentTransport"
     },
     {
       "native_sha256": "7a261b38505a3455840ea47629e1e23c4fb973277b331a2b9fa8c0267fa8d10e",
@@ -1334,7 +1492,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "SquaredMomentPolarization",
-      "path": "SquaredMomentPolarization.lean"
+      "path": "SquaredMomentPolarization.lean",
+      "native_module": "SquaredMomentPolarization",
+      "release_module": "SquaredMomentPolarization"
     },
     {
       "native_sha256": "b3bcc9de2d4b9de866864477ecef7c3a97eeaa957398010a77f76e854ca7cdda",
@@ -1346,7 +1506,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "UniformDistributionClosure",
-      "path": "UniformDistributionClosure.lean"
+      "path": "UniformDistributionClosure.lean",
+      "native_module": "UniformDistributionClosure",
+      "release_module": "UniformDistributionClosure"
     },
     {
       "native_sha256": "eaa7916e6a851dad08c91d952aa53673f75d278c74412d5db58273d035310766",
@@ -1358,7 +1520,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RadialSupportRadius",
-      "path": "RadialSupportRadius.lean"
+      "path": "RadialSupportRadius.lean",
+      "native_module": "RadialSupportRadius",
+      "release_module": "RadialSupportRadius"
     },
     {
       "native_sha256": "406595224c19000194a9e3cb84cdad46f67b7d765df3c03fcd5ec4d5106bef1a",
@@ -1370,7 +1534,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "OrbitMinimizerSupport",
-      "path": "OrbitMinimizerSupport.lean"
+      "path": "OrbitMinimizerSupport.lean",
+      "native_module": "OrbitMinimizerSupport",
+      "release_module": "OrbitMinimizerSupport"
     },
     {
       "native_sha256": "ca38c89f03558257456b5143914c6bb560f377355053920862dc1f952317631c",
@@ -1382,7 +1548,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RequestProject.Core2",
-      "path": "RequestProject/Core2.lean"
+      "path": "RequestProject/Core2.lean",
+      "native_module": "RequestProject.Core2",
+      "release_module": "RequestProject.Core2"
     },
     {
       "native_sha256": "e9f1be83a9313c105a39f86a1cee4eac48b3adaa744f685541ce0c21c2cdc3be",
@@ -1394,7 +1562,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RequestProject.Core3",
-      "path": "RequestProject/Core3.lean"
+      "path": "RequestProject/Core3.lean",
+      "native_module": "RequestProject.Core3",
+      "release_module": "RequestProject.Core3"
     },
     {
       "native_sha256": "13786105721dc85948f277125b2ba44c253a76a75a141b8b8edaa9a46dc0dcc9",
@@ -1406,7 +1576,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RequestProject.Core4",
-      "path": "RequestProject/Core4.lean"
+      "path": "RequestProject/Core4.lean",
+      "native_module": "RequestProject.Core4",
+      "release_module": "RequestProject.Core4"
     },
     {
       "native_sha256": "adf44668b8f4b3fcbf473fbadf5dca498a8762687343634f677940b24b2572db",
@@ -1418,7 +1590,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "RequestProject.MainResults",
-      "path": "RequestProject/MainResults.lean"
+      "path": "RequestProject/MainResults.lean",
+      "native_module": "RequestProject.MainResults",
+      "release_module": "RequestProject.MainResults"
     },
     {
       "native_sha256": "5f18e41bb57deee656b6db1bd7c959b79a939a6694add28164f89e6aabbe6482",
@@ -1430,7 +1604,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FiniteOrbitEnergies",
-      "path": "FiniteOrbitEnergies.lean"
+      "path": "FiniteOrbitEnergies.lean",
+      "native_module": "FiniteOrbitEnergies",
+      "release_module": "FiniteOrbitEnergies"
     },
     {
       "native_sha256": "39eafba6d2f5b2f563b9c3a295c5d4211215b35a042f9d2a8ea9f054f1bd4d23",
@@ -1442,7 +1618,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "UniformSquaredIntegral",
-      "path": "UniformSquaredIntegral.lean"
+      "path": "UniformSquaredIntegral.lean",
+      "native_module": "UniformSquaredIntegral",
+      "release_module": "UniformSquaredIntegral"
     },
     {
       "native_sha256": "359f635b4f373d7c40f28ce72ea9dba125a46a0de4ddcb285720843e106975f5",
@@ -1454,7 +1632,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "OrbitL2Closure",
-      "path": "OrbitL2Closure.lean"
+      "path": "OrbitL2Closure.lean",
+      "native_module": "OrbitL2Closure",
+      "release_module": "OrbitL2Closure"
     },
     {
       "native_sha256": "6d2054097340b4300ad55e70ff92bec02f4675a69eb170e8f891585ed6f4e9d7",
@@ -1466,7 +1646,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "SpectralCutoffGeometry",
-      "path": "SpectralCutoffGeometry.lean"
+      "path": "SpectralCutoffGeometry.lean",
+      "native_module": "SpectralCutoffGeometry",
+      "release_module": "SpectralCutoffGeometry"
     },
     {
       "native_sha256": "f53cd779c1c71984a6f196129210e759dedf9c1bf1bd38a8eac301525c0e4827",
@@ -1478,7 +1660,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "CutoffMassLimit",
-      "path": "CutoffMassLimit.lean"
+      "path": "CutoffMassLimit.lean",
+      "native_module": "CutoffMassLimit",
+      "release_module": "CutoffMassLimit"
     },
     {
       "native_sha256": "9dd7392fbc97b0efe52cbdf92265977c34f6d35f88c5f9135f7b520bf1b68f28",
@@ -1490,7 +1674,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "CutoffEnergyEstimate",
-      "path": "CutoffEnergyEstimate.lean"
+      "path": "CutoffEnergyEstimate.lean",
+      "native_module": "CutoffEnergyEstimate",
+      "release_module": "CutoffEnergyEstimate"
     },
     {
       "native_sha256": "72be820f42e72b1e651cdc997fed5eecf8e2da076ace33a5f4d770179290b1b4",
@@ -1502,7 +1688,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "CutoffRayleighReal",
-      "path": "CutoffRayleighReal.lean"
+      "path": "CutoffRayleighReal.lean",
+      "native_module": "CutoffRayleighReal",
+      "release_module": "CutoffRayleighReal"
     },
     {
       "native_sha256": "21727357b21a4e3bdfa1bf31da6b6cac2ecadb4f2ff3e598951cf56f7bff2056",
@@ -1514,7 +1702,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "FixedInitialFaberKrahn",
-      "path": "FixedInitialFaberKrahn.lean"
+      "path": "FixedInitialFaberKrahn.lean",
+      "native_module": "FixedInitialFaberKrahn",
+      "release_module": "FixedInitialFaberKrahn"
     },
     {
       "native_sha256": "24ba30fed9fa47f037e83fecb99891e6a7426b1bc2133d978c6b792b719e90de",
@@ -1526,7 +1716,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "DirichletTestDensity",
-      "path": "DirichletTestDensity.lean"
+      "path": "DirichletTestDensity.lean",
+      "native_module": "DirichletTestDensity",
+      "release_module": "DirichletTestDensity"
     },
     {
       "native_sha256": "06290265f0c53773d03c2a39459788f665368f70f7aae4f93021c17dc52c643b",
@@ -1538,7 +1730,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "TestFunctionFaberKrahn",
-      "path": "TestFunctionFaberKrahn.lean"
+      "path": "TestFunctionFaberKrahn.lean",
+      "native_module": "TestFunctionFaberKrahn",
+      "release_module": "TestFunctionFaberKrahn"
     },
     {
       "native_sha256": "c038c00984b2a922eb85c4a10485c6abf89827a79eaf52bef2b5a0b209c33cf6",
@@ -1550,7 +1744,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "DirichletFKAreaProduct",
-      "path": "DirichletFKAreaProduct.lean"
+      "path": "DirichletFKAreaProduct.lean",
+      "native_module": "DirichletFKAreaProduct",
+      "release_module": "DirichletFKAreaProduct"
     },
     {
       "native_sha256": "c560aa10ee8a2ec258a09a46dbe3bf77e1019349735878d98c01ccb76d2ae9db",
@@ -1562,7 +1758,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "UnconditionalFaberKrahn",
-      "path": "UnconditionalFaberKrahn.lean"
+      "path": "UnconditionalFaberKrahn.lean",
+      "native_module": "UnconditionalFaberKrahn",
+      "release_module": "UnconditionalFaberKrahn"
     },
     {
       "native_sha256": "1a0b8107566dd6bac8730158992c628775a65c91fb7f6d4ae8ed23920b87df53",
@@ -1574,7 +1772,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "UnconditionalAreaRigidity",
-      "path": "UnconditionalAreaRigidity.lean"
+      "path": "UnconditionalAreaRigidity.lean",
+      "native_module": "UnconditionalAreaRigidity",
+      "release_module": "UnconditionalAreaRigidity"
     },
     {
       "native_sha256": "c9fcecbff588f67490191cc62b75b035003a78d07078113899794af4108a221b",
@@ -1586,7 +1786,9 @@
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "UnconditionalAreaFinalAudit",
-      "path": "UnconditionalAreaFinalAudit.lean"
+      "path": "UnconditionalAreaFinalAudit.lean",
+      "native_module": "UnconditionalAreaFinalAudit",
+      "release_module": "UnconditionalAreaFinalAudit"
     },
     {
       "native_sha256": "6cce53daa10f1f17b07c49466949d7f7240a01a096ec06799075b672bd574a81",
@@ -1597,8 +1799,17 @@
       "prefix_eol": "LF",
       "author_wording_edits": 1,
       "exact_original_bytes_recoverable": true,
-      "module": "Challenge",
-      "path": "Challenge.lean"
+      "module": "PlanarBucklingChallenge",
+      "path": "PlanarBucklingChallenge.lean",
+      "native_module": "Challenge",
+      "previous_release_module": "Challenge",
+      "module_root_rename": {
+        "old": "Challenge",
+        "new": "PlanarBucklingChallenge",
+        "payload_raw_bytes_unchanged": true,
+        "new_module_native_verification_claimed": false
+      },
+      "release_module": "PlanarBucklingChallenge"
     },
     {
       "native_sha256": "134aa69b2298a383761ca85ee9afd9072ff9b3817017a4be9f1a459d274ea863",
@@ -1609,20 +1820,37 @@
       "prefix_eol": "LF",
       "author_wording_edits": 1,
       "exact_original_bytes_recoverable": true,
-      "module": "Solution",
-      "path": "Solution.lean"
+      "module": "PlanarBucklingSolution",
+      "path": "PlanarBucklingSolution.lean",
+      "native_module": "Solution",
+      "previous_release_module": "Solution",
+      "module_root_rename": {
+        "old": "Solution",
+        "new": "PlanarBucklingSolution",
+        "payload_raw_bytes_unchanged": true,
+        "new_module_native_verification_claimed": false
+      },
+      "release_module": "PlanarBucklingSolution"
     },
     {
       "native_sha256": "4da2f96b6b5402832cf5d78827b21940369c2c3ac7c9e9765c6fb79ec3ff7ef3",
-      "release_sha256": "98034ea85d3fc79290d3e377ffd1e6cfad1c269c460312d577650cecbba28989",
+      "release_sha256": "a778b25fd9224800f86e705e837bef25e0af2537abc0a977fad4e76e2ea9cb59",
       "native_bytes": 1801,
-      "release_bytes": 2022,
+      "release_bytes": 2036,
       "prefix_after_native_line": 1,
       "prefix_eol": "CRLF",
       "author_wording_edits": 0,
       "exact_original_bytes_recoverable": true,
       "module": "SubmissionSolutionAudit",
-      "path": "SubmissionSolutionAudit.lean"
+      "path": "SubmissionSolutionAudit.lean",
+      "native_module": "SubmissionSolutionAudit",
+      "audit_import_rename": {
+        "old": "public import Solution",
+        "new": "public import PlanarBucklingSolution",
+        "old_release_sha256": "98034ea85d3fc79290d3e377ffd1e6cfad1c269c460312d577650cecbba28989",
+        "reverse_this_then_original_comment_transform_to_recover_native": true
+      },
+      "release_module": "SubmissionSolutionAudit"
     }
   ],
   "pinned_library_sources": [
@@ -2368,5 +2596,16 @@
   "excluded_stale_draft_reports": [
     "DRAFT_PROVENANCE.json",
     "DRAFT_STATIC_CHECKS.json"
-  ]
+  ],
+  "module_root_collision_repair": {
+    "failed_commit": "77b0e5afdbfd0603cbd9ee0953edda3771fc5015",
+    "run_id": 39072719634,
+    "job_id": 117513472611,
+    "raw_log_sha256": "e6a1fda995b4c2a418ef6685684cdc58c80708ba7d759ff7f11d05d854c19a59",
+    "first184_evidence_sha256": "01696c724de845882a8c2000dfe8cebc00bb581533363eba946366d834a07dc6",
+    "official_policy": "https://github.com/PalomarRegistry/PalomarSubmission/blob/d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44/README.md#L149-L158",
+    "math_definitions_proofs_five_names_and_guards_unchanged": true,
+    "new_module_native_or_Linux_Comparator_success_claimed": false,
+    "migration_script_sha256": "944a3da89f9153ce43186c430ab66cd8540306940dccac54fcc8084c6e0063dc"
+  }
 }

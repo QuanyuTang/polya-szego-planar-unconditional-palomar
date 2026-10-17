@@ -16,4 +16,4 @@ while IFS= read -r target || [ -n "$target" ]; do
   lake build "$target"
 done < verification/build-targets.txt
 # Confirm the actual submission targets remain up-to-date before replay.
-lake build --no-build --no-cache @/+Challenge @/+Solution
+lake build --no-build --no-cache @/+PlanarBucklingChallenge @/+PlanarBucklingSolution

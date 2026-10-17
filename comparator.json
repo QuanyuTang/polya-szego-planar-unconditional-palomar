@@ -1,6 +1,6 @@
 {
-  "challenge_module": "Challenge",
-  "solution_module": "Solution",
+  "challenge_module": "PlanarBucklingChallenge",
+  "solution_module": "PlanarBucklingSolution",
   "theorem_names": [
     "BucklingChallenge.area_inequality",
     "BucklingChallenge.area_equality_iff",

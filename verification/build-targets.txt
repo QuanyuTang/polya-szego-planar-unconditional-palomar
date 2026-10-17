@@ -180,6 +180,6 @@
 @/+UnconditionalFaberKrahn
 @/+UnconditionalAreaRigidity
 @/+UnconditionalAreaFinalAudit
-@/+Challenge
-@/+Solution
+@/+PlanarBucklingChallenge
+@/+PlanarBucklingSolution
 @/+SubmissionSolutionAudit

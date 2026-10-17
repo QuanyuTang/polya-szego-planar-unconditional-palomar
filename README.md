@@ -21,11 +21,13 @@ The two additional public results give $\Lambda_1(B_R(a))=j_{1,1}^2/R^2$ for $R>
 
 `Plane` is `EuclideanSpace ℝ (Fin 2)`. A test function is smooth with compact support contained in the open set. `H01` and `H02` are the closures of its actual first- and second-derivative data in the corresponding products of `L²(Ω)`. The Hilbert-space and weak-gradient bridges retain these original data and their values and derivatives.
 
-The Dirichlet eigenvalue is the infimum of $E_1/E_0$ over `H01` data with nonzero mass. The buckling eigenvalue is the infimum of the squared Laplacian norm divided by the squared gradient norm over `H02` data with nonzero gradient energy. The Bessel functions use their defining power series; `j01` and `j11` are the infima of their positive real zeros. `Challenge.lean` contains the full definitions, including the original `toL2` fallback; the test-function bridges prove the required square integrability.
+The Dirichlet eigenvalue is the infimum of $E_1/E_0$ over `H01` data with nonzero mass. The buckling eigenvalue is the infimum of the squared Laplacian norm divided by the squared gradient norm over `H02` data with nonzero gradient energy. The Bessel functions use their defining power series; `j01` and `j11` are the infima of their positive real zeros. `PlanarBucklingChallenge.lean` contains the full definitions, including the original `toL2` fallback; the test-function bridges prove the required square integrability.
 
 ## Public verification targets
 
-`comparator.json` compares these exact declarations from `Solution` with the separately checked `Challenge`:
+The submission roots are `PlanarBucklingChallenge` and `PlanarBucklingSolution`. The [official module-root policy](https://github.com/PalomarRegistry/PalomarSubmission/blob/d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44/README.md#L149-L158) forbids a Challenge top component that shadows a dependency entry; the pinned EllipticPdes package publishes generic roots `Challenge` and `Solution`. Both payloads therefore use project-specific filenames. The five `BucklingChallenge.*` declarations and all mathematical definitions are unchanged.
+
+`comparator.json` compares these exact declarations from `PlanarBucklingSolution` with the separately checked `PlanarBucklingChallenge`:
 
 | Declaration | Result |
 | --- | --- |
@@ -35,7 +37,7 @@ The Dirichlet eigenvalue is the infimum of $E_1/E_0$ over `H01` data with nonzer
 | `BucklingChallenge.bucklingEig_ball` | Disk buckling eigenvalue |
 | `BucklingChallenge.buckling_ge_dirichlet` | Buckling–Dirichlet comparison |
 
-`Challenge.lean` imports only canonical Mathlib and intentionally omits the five specification proofs. `Solution.lean` supplies proofs in a separate environment without importing `Challenge`. The permitted axioms are exactly `propext`, `Quot.sound` and `Classical.choice`.
+`PlanarBucklingChallenge.lean` imports only canonical Mathlib and intentionally omits the five specification proofs. `PlanarBucklingSolution.lean` supplies proofs in a separate environment without importing `PlanarBucklingChallenge`. The permitted axioms are exactly `propext`, `Quot.sound` and `Classical.choice`.
 
 The local verification record covers the full source closure and the literal submission statements. `UnconditionalAreaFinalAudit.lean` prints the complete types of 14 internal roots and checks their axiom sets. `SubmissionSolutionAudit.lean` prints the complete types of the five public results and checks their axiom sets. These audits supplement the actual Challenge/Solution comparison.
 

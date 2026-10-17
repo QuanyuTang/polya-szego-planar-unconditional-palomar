@@ -26,11 +26,20 @@ CRITICAL = [".gitattributes", ".gitignore", "lean-toolchain", "lakefile.toml", "
 
 def main() -> int:
     errors = []
-    required = set(CRITICAL + ["Challenge.lean", "Solution.lean",
+    for obsolete in ("Challenge.lean", "Solution.lean"):
+        if (ROOT / obsolete).exists():
+            errors.append("obsolete generic submission wrapper/file is forbidden: " + obsolete)
+    required = set(CRITICAL + ["PlanarBucklingChallenge.lean", "PlanarBucklingSolution.lean",
         "UnconditionalAreaFinalAudit.lean", "SubmissionSolutionAudit.lean",
         "verification/SHA256SUMS"])
     try:
         lake = tomllib.loads((ROOT / "lakefile.toml").read_text(encoding="utf-8"))
+        submission_roots = ("PlanarBucklingChallenge", "PlanarBucklingSolution")
+        library_roots = {lib["name"]: lib.get("roots", []) for lib in lake["lean_lib"]}
+        if any(library_roots.get(name) != [name] for name in submission_roots) or any(name in library_roots for name in ("Challenge", "Solution")):
+            errors.append("submission lean_lib names/roots must be the two unique modules")
+        if not set(submission_roots).issubset(lake.get("defaultTargets", [])):
+            errors.append("both unique submission libraries must be default targets")
         for lib in lake["lean_lib"]:
             required.update(name.replace(".", "/") + ".lean" for name in lib.get("roots", []))
     except (OSError, ValueError, KeyError) as error:
@@ -46,8 +55,8 @@ def main() -> int:
                     required.add(module.replace(".", "/") + ".lean")
             elif not target.startswith("@EllipticPdes/+"):
                 errors.append(f"unexpected build target: {target}")
-        if not targets or targets[-4:] != ["@/+UnconditionalAreaFinalAudit", "@/+Challenge", "@/+Solution", "@/+SubmissionSolutionAudit"]:
-            errors.append("build order must conclude with the final proof audit, Challenge, Solution, and the submission audit")
+        if not targets or targets[-4:] != ["@/+UnconditionalAreaFinalAudit", "@/+PlanarBucklingChallenge", "@/+PlanarBucklingSolution", "@/+SubmissionSolutionAudit"]:
+            errors.append("build order must conclude with the final proof audit, unique challenge and solution roots, and the submission audit")
     except (OSError, UnicodeError) as error:
         errors.append(f"cannot read the reviewed build order: {error}")
     for relative in sorted(required):
@@ -72,7 +81,7 @@ def main() -> int:
             if not re.fullmatch(r"https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:\.git)?", package.get("url", "")):
                 errors.append(f"dependency URL is not public credential-free GitHub HTTPS: {package.get('name')}")
         config = json.loads((ROOT / "comparator.json").read_text(encoding="utf-8"))
-        if config.get("challenge_module") != "Challenge" or config.get("solution_module") != "Solution":
+        if config.get("challenge_module") != "PlanarBucklingChallenge" or config.get("solution_module") != "PlanarBucklingSolution":
             errors.append("unexpected Challenge/Solution module pair")
         if config.get("theorem_names") != RESULTS:
             errors.append("Comparator must retain all five reviewed original target names")
@@ -82,7 +91,7 @@ def main() -> int:
             errors.append("submitted comparator.json must not contain external_kernels")
     except (OSError, ValueError, KeyError, TypeError) as error:
         errors.append(f"invalid fixed dependency/comparator input: {error}")
-    challenge = ROOT / "Challenge.lean"
+    challenge = ROOT / "PlanarBucklingChallenge.lean"
     if challenge.is_file():
         content = challenge.read_bytes()
         if len(content) > 100 * 1024 or len(content.splitlines()) > 1000:
