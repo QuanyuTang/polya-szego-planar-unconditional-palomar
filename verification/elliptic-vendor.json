@@ -1,0 +1,584 @@
+{
+  "format_version": 1,
+  "upstream_repository": "https://github.com/alejandro-soto-franco/EllipticPDE",
+  "upstream_commit": "ec784093f30308ef770ff855ce624725adf6f870",
+  "upstream_project_directory": "lean",
+  "vendored_package_directory": "vendor/EllipticPdes",
+  "module_count": 81,
+  "source_policy": "All mathematical Lean files are exact upstream Git blobs; only the Lake package wrapper is adapted.",
+  "license": {
+    "source_path": "LICENSE",
+    "vendored_path": "vendor/EllipticPdes/LICENSE",
+    "sha256": "45ce430f00a912198ec16884eadd8f79b52ab7f0c25cb215d87b4173c5d47e62",
+    "git_blob": "3b89f34e5356ba1847e70fa1d6ab5c683f0ccdac"
+  },
+  "files": [
+    {
+      "module": "EllipticPdes.Sobolev.Basic",
+      "source_path": "lean/EllipticPdes/Sobolev/Basic.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/Basic.lean",
+      "sha256": "148d1c7b1f62ab051c3597453b916066bea897f58aa2070cd124297b341dcbae",
+      "git_blob": "b4726293dce5c3395a3336744922485a25b20009"
+    },
+    {
+      "module": "EllipticPdes.Analysis.LpExtendByZero",
+      "source_path": "lean/EllipticPdes/Analysis/LpExtendByZero.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/LpExtendByZero.lean",
+      "sha256": "954e4fc579921bea5487765c110d6589fe1554cded293f1805d34210cbbc664d",
+      "git_blob": "09851d4a5af09c6b55a5e33904d4e9a466a7ac88"
+    },
+    {
+      "module": "EllipticPdes.Analysis.Mollifier",
+      "source_path": "lean/EllipticPdes/Analysis/Mollifier.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/Mollifier.lean",
+      "sha256": "bee04f1c6f0f655ca0dc7d86eb732c68841253c48d470146cb280992160969f4",
+      "git_blob": "3197dd5b78a39a06c06da053eb1b65943a4b6a8d"
+    },
+    {
+      "module": "EllipticPdes.Embedding.Convolution",
+      "source_path": "lean/EllipticPdes/Embedding/Convolution.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/Convolution.lean",
+      "sha256": "a71bd4999906f8c50a5453a69ac9b6926092b51f38532289eecc6c84c43e93ee",
+      "git_blob": "6779ae2b0dff030099c1d18ecbd1a9f4ec9e29ee"
+    },
+    {
+      "module": "EllipticPdes.Analysis.SmoothCutoff",
+      "source_path": "lean/EllipticPdes/Analysis/SmoothCutoff.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/SmoothCutoff.lean",
+      "sha256": "6627517fb3bb70593655d6737b5542df2172e7f9a13427dcedfc449d04ccf258",
+      "git_blob": "1a775b2a12a53168d89df29c88be623a010d1d19"
+    },
+    {
+      "module": "EllipticPdes.Sobolev.WeakDeriv",
+      "source_path": "lean/EllipticPdes/Sobolev/WeakDeriv.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/WeakDeriv.lean",
+      "sha256": "f002f3865f72550cdea253735f4c91941a619603c6e874811818cd38a03a701c",
+      "git_blob": "6237fb588668a9187d7d6fa0406e55338e1125dc"
+    },
+    {
+      "module": "EllipticPdes.Sobolev.WeakDerivClassical",
+      "source_path": "lean/EllipticPdes/Sobolev/WeakDerivClassical.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/WeakDerivClassical.lean",
+      "sha256": "11a3145f6fa3746eb32cc0368bc88f5dcdee5e7d7379057b508793a49b73d0d9",
+      "git_blob": "d4b2cf542e5cdd0a4827b7dba23015c1cf122d07"
+    },
+    {
+      "module": "EllipticPdes.Embedding.WeakDerivChain",
+      "source_path": "lean/EllipticPdes/Embedding/WeakDerivChain.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/WeakDerivChain.lean",
+      "sha256": "dfb50da7203dd855bd3209a303d0f586fa506884dd95d0a24d6091cc24156559",
+      "git_blob": "4555f01076fa38b4ba2f7a55b0a53f31abf1782a"
+    },
+    {
+      "module": "EllipticPdes.Sobolev.Graph",
+      "source_path": "lean/EllipticPdes/Sobolev/Graph.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/Graph.lean",
+      "sha256": "b44f2bf48a61456761396fdd2f14bb9fee6ef4e37985ba176ddd1afc99033ec6",
+      "git_blob": "6ab94ead57cc33d6a7288e36e127a5116c1523d1"
+    },
+    {
+      "module": "EllipticPdes.Sobolev.GraphLattice",
+      "source_path": "lean/EllipticPdes/Sobolev/GraphLattice.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/GraphLattice.lean",
+      "sha256": "2e5d124f325b58215d6314fa6310e72b16b1a4c49df538259448ea355b9b405b",
+      "git_blob": "705606fe2d8f83db5bcafb88f7f8eed093c6222d"
+    },
+    {
+      "module": "EllipticPdes.Sobolev.GraphEuclidean",
+      "source_path": "lean/EllipticPdes/Sobolev/GraphEuclidean.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/GraphEuclidean.lean",
+      "sha256": "358d47435bd20ade0d8ac1fa3c78db1a1684af5326cc7207ea145b1a81be5dc4",
+      "git_blob": "39c99a622dd023bbf7a94a56bc11f7c672e6d026"
+    },
+    {
+      "module": "EllipticPdes.Embedding.WeakGradient",
+      "source_path": "lean/EllipticPdes/Embedding/WeakGradient.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/WeakGradient.lean",
+      "sha256": "88f7f6bbb1e375845e867eb4ee424405f3488afc5c7c0d6eec9c34c2c1785ceb",
+      "git_blob": "1a4e792c11c0098ff8dfef7e8d4d9fb43e55a73e"
+    },
+    {
+      "module": "EllipticPdes.Analysis.WeakCompactness",
+      "source_path": "lean/EllipticPdes/Analysis/WeakCompactness.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/WeakCompactness.lean",
+      "sha256": "d1cb25eda21c3e11ce8670319480c86f60214a27241260b93ca31308f9d134f2",
+      "git_blob": "c9f3e21e3bed6369ad9bd02abaa944f479b3f1ce"
+    },
+    {
+      "module": "EllipticPdes.Analysis.DirectMethodForm",
+      "source_path": "lean/EllipticPdes/Analysis/DirectMethodForm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/DirectMethodForm.lean",
+      "sha256": "36d008ff0474213e3d42fb59435594fec6f45e14c7609a30d27e3804f480d034",
+      "git_blob": "4742c4d6c0db98da5990e590e0d97685b04437c9"
+    },
+    {
+      "module": "EllipticPdes.Analysis.PoincareInequality",
+      "source_path": "lean/EllipticPdes/Analysis/PoincareInequality.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/PoincareInequality.lean",
+      "sha256": "bba1d2435e94223fbfc0b6771d23960d624926ffd0a82bd07f342de0e490eebc",
+      "git_blob": "553885bd97bb750f87dcedf9515826e699f875e6"
+    },
+    {
+      "module": "EllipticPdes.Analysis.LpTranslation",
+      "source_path": "lean/EllipticPdes/Analysis/LpTranslation.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/LpTranslation.lean",
+      "sha256": "3dd8dc518a58ab12a6377e529c24ad69bcccfb73f50a00e2429a1bd096095ad8",
+      "git_blob": "d85ebe67b9603f4a8feb694a90dcb2fdcb76bc24"
+    },
+    {
+      "module": "EllipticPdes.Analysis.Translation",
+      "source_path": "lean/EllipticPdes/Analysis/Translation.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/Translation.lean",
+      "sha256": "955faf94bfcd6c23b00c4957b3307e3d0da6ba42bcc4a0bf75b4488b1d17ca86",
+      "git_blob": "49828854eedc425404ec29b924bf67f34554167e"
+    },
+    {
+      "module": "EllipticPdes.Analysis.FrechetKolmogorov",
+      "source_path": "lean/EllipticPdes/Analysis/FrechetKolmogorov.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/FrechetKolmogorov.lean",
+      "sha256": "235b180768a084b0ac85ae10651f825b6526f0386a0c381e960e5ba472d23856",
+      "git_blob": "67b8fd5aed2019b2dd32aedb7abe67d92355c083"
+    },
+    {
+      "module": "EllipticPdes.Embedding.WeakGradUnique",
+      "source_path": "lean/EllipticPdes/Embedding/WeakGradUnique.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/WeakGradUnique.lean",
+      "sha256": "8f9199ce18fe51f9a1da6fb51b86b699f509293ea4a977fc9425e2bde703192d",
+      "git_blob": "1b107acb4bec0c9c89730ccc1affcc1280e42293"
+    },
+    {
+      "module": "EllipticPdes.Embedding.ChainRule",
+      "source_path": "lean/EllipticPdes/Embedding/ChainRule.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/ChainRule.lean",
+      "sha256": "eb0e2acd22aa5e42a8eb1f7d79d0b3810f78d1ae650133c40ff62f7df876934a",
+      "git_blob": "880a01ea7fddf89e826e93a0a1f0dff8554d071b"
+    },
+    {
+      "module": "EllipticPdes.Embedding.RayIntegral",
+      "source_path": "lean/EllipticPdes/Embedding/RayIntegral.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/RayIntegral.lean",
+      "sha256": "79be3e23a80158906e6e628ce9b7439d00821e8d3c22f5b127ab5ccac78859b5",
+      "git_blob": "e88a40a93bc9679f7cd924c56b950994d3c73e6b"
+    },
+    {
+      "module": "EllipticPdes.Embedding.Morrey",
+      "source_path": "lean/EllipticPdes/Embedding/Morrey.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/Morrey.lean",
+      "sha256": "c0e57ade449c2dca437d756917ad022b856a9355f28d80a7d481fb31ef00ad97",
+      "git_blob": "170ab7a322bac10da3a40e80996cf05be9e479f8"
+    },
+    {
+      "module": "EllipticPdes.Extension.Basic",
+      "source_path": "lean/EllipticPdes/Extension/Basic.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Basic.lean",
+      "sha256": "463c2034444f28ec04e7648a4dfff5018f5b6f1b7d6e45748b01a5dc0e31bc07",
+      "git_blob": "0fdf1ebbf8fde212d9949f7fd9cadda32d2474f2"
+    },
+    {
+      "module": "EllipticPdes.Extension.C1Test",
+      "source_path": "lean/EllipticPdes/Extension/C1Test.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/C1Test.lean",
+      "sha256": "ae442f138087d0d8db6a58160ec1d0748f71bdce523534952f92b96ebf961c1a",
+      "git_blob": "64a05abda0e85f2767e8b2cdc070b6b58fab61a5"
+    },
+    {
+      "module": "EllipticPdes.Extension.Shear",
+      "source_path": "lean/EllipticPdes/Extension/Shear.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Shear.lean",
+      "sha256": "5da699998aedc1c08f2fdbf6349c508595088e4d56ea52e7d8c7907896d1b4fa",
+      "git_blob": "2b753e1cc9a07d013e4c443b4cf699c8d046ab81"
+    },
+    {
+      "module": "EllipticPdes.Embedding.WeakSobolev",
+      "source_path": "lean/EllipticPdes/Embedding/WeakSobolev.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/WeakSobolev.lean",
+      "sha256": "8496f02c1d56901d8480114c268193195e9e480e56890800042ef79458f611f5",
+      "git_blob": "090dd5443f93aa13a1cf5a97561d527d07042584"
+    },
+    {
+      "module": "EllipticPdes.Embedding.GagliardoNirenberg",
+      "source_path": "lean/EllipticPdes/Embedding/GagliardoNirenberg.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/GagliardoNirenberg.lean",
+      "sha256": "ec8a231a74e983ef02d5205017cffabf5d4e4884131c295d2458e61241658588",
+      "git_blob": "03b701bbb0bfc906849f4b91dd4dee9a6a151395"
+    },
+    {
+      "module": "EllipticPdes.Extension.ShearWeakGrad",
+      "source_path": "lean/EllipticPdes/Extension/ShearWeakGrad.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/ShearWeakGrad.lean",
+      "sha256": "41d9f0a15c3a4f6e5709765b73d30fdb5eee8abb7f49586f878efaa66d4cc6ad",
+      "git_blob": "c78d0c28c77fac76b058eecc1c452d71cf4a590b"
+    },
+    {
+      "module": "EllipticPdes.Extension.Cutoff",
+      "source_path": "lean/EllipticPdes/Extension/Cutoff.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Cutoff.lean",
+      "sha256": "05c2d6d2da08f78d64accc731576ba12c913f837bb92073b996a7ec9a3f2554b",
+      "git_blob": "5a3201520fe601b56d22808622859457c93384b8"
+    },
+    {
+      "module": "EllipticPdes.Extension.Reflect",
+      "source_path": "lean/EllipticPdes/Extension/Reflect.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Reflect.lean",
+      "sha256": "7f08bb2a9ee838cc4d7db73bbddb72a7c30a90a309aa92ea3e1ef6a24205c2e8",
+      "git_blob": "dadb11a042f1c73cef509d5b62c782621424ad38"
+    },
+    {
+      "module": "EllipticPdes.Extension.HalfSpace",
+      "source_path": "lean/EllipticPdes/Extension/HalfSpace.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/HalfSpace.lean",
+      "sha256": "7785fe06c831be1aa8ba485d926266b42e56f27fa2283c3e6b41ef63765b8f86",
+      "git_blob": "6cd6f0103beeec849a4a2b38b728402ecb20cd52"
+    },
+    {
+      "module": "EllipticPdes.Extension.EvenReflection",
+      "source_path": "lean/EllipticPdes/Extension/EvenReflection.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/EvenReflection.lean",
+      "sha256": "b993f9a566248cf0ee0884a4a52766c48ddee8f43e885dd40b222483d39af4f3",
+      "git_blob": "163a5b1f73e2c0f41d9fea81bf33e50154f1ff0b"
+    },
+    {
+      "module": "EllipticPdes.Extension.BoundaryChart",
+      "source_path": "lean/EllipticPdes/Extension/BoundaryChart.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/BoundaryChart.lean",
+      "sha256": "d31efd92e8518865877fa984194971410120cfc42d29753303bb2ca72fef2a6c",
+      "git_blob": "36dd190f6450aea6b1f88cfdc5761d5e893f01b6"
+    },
+    {
+      "module": "EllipticPdes.Extension.C1Boundary",
+      "source_path": "lean/EllipticPdes/Extension/C1Boundary.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/C1Boundary.lean",
+      "sha256": "e8016c91acd6a2b6da0e5db9c00a503b13d13d17510c98eebf652f70d5c592d1",
+      "git_blob": "ba1aaddcb50e626df6aeeda2cad9adb5262387ed"
+    },
+    {
+      "module": "EllipticPdes.Extension.PartitionOfUnity",
+      "source_path": "lean/EllipticPdes/Extension/PartitionOfUnity.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/PartitionOfUnity.lean",
+      "sha256": "6b244d4a5231aad4f0d63dea8b931eca476686eceff65cc09a82923f2c3f1230",
+      "git_blob": "d6b2a8f96fbb1255df2baffd010b03486bec1f55"
+    },
+    {
+      "module": "EllipticPdes.Extension.Patch",
+      "source_path": "lean/EllipticPdes/Extension/Patch.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Patch.lean",
+      "sha256": "575e11370d7a1dd5443300791df61f385c4d4ed6493ff2ceac220b35b16c43a1",
+      "git_blob": "ff5cd4dcdd4a98d0833e38568884203e0923de0c"
+    },
+    {
+      "module": "EllipticPdes.Extension.Motion",
+      "source_path": "lean/EllipticPdes/Extension/Motion.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Motion.lean",
+      "sha256": "83e9f21726275e102bb11037f07f59c9a7fc153d2ae92c9ea097fafc2dc6970f",
+      "git_blob": "555b11018d3841d8623ac380f85bc6fcc49388ae"
+    },
+    {
+      "module": "EllipticPdes.Extension.LocalExtension",
+      "source_path": "lean/EllipticPdes/Extension/LocalExtension.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/LocalExtension.lean",
+      "sha256": "da3b374f54ec75ef873c4c82b95d289231609a8f5656c848bc70e9c5c11e31ef",
+      "git_blob": "bb32c90158a466712f7867f3c02a78c55d90f3c0"
+    },
+    {
+      "module": "EllipticPdes.Extension.Operator",
+      "source_path": "lean/EllipticPdes/Extension/Operator.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Operator.lean",
+      "sha256": "e3ac15e00513098ea15c4bdf39b74b8600b755aef369050c0a6517325b51b9cb",
+      "git_blob": "d25f7aedc0839ce5d7ee6dd2164f4c6cc8d519ce"
+    },
+    {
+      "module": "EllipticPdes.Embedding.DomainSobolev",
+      "source_path": "lean/EllipticPdes/Embedding/DomainSobolev.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/DomainSobolev.lean",
+      "sha256": "a7a13cad1c8f10e41b0edd6188e78d4da445e985ff111ce2e6814a540ec54d21",
+      "git_blob": "fe62e503040219599c6bf53fee7e3f86bcfa2faf"
+    },
+    {
+      "module": "EllipticPdes.Extension.GlobalApproximation",
+      "source_path": "lean/EllipticPdes/Extension/GlobalApproximation.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/GlobalApproximation.lean",
+      "sha256": "65a41c483a0399cb3c253851f03e94a9e623001c8b71b34f063737c510e2919a",
+      "git_blob": "d517a7a6e97b47631f85aab0f42fa2e42577f324"
+    },
+    {
+      "module": "EllipticPdes.Extension.LinearOperator",
+      "source_path": "lean/EllipticPdes/Extension/LinearOperator.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/LinearOperator.lean",
+      "sha256": "0a2e4fd3221e9b31a0290775926d1445552f5af8f5c2fb48e3061f4171dc50a5",
+      "git_blob": "0e58a60ead4adcfbfdb9116d549ee3c08e5ff018"
+    },
+    {
+      "module": "EllipticPdes.Fredholm.CompactOperator",
+      "source_path": "lean/EllipticPdes/Fredholm/CompactOperator.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Fredholm/CompactOperator.lean",
+      "sha256": "c52a120d806efd87cc4754b16c0178df08f64b2f97f4a4d673efb28643417484",
+      "git_blob": "c5694137ec9285e1b3eb3c6975fbeb240f845ac6"
+    },
+    {
+      "module": "EllipticPdes.Poincare.Domain",
+      "source_path": "lean/EllipticPdes/Poincare/Domain.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/Domain.lean",
+      "sha256": "00ff2d2bd7fdd0f77ddf68c64c0750cac898837300326a2e1c9a29a9b311a444",
+      "git_blob": "02f5702b12ab8958a16276002b7071994026b00e"
+    },
+    {
+      "module": "EllipticPdes.Poincare.Density",
+      "source_path": "lean/EllipticPdes/Poincare/Density.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/Density.lean",
+      "sha256": "3b05e91a50be717a517cccaa071878396c4b4e44019762dc21164390649dabe9",
+      "git_blob": "2db4d7a9c9daad18a4f3428e9df08aeb8f23d683"
+    },
+    {
+      "module": "EllipticPdes.Form.BilinearForm",
+      "source_path": "lean/EllipticPdes/Form/BilinearForm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Form/BilinearForm.lean",
+      "sha256": "8d5d81b2eef7ccc67149973dfe0f7f5c2be92e611b05b6e88ea36414c7fe5858",
+      "git_blob": "547495c057189d26eea2da160b07163b314dad1a"
+    },
+    {
+      "module": "EllipticPdes.Form.DivForm",
+      "source_path": "lean/EllipticPdes/Form/DivForm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Form/DivForm.lean",
+      "sha256": "9e7b4f048d756e253ec90db09d6b69bc94707f8267b3a4d4eca40558435bd140",
+      "git_blob": "0d89662e0df3cca3e61b384157a92347ec07f407"
+    },
+    {
+      "module": "EllipticPdes.Form.DivFormGarding",
+      "source_path": "lean/EllipticPdes/Form/DivFormGarding.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Form/DivFormGarding.lean",
+      "sha256": "795d602dca7897522c53b4449aab02b9bd5e231e84ab034381c4973c01230961",
+      "git_blob": "77c9c96800ddd123dc5c2b516f8b895199d73b7e"
+    },
+    {
+      "module": "EllipticPdes.Poincare.Slab",
+      "source_path": "lean/EllipticPdes/Poincare/Slab.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/Slab.lean",
+      "sha256": "56bac3b6805b52c339a126f83e70f865b3da4cfb89d5a66741ea88179962bbdd",
+      "git_blob": "dfe360e41c8dc43e93922d444b40e496eb4db5d2"
+    },
+    {
+      "module": "EllipticPdes.Poincare.GraphBounded",
+      "source_path": "lean/EllipticPdes/Poincare/GraphBounded.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/GraphBounded.lean",
+      "sha256": "c4b3063621cb3931de585ea13d76aae4b5357aed52cee52fe6a2e5c99dda98b2",
+      "git_blob": "3505bc3a677d4b2dea21c619595cb7e9210e0949"
+    },
+    {
+      "module": "EllipticPdes.Existence.DivFormExistence",
+      "source_path": "lean/EllipticPdes/Existence/DivFormExistence.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Existence/DivFormExistence.lean",
+      "sha256": "855c0a95e04d54426f54569a72deca043bd83475556af011b3f178105f60c94d",
+      "git_blob": "ab232ea76fdda726d4cda61e66a40d6a0d6d0dfa"
+    },
+    {
+      "module": "EllipticPdes.Sobolev.Coefficients",
+      "source_path": "lean/EllipticPdes/Sobolev/Coefficients.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Sobolev/Coefficients.lean",
+      "sha256": "4d7db9ceb741c4a5b675dfad894beb82f1f1a167d1d689088b09a79f355c6628",
+      "git_blob": "aca1f77296d300069ccf6b6ee8eff41df5329e3f"
+    },
+    {
+      "module": "EllipticPdes.Form.GeneralForm",
+      "source_path": "lean/EllipticPdes/Form/GeneralForm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Form/GeneralForm.lean",
+      "sha256": "a45bd573111d92b6c9f3a9ea540f19d257e7c4ebcf5cfe41b20af40c60bcc79c",
+      "git_blob": "5e5a014303a12f29f43cc22c359e8a3cde5212a9"
+    },
+    {
+      "module": "EllipticPdes.Existence.FullOp",
+      "source_path": "lean/EllipticPdes/Existence/FullOp.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Existence/FullOp.lean",
+      "sha256": "db3248174fec8999906eba5ea0123778352b853670c42b068674484a621a7416",
+      "git_blob": "5007369dade28bf4bacdf788d19f1e6182a0cd42"
+    },
+    {
+      "module": "EllipticPdes.Form.DivFormEuclidean",
+      "source_path": "lean/EllipticPdes/Form/DivFormEuclidean.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Form/DivFormEuclidean.lean",
+      "sha256": "6cd03cb057da894f0e8be5a0e0c988cf56e6d7d9d2d401e89dccccd584b96de5",
+      "git_blob": "6a35bc04bc3fb1db2ceba6046f9247aa8bde62ef"
+    },
+    {
+      "module": "EllipticPdes.Poincare.Geometry",
+      "source_path": "lean/EllipticPdes/Poincare/Geometry.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/Geometry.lean",
+      "sha256": "c7154b6f1619f1d5c78eaa5e4aab7e9b60d5bcc0c38578b730afae3caba11a0a",
+      "git_blob": "d5bc86d1e06fef54b3c034241764cf5a2a4eb04b"
+    },
+    {
+      "module": "EllipticPdes.Poincare.BoxSlice",
+      "source_path": "lean/EllipticPdes/Poincare/BoxSlice.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/BoxSlice.lean",
+      "sha256": "99414c614b70057aea2f4a5f77e03af17a0ac2bb2464318006faf09c60de9825",
+      "git_blob": "d6870bb7c60c450b7afaeaa69dbc907c88d4b663"
+    },
+    {
+      "module": "EllipticPdes.Poincare.BoundedDomain",
+      "source_path": "lean/EllipticPdes/Poincare/BoundedDomain.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Poincare/BoundedDomain.lean",
+      "sha256": "1b9336d7d4e393423fc5432daabeb1e6f83483c7e1f0ba47ed86c15e3b6969a3",
+      "git_blob": "a33d10cbb5c99831778152c1e5c82983d25ef7d6"
+    },
+    {
+      "module": "EllipticPdes.Existence.Garding",
+      "source_path": "lean/EllipticPdes/Existence/Garding.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Existence/Garding.lean",
+      "sha256": "92cd6e2f305156b3217fa79debcede698455f12bf24ecd39bf4b1d62304a28cd",
+      "git_blob": "149da09874cef627f83788acda31c9231cca231a"
+    },
+    {
+      "module": "EllipticPdes.Fredholm.GardingForm",
+      "source_path": "lean/EllipticPdes/Fredholm/GardingForm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Fredholm/GardingForm.lean",
+      "sha256": "f334c3b4de96d253cd1b5d0521922cb6e3b366cfc0ce5dac4aa8b65a26e3e5d7",
+      "git_blob": "4c399ac879ba6292854a8c8ea7aa48f4c743501d"
+    },
+    {
+      "module": "EllipticPdes.Fredholm.Fredholm",
+      "source_path": "lean/EllipticPdes/Fredholm/Fredholm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Fredholm/Fredholm.lean",
+      "sha256": "572a79ddd6ed9305c81109d9f128e40c82d69cd33427420f9a1752f9ffafc6da",
+      "git_blob": "7c6801046b0fef049817f6c5f25442129f3d6794"
+    },
+    {
+      "module": "EllipticPdes.Fredholm.FredholmComplete",
+      "source_path": "lean/EllipticPdes/Fredholm/FredholmComplete.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Fredholm/FredholmComplete.lean",
+      "sha256": "f207066b282fb83117abcb44a4efbc5b9f3ee6d6fac396cf400848edc3ceaac9",
+      "git_blob": "62f2bae6addab7cff74f4f3be445e169ffff8692"
+    },
+    {
+      "module": "EllipticPdes.Fredholm.Compactness",
+      "source_path": "lean/EllipticPdes/Fredholm/Compactness.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Fredholm/Compactness.lean",
+      "sha256": "c7e6f6c3b6f8785799954db95050f1e4e339e158a3551c5ba44a1a880c9cf840",
+      "git_blob": "3e57159fb1c31bbace49ba35281025210e850edf"
+    },
+    {
+      "module": "EllipticPdes.Spectrum.Spectrum",
+      "source_path": "lean/EllipticPdes/Spectrum/Spectrum.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Spectrum/Spectrum.lean",
+      "sha256": "ceac8aa5934dd8b60fcc74c4c7a6c57526109136f0ce278863b99c0f8da2fad7",
+      "git_blob": "65a1dd8cda3e57f1eb445f05a02789873b8e1bbc"
+    },
+    {
+      "module": "EllipticPdes.Analysis.EuclideanFunctionalNorm",
+      "source_path": "lean/EllipticPdes/Analysis/EuclideanFunctionalNorm.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/EuclideanFunctionalNorm.lean",
+      "sha256": "b6c7a4387189d62447d25c2bd609d2fbe4250470990aedb7e9c7b4fb8d2b6f5a",
+      "git_blob": "040de89a542a02e5fc903c897eca8f2ea155705c"
+    },
+    {
+      "module": "EllipticPdes.Spectrum.RellichDischarge",
+      "source_path": "lean/EllipticPdes/Spectrum/RellichDischarge.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Spectrum/RellichDischarge.lean",
+      "sha256": "a2466af1fe74ef380964a2a2b243502165a6a79da1a1f08b7c19d2d4eded1e2a",
+      "git_blob": "5fc6c08c59948542751cba942bf601b6e69d7a7f"
+    },
+    {
+      "module": "EllipticPdes.Embedding.H01Sobolev",
+      "source_path": "lean/EllipticPdes/Embedding/H01Sobolev.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/H01Sobolev.lean",
+      "sha256": "23d9aedb46dc5e9a361d69fb08f4ad311314bfad3f98d6c4609aee1bed57cb2e",
+      "git_blob": "fee2a0fdf3f1858c2f2d0ab16283609d1af4e2d2"
+    },
+    {
+      "module": "EllipticPdes.Extension.BallChart",
+      "source_path": "lean/EllipticPdes/Extension/BallChart.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/BallChart.lean",
+      "sha256": "a3abdb9cf588aa6ee9f24cbbc350b294ac7d4680e56da8d27f97961ebf4cc3a2",
+      "git_blob": "0a31ddfc497f589d62a36e84cf4cbbb7d39cebe4"
+    },
+    {
+      "module": "EllipticPdes.Regularity.DifferenceQuotient",
+      "source_path": "lean/EllipticPdes/Regularity/DifferenceQuotient.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Regularity/DifferenceQuotient.lean",
+      "sha256": "0d749b864229ee0e33cb450e8a16e2b85f76c6e8f3865cc049db65ac6c1742ec",
+      "git_blob": "489fcebd599e2ff3ab5d4eaa67fb5752efbeacb1"
+    },
+    {
+      "module": "EllipticPdes.Regularity.DiffQuotientBound",
+      "source_path": "lean/EllipticPdes/Regularity/DiffQuotientBound.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Regularity/DiffQuotientBound.lean",
+      "sha256": "4ebfaa3bdb1c641bdd4c14289b10660b50ad4dbf2891f0a67f86131d68c3ff9d",
+      "git_blob": "f5de06f8cfcb71bcc5e8f8886b06c8c47ee8c029"
+    },
+    {
+      "module": "EllipticPdes.Regularity.Caccioppoli",
+      "source_path": "lean/EllipticPdes/Regularity/Caccioppoli.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Regularity/Caccioppoli.lean",
+      "sha256": "2a8007c709d1e61b3e73ce8469a3de9d083a642041d53e175e319bee685d5196",
+      "git_blob": "bc7fab339fbd5825fa2ac112082967a18e28baba"
+    },
+    {
+      "module": "EllipticPdes.Regularity.InteriorCompactSupport",
+      "source_path": "lean/EllipticPdes/Regularity/InteriorCompactSupport.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Regularity/InteriorCompactSupport.lean",
+      "sha256": "dd11550ab07dff74ddceeaeb126ba0749f5871573af3798873dac3c5a1b9f5ec",
+      "git_blob": "30501dcdd91221dfd9a6ad265cdb0eae7491197d"
+    },
+    {
+      "module": "EllipticPdes.Regularity.RestrictedDiffQuotient",
+      "source_path": "lean/EllipticPdes/Regularity/RestrictedDiffQuotient.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Regularity/RestrictedDiffQuotient.lean",
+      "sha256": "248f1d47a2f8b673772297995d00b5abc89bea47493c28cfa11c5e30d87c130f",
+      "git_blob": "6fed4e3237462001df1f91394213ab9f6cfc5533"
+    },
+    {
+      "module": "EllipticPdes.Spectrum.RellichW12",
+      "source_path": "lean/EllipticPdes/Spectrum/RellichW12.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Spectrum/RellichW12.lean",
+      "sha256": "7303683771dd8a2134553592fa05fd20c23dee408b19e19127fc85699153cc0d",
+      "git_blob": "994d985f5e422d260f0ca69805d95ee9709981b2"
+    },
+    {
+      "module": "EllipticPdes.Embedding.ConstOfGradZero",
+      "source_path": "lean/EllipticPdes/Embedding/ConstOfGradZero.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Embedding/ConstOfGradZero.lean",
+      "sha256": "cbba1460222beca98e883d6324f8d1d66162a2ced113436c28693a9ee79e02e1",
+      "git_blob": "ec907a62863a86c208e89029ffc27c92c5869de2"
+    },
+    {
+      "module": "EllipticPdes.Spectrum.PoincareWirtinger",
+      "source_path": "lean/EllipticPdes/Spectrum/PoincareWirtinger.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Spectrum/PoincareWirtinger.lean",
+      "sha256": "c819d91a21ba004f84fb41613b8e13a0c3a1e92b01d16cb96e1bf353e83b4875",
+      "git_blob": "94482fc6b874d55888a8cb6a997f5ffd67a6c823"
+    },
+    {
+      "module": "EllipticPdes.Extension.Descent",
+      "source_path": "lean/EllipticPdes/Extension/Descent.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Descent.lean",
+      "sha256": "c03224c0563788ca28c43a39856bb9e1834aef7692670d6be1506da13f3b9593",
+      "git_blob": "5aab4291f32ca64d3dcfb1271ded0e8630645224"
+    },
+    {
+      "module": "EllipticPdes.Extension.GraphOperator",
+      "source_path": "lean/EllipticPdes/Extension/GraphOperator.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/GraphOperator.lean",
+      "sha256": "c33333a16dc815839cf1107e5b7b8f1a09bc99ea55f31fa20e5bd4e986c8e123",
+      "git_blob": "76f57fb4b7c0d03cba236f0e2e3b72cd1ab598d9"
+    },
+    {
+      "module": "EllipticPdes.Extension.Translate",
+      "source_path": "lean/EllipticPdes/Extension/Translate.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Extension/Translate.lean",
+      "sha256": "733faf68d4c40190e8d99cb1b4ad870bf9de905fdfb7a847437564813618c8df",
+      "git_blob": "f84cac12e835d5c711c363306ad848fbd8a08f7c"
+    },
+    {
+      "module": "EllipticPdes.Analysis.Dilation",
+      "source_path": "lean/EllipticPdes/Analysis/Dilation.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Analysis/Dilation.lean",
+      "sha256": "cc4c0390f60c50feb1858dcf670b58132b4fdebc59425bfad8887a6778b819ac",
+      "git_blob": "54c57cb80e5d4eb1ac22971546d7d754137bf726"
+    },
+    {
+      "module": "EllipticPdes.Spectrum.PoincareBall",
+      "source_path": "lean/EllipticPdes/Spectrum/PoincareBall.lean",
+      "vendored_path": "vendor/EllipticPdes/EllipticPdes/Spectrum/PoincareBall.lean",
+      "sha256": "e489e20ac8482f5774066a7af2fa96763c3a0bb5b8b8b772c62eee351a57183d",
+      "git_blob": "81e1961b8feeffef7ef0d288620d5db7bada1888"
+    }
+  ]
+}

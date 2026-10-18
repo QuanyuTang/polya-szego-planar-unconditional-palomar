@@ -3,14 +3,12 @@
   "packagesDir": ".lake/packages",
   "packages": [
     {
-      "url": "https://github.com/alejandro-soto-franco/EllipticPDE.git",
-      "type": "git",
-      "subDir": "lean",
+      "type": "path",
+      "dir": "vendor/EllipticPdes",
+      "copy": false,
       "scope": "",
-      "rev": "ec784093f30308ef770ff855ce624725adf6f870",
       "name": "EllipticPdes",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "ec784093f30308ef770ff855ce624725adf6f870",
       "inherited": false,
       "configFile": "lakefile.toml"
     },

@@ -12,9 +12,15 @@ For the 81 pinned EllipticPDE modules, the successful native source SHA equals t
 
 A final Linux checkout builds the actual released bytes using the fixed dependency pins. The Lean verification Action builds the 185 targets and runs both audits. Palomar checks validates metadata, license and source integrity and runs the five-target Comparator wrapper with the bundled three kernels. Both recheck the source checksums and Git differences after verification. Their result is read from the run for the exact commit; this document does not assert that a particular Actions run succeeded.
 
-The reviewed target list specifies cross-module order. Own-package Lean commands use `-j1` and `Elab.async=false`; dependency-package internals and the sandbox retain their own settings. This is an execution-resource boundary, not a claim that any dependency proof is exempt from kernel checking.
+The reviewed target list specifies cross-module order. Own-package Lean commands use `-j1` and `Elab.async=false`; dependency-package internals and the sandbox retain their own settings. This is an execution-resource boundary, not a claim that any dependency proof is exempt from kernel checking. The 81 EllipticPDE modules now live in a contained path package with their upstream Lean options and exact Git-blob bytes; this changes their source location, not their proofs.
 
 AI-assisted review and local verification are disclosed in `formalization.yaml`. No independent human review is recorded. Repository visibility and Palomar acceptance are not inferred from compilation or CI.
+
+## Registry filesystem compatibility
+
+The first actual registry submission at `cbf34160d21a1b8fa3b8c85e67460eff40d8ff1f` failed during the Solution build. The pinned verifier did not grant write access to the build directory of the Git dependency's `subDir = "lean"` project. The 81 required EllipticPDE sources are now included under `vendor/EllipticPdes`, with their license and original notices, as a contained path dependency. [The source manifest](elliptic-vendor.json) binds every module to the upstream commit and Git blob. All 104 original project Lean files and the 185-target build order remain unchanged.
+
+The added Official Palomar mechanical preflight uses the registry's pinned reusable workflow and its actual outer sandbox. Its report must be checked for the exact new commit; the earlier ordinary CI successes do not certify this new check. [The compatibility record](PALOMAR-COMPATIBILITY.md) distinguishes the original failed submission from any later preflight or registry acceptance.
 
 ## Module-root collision repair
 

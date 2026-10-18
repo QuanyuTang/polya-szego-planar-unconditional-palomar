@@ -71,7 +71,7 @@ The [final semantic audit](verification/FINAL-AUDIT.md) records the statement co
 | --- | --- |
 | Lean | `leanprover/lean4:v4.35.0-rc3` |
 | Mathlib | `c55e6e786f49471c72fbddbec5415808896aec1e` |
-| EllipticPDE | `ec784093f30308ef770ff855ce624725adf6f870` (`subDir = "lean"`) |
+| EllipticPDE | 81 unchanged source modules from `ec784093f30308ef770ff855ce624725adf6f870`, included as the contained package `vendor/EllipticPdes` |
 
 On Linux with the fixed toolchain and the prerequisites used by the workflows:
 
@@ -89,9 +89,11 @@ sha256sum --check verification/SHA256SUMS
 git diff --exit-code
 ```
 
-`verification/build-targets.txt` builds 185 reviewed targets in dependency order: 104 project modules and 81 pinned EllipticPDE modules.
+`verification/build-targets.txt` builds 185 reviewed targets in dependency order: 104 project modules and 81 pinned EllipticPDE modules. The latter are included as a contained path dependency, with their original copyright notices and Apache license. [Their source manifest](verification/elliptic-vendor.json) records the original commit, Git blobs and SHA-256 values; the preflight checks every included module against it.
 
 The **Lean verification** Action builds the full closure, runs both audits and checks the frozen sources. **Palomar checks** validates the fixed metadata contract, license and sources, then compares all five targets through Lean's kernel and the toolchain's bundled **NanoDa** and **con-ron**. The wrapper supplies the protected external-kernel configuration; the submitted `comparator.json` does not declare external kernels. Both workflows check source checksums again after verification.
+
+The **Official Palomar mechanical preflight** Action calls the registry's complete, immutable verification workflow, including a fresh build inside its outer filesystem sandbox. It uses the same five comparison targets and bundled kernels. It does not submit or register a result. This additional check covers the build-directory restriction that the earlier repository workflows did not reproduce; see [the compatibility repair](verification/PALOMAR-COMPATIBILITY.md).
 
 Check the Actions result and logs for the **exact commit** being reviewed. A local native check, printed type or axiom guard does not establish a Linux Comparator or independent-kernel result. Source-byte provenance, historical development comments and verification boundaries are explained in [verification/README.md](verification/README.md).
 

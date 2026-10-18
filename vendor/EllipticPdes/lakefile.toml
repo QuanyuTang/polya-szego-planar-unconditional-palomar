@@ -1,0 +1,102 @@
+# Contained source package for the unchanged reviewed EllipticPDE closure.
+# Origin and exact source hashes: ../../verification/elliptic-vendor.json
+name = "EllipticPdes"
+version = "0.1.0"
+defaultTargets = ["EllipticPdes"]
+
+# Preserve the upstream package elaboration and linter options.
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c55e6e786f49471c72fbddbec5415808896aec1e"
+
+[[lean_lib]]
+name = "EllipticPdes"
+roots = [
+  "EllipticPdes.Sobolev.Basic",
+  "EllipticPdes.Analysis.LpExtendByZero",
+  "EllipticPdes.Analysis.Mollifier",
+  "EllipticPdes.Embedding.Convolution",
+  "EllipticPdes.Analysis.SmoothCutoff",
+  "EllipticPdes.Sobolev.WeakDeriv",
+  "EllipticPdes.Sobolev.WeakDerivClassical",
+  "EllipticPdes.Embedding.WeakDerivChain",
+  "EllipticPdes.Sobolev.Graph",
+  "EllipticPdes.Sobolev.GraphLattice",
+  "EllipticPdes.Sobolev.GraphEuclidean",
+  "EllipticPdes.Embedding.WeakGradient",
+  "EllipticPdes.Analysis.WeakCompactness",
+  "EllipticPdes.Analysis.DirectMethodForm",
+  "EllipticPdes.Analysis.PoincareInequality",
+  "EllipticPdes.Analysis.LpTranslation",
+  "EllipticPdes.Analysis.Translation",
+  "EllipticPdes.Analysis.FrechetKolmogorov",
+  "EllipticPdes.Embedding.WeakGradUnique",
+  "EllipticPdes.Embedding.ChainRule",
+  "EllipticPdes.Embedding.RayIntegral",
+  "EllipticPdes.Embedding.Morrey",
+  "EllipticPdes.Extension.Basic",
+  "EllipticPdes.Extension.C1Test",
+  "EllipticPdes.Extension.Shear",
+  "EllipticPdes.Embedding.WeakSobolev",
+  "EllipticPdes.Embedding.GagliardoNirenberg",
+  "EllipticPdes.Extension.ShearWeakGrad",
+  "EllipticPdes.Extension.Cutoff",
+  "EllipticPdes.Extension.Reflect",
+  "EllipticPdes.Extension.HalfSpace",
+  "EllipticPdes.Extension.EvenReflection",
+  "EllipticPdes.Extension.BoundaryChart",
+  "EllipticPdes.Extension.C1Boundary",
+  "EllipticPdes.Extension.PartitionOfUnity",
+  "EllipticPdes.Extension.Patch",
+  "EllipticPdes.Extension.Motion",
+  "EllipticPdes.Extension.LocalExtension",
+  "EllipticPdes.Extension.Operator",
+  "EllipticPdes.Embedding.DomainSobolev",
+  "EllipticPdes.Extension.GlobalApproximation",
+  "EllipticPdes.Extension.LinearOperator",
+  "EllipticPdes.Fredholm.CompactOperator",
+  "EllipticPdes.Poincare.Domain",
+  "EllipticPdes.Poincare.Density",
+  "EllipticPdes.Form.BilinearForm",
+  "EllipticPdes.Form.DivForm",
+  "EllipticPdes.Form.DivFormGarding",
+  "EllipticPdes.Poincare.Slab",
+  "EllipticPdes.Poincare.GraphBounded",
+  "EllipticPdes.Existence.DivFormExistence",
+  "EllipticPdes.Sobolev.Coefficients",
+  "EllipticPdes.Form.GeneralForm",
+  "EllipticPdes.Existence.FullOp",
+  "EllipticPdes.Form.DivFormEuclidean",
+  "EllipticPdes.Poincare.Geometry",
+  "EllipticPdes.Poincare.BoxSlice",
+  "EllipticPdes.Poincare.BoundedDomain",
+  "EllipticPdes.Existence.Garding",
+  "EllipticPdes.Fredholm.GardingForm",
+  "EllipticPdes.Fredholm.Fredholm",
+  "EllipticPdes.Fredholm.FredholmComplete",
+  "EllipticPdes.Fredholm.Compactness",
+  "EllipticPdes.Spectrum.Spectrum",
+  "EllipticPdes.Analysis.EuclideanFunctionalNorm",
+  "EllipticPdes.Spectrum.RellichDischarge",
+  "EllipticPdes.Embedding.H01Sobolev",
+  "EllipticPdes.Extension.BallChart",
+  "EllipticPdes.Regularity.DifferenceQuotient",
+  "EllipticPdes.Regularity.DiffQuotientBound",
+  "EllipticPdes.Regularity.Caccioppoli",
+  "EllipticPdes.Regularity.InteriorCompactSupport",
+  "EllipticPdes.Regularity.RestrictedDiffQuotient",
+  "EllipticPdes.Spectrum.RellichW12",
+  "EllipticPdes.Embedding.ConstOfGradZero",
+  "EllipticPdes.Spectrum.PoincareWirtinger",
+  "EllipticPdes.Extension.Descent",
+  "EllipticPdes.Extension.GraphOperator",
+  "EllipticPdes.Extension.Translate",
+  "EllipticPdes.Analysis.Dilation",
+  "EllipticPdes.Spectrum.PoincareBall",
+]
