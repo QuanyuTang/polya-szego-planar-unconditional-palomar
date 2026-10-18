@@ -1,6 +1,8 @@
 # A Formal Proof of the Planar Pólya–Szegő Buckling Conjecture
 Authors: Quanyu Tang and Haiqi Zhang
 
+Registered in **Palomar** on 18 October 2026 as [**PALOMAR-2026-10-18-000008, version 1**](https://palomar-registry.org/entry?id=PALOMAR-2026-10-18-000008&version=1). The registered proof and [v1.0.0 release](https://github.com/QuanyuTang/polya-szego-planar-unconditional-palomar/releases/tag/v1.0.0-palomar-submission) are fixed at commit [`5311f47821b5da92e81e75b7da5091d176c8deb9`](https://github.com/QuanyuTang/polya-szego-planar-unconditional-palomar/commit/5311f47821b5da92e81e75b7da5091d176c8deb9).
+
 This repository gives a Lean formalization proving the **planar Pólya–Szegő conjecture for the first buckling eigenvalue**. It establishes the sharp area inequality and characterizes equality by exact equality with an open disk, for every open planar set of finite positive area.
 
 The original informal mathematical proof was developed by the human authors, **Quanyu Tang and Haiqi Zhang**, with assistance from **ChatGPT**. **Aristotle and Codex** constructed the Lean formalization based on the authors' original informal proof.
@@ -101,4 +103,4 @@ Check the Actions result and logs for the **exact commit** being reviewed. A loc
 
 Based on the authors' original informal proof, Aristotle produced the initial conditional development, and Codex completed the missing proof obligations, API porting, semantic and axiom review, and local Lean verification. No independent human review of the formalization is recorded. See `formalization.yaml` for the source and automation disclosure. The source manuscript was consulted privately and is not included in the current source tree; earlier Git history is retained. The formalization is licensed under Apache-2.0; retained dependency and vendored-tool notices keep their own attribution and license terms.
 
-Repository name: `polya-szego-planar-unconditional-palomar`. The repository can remain private during preparation, and its Linux CI can run while private. Palomar submission requires public access and is a separate later step. Neither workflow changes repository visibility or submits the project to Palomar; successful CI is not registry acceptance.
+Repository name: `polya-szego-planar-unconditional-palomar`. Palomar has publicly registered version 1 at the fixed commit linked above. Subsequent repository updates are tracked separately from that registered snapshot. The existing release tag continues to identify the registered proof; the workflows reproduce verification for each reviewed commit.
