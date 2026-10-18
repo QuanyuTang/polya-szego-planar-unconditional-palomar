@@ -24,6 +24,9 @@ sources:
     relationship: formalizes
     location: 'Privately supplied manuscript: cor:area and conj:PS; not included in the current source tree'
     note: >-
+      Quanyu Tang and Haiqi Zhang developed the original informal mathematical
+      proof with assistance from ChatGPT. Aristotle and Codex constructed the
+      Lean formalization based on the authors' original informal proof.
       The target manuscript was consulted privately and is not included in the
       current source tree; earlier Git history is retained. Aristotle's initial
       Lean delivery was based on the separately supplied
@@ -34,14 +37,20 @@ sources:
 automation:
   methods:
     - method: >-
-        Aristotle generated the initial Lean delivery from the supplied
+        Quanyu Tang and Haiqi Zhang developed the original informal mathematical
+        proof with assistance from ChatGPT. This assistance concerns the informal
+        proof on which the Lean formalization is based.
+      framework: ChatGPT
+    - method: >-
+        Based on the authors' original informal proof, Aristotle generated the
+        initial Lean delivery from the supplied
         PS_dim2_definition_theorem_proof_v3.tex. Its main target statements
         retained PaperExternals assumptions; that delivery alone did not prove
         the requested unconditional corollary.
       framework: Aristotle
     - method: >-
-        Codex assisted completion of the missing proof obligations, Lean API
-        porting, source and dependency review, semantic and axiom audits, and
+        Codex formalized the authors' informal proof, completing missing proof
+        obligations, Lean API porting, source and dependency review, semantic and axiom audits, and
         end-to-end local native Lean verification. The repository workflows
         enforce Linux builds, comparison of the five original public statements,
         and replay through Lean, NanoDa and con-ron for the exact commit.

@@ -3,6 +3,8 @@ Authors: Quanyu Tang and Haiqi Zhang
 
 This repository gives a Lean formalization proving the **planar Pólya–Szegő conjecture for the first buckling eigenvalue**. It establishes the sharp area inequality and characterizes equality by exact equality with an open disk, for every open planar set of finite positive area.
 
+The original informal mathematical proof was developed by the human authors, **Quanyu Tang and Haiqi Zhang**, with assistance from **ChatGPT**. **Aristotle and Codex** constructed the Lean formalization based on the authors' original informal proof.
+
 ## The conjecture and the formalized theorem
 
 The classical conjecture asks whether a disk minimizes the first clamped buckling eigenvalue among smooth bounded planar domains of prescribed area. For an open set $\Omega\subset\mathbb R^2$, the variational eigenvalue is
@@ -95,6 +97,6 @@ Check the Actions result and logs for the **exact commit** being reviewed. A loc
 
 ## Provenance and availability
 
-Aristotle produced the initial conditional development. Codex assisted completion of the missing proof obligations, API porting, semantic and axiom review, and local Lean verification. No independent human review of the formalization is recorded. See `formalization.yaml` for the source and automation disclosure. The source manuscript was consulted privately and is not included in the current source tree; earlier Git history is retained. The formalization is licensed under Apache-2.0; retained dependency and vendored-tool notices keep their own attribution and license terms.
+Based on the authors' original informal proof, Aristotle produced the initial conditional development, and Codex completed the missing proof obligations, API porting, semantic and axiom review, and local Lean verification. No independent human review of the formalization is recorded. See `formalization.yaml` for the source and automation disclosure. The source manuscript was consulted privately and is not included in the current source tree; earlier Git history is retained. The formalization is licensed under Apache-2.0; retained dependency and vendored-tool notices keep their own attribution and license terms.
 
 Repository name: `polya-szego-planar-unconditional-palomar`. The repository can remain private during preparation, and its Linux CI can run while private. Palomar submission requires public access and is a separate later step. Neither workflow changes repository visibility or submits the project to Palomar; successful CI is not registry acceptance.
