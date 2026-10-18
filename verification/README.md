@@ -16,6 +16,12 @@ The reviewed target list specifies cross-module order. Own-package Lean commands
 
 AI-assisted review and local verification are disclosed in `formalization.yaml`. No independent human review is recorded. Repository visibility and Palomar acceptance are not inferred from compilation or CI.
 
+## Accompanying manuscript snapshot
+
+The documentation update dated 18 October 2026 adds the informal working draft v5 under `manuscript/`, including its TeX source, compiled PDF and provenance/compilation notes. `SHA256SUMS` includes these three files and the updated README files. The manuscript source differs from the authors' supplied v5 only by normalized line endings/trailing whitespace and the dated first-page draft notice. The manuscript is still under revision and has not yet been submitted to arXiv.
+
+This documentation snapshot does not change any Lean source, specification, dependency pin, proof audit, Comparator configuration or workflow. The Palomar version 1 snapshot and existing release tag remain at `5311f47821b5da92e81e75b7da5091d176c8deb9`. Compilation and visual inspection of the manuscript PDF are document checks, not a new mathematical audit or a line-by-line formal verification of the manuscript.
+
 ## Registry filesystem compatibility
 
 The first actual registry submission at `cbf34160d21a1b8fa3b8c85e67460eff40d8ff1f` failed during the Solution build. The pinned verifier did not grant write access to the build directory of the Git dependency's `subDir = "lean"` project. The 81 required EllipticPDE sources are now included under `vendor/EllipticPdes`, with their license and original notices, as a contained path dependency. [The source manifest](elliptic-vendor.json) binds every module to the upstream commit and Git blob. All 104 original project Lean files and the 185-target build order remain unchanged.

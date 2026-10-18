@@ -7,6 +7,14 @@ This repository gives a Lean formalization proving the **planar Pólya–Szegő 
 
 The original informal mathematical proof was developed by the human authors, **Quanyu Tang and Haiqi Zhang**, with assistance from **ChatGPT**. **Aristotle and Codex** constructed the Lean formalization based on the authors' original informal proof.
 
+## Accompanying manuscript: working draft v5
+
+The accompanying informal manuscript is available as a [PDF](manuscript/PS_dim2_v5.pdf) and [TeX source](manuscript/PS_dim2_v5.tex). This **working draft v5, dated 18 October 2026**, is currently being revised and **has not yet been submitted to arXiv**. It is provided for public reading and feedback; an arXiv link will be added when available.
+
+The authors developed the original informal proof with assistance from ChatGPT. Aristotle and Codex constructed the Lean formalization based on that original proof, whose current revised presentation is provided in manuscript v5. The manuscript has continued to evolve since the initial formalization. The Palomar registration concerns the Lean declarations at the registered commit; it does not constitute a line-by-line verification of this manuscript.
+
+See [the manuscript notes](manuscript/README.md) for its provenance, compilation instructions and rights statement. The registered proof and existing release remain fixed at the commit linked above.
+
 ## The conjecture and the formalized theorem
 
 The classical conjecture asks whether a disk minimizes the first clamped buckling eigenvalue among smooth bounded planar domains of prescribed area. For an open set $\Omega\subset\mathbb R^2$, the variational eigenvalue is
@@ -101,6 +109,6 @@ Check the Actions result and logs for the **exact commit** being reviewed. A loc
 
 ## Provenance and availability
 
-Based on the authors' original informal proof, Aristotle produced the initial conditional development, and Codex completed the missing proof obligations, API porting, semantic and axiom review, and local Lean verification. No independent human review of the formalization is recorded. See `formalization.yaml` for the source and automation disclosure. The source manuscript was consulted privately and is not included in the current source tree; earlier Git history is retained. The formalization is licensed under Apache-2.0; retained dependency and vendored-tool notices keep their own attribution and license terms.
+Based on the authors' original informal proof, Aristotle produced the initial conditional development, and Codex completed the missing proof obligations, API porting, semantic and axiom review, and local Lean verification. No independent human review of the formalization is recorded. See `formalization.yaml` for the source and automation disclosure. The current revised manuscript is included in [manuscript/](manuscript/README.md); earlier Git history is retained. The formalization code is licensed under Apache-2.0; retained dependency and vendored-tool notices keep their own attribution and license terms. The manuscript has its own rights statement in that directory.
 
 Repository name: `polya-szego-planar-unconditional-palomar`. Palomar has publicly registered version 1 at the fixed commit linked above. Subsequent repository updates are tracked separately from that registered snapshot. The existing release tag continues to identify the registered proof; the workflows reproduce verification for each reviewed commit.
