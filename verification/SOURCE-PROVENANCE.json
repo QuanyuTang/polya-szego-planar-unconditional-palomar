@@ -2584,10 +2584,12 @@
       "newline_only_difference": true
     }
   ],
-  "paper": {
-    "path": "paper/PS_dim2_v3.tex",
-    "sha256": "d0d04dbc3ba3cc46f78930000c52a43f7447c2f160ba1c4d6fa17abdbeb6aea6",
-    "raw_bytes_preserved": true
+  "private_manuscript_audit_reference": {
+    "title": "A sharp comparison between planar buckling and Dirichlet eigenvalues",
+    "targets": ["cor:area", "conj:PS"],
+    "locally_reviewed_source_sha256": "d0d04dbc3ba3cc46f78930000c52a43f7447c2f160ba1c4d6fa17abdbeb6aea6",
+    "included_in_current_source_tree": false,
+    "note": "This hash identifies the privately consulted source used for semantic review. The manuscript is absent from the current source tree; earlier Git history is retained."
   },
   "input_contract_sha256": "56a7222dbbaca31cdb6cb3db9852d7b84f6c2201e3b68c9925009c2682b8d77b",
   "assembly_script_sha256": "0f3fb56a2c53d525e0387c40dad057ceb52aec976aa8064784f581c7fe29b4a6",

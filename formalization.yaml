@@ -1,9 +1,8 @@
 project:
   name: Planar Pólya–Szegő Buckling Inequality
   description: >-
-    Unconditional Lean formalization of the planar area corollary cor:area and
-    conjecture conj:PS in A sharp comparison between planar buckling and Dirichlet
-    eigenvalues. For open planar sets of positive finite area, it proves the sharp
+    Lean formalization proving the planar Polya-Szego conjecture for the first
+    buckling eigenvalue. For open planar sets of positive finite area, it proves the sharp
     area inequality and characterizes equality by exact equality with an open
     disk. It retains the original Sobolev-space, variational eigenvalue and Bessel
     definitions, and includes the disk eigenvalue and buckling–Dirichlet comparison.
@@ -23,12 +22,13 @@ sources:
   - title: A sharp comparison between planar buckling and Dirichlet eigenvalues
     type: manuscript
     relationship: formalizes
-    location: 'paper/PS_dim2_v3.tex: cor:area and conj:PS'
+    location: 'Privately supplied manuscript: cor:area and conj:PS; not included in the current source tree'
     note: >-
-      The target manuscript supplied for this project is paper/PS_dim2_v3.tex.
-      Aristotle's initial Lean delivery was based on the separately supplied
+      The target manuscript was consulted privately and is not included in the
+      current source tree; earlier Git history is retained. Aristotle's initial
+      Lean delivery was based on the separately supplied
       PS_dim2_definition_theorem_proof_v3.tex. The public statements retain the
-      standard mathematical definitions audited against PS_dim2_v3.tex. No public
+      standard mathematical definitions audited against the target manuscript. No public
       manuscript identifier or publication link is asserted.
 
 automation:
